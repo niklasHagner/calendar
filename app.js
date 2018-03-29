@@ -32,9 +32,6 @@ app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
 const baseEndpoint = 'https://api.dryg.net/dagar/v2.1';
 
-const monthNames = [
-    'Januari', 'Februari', 'Mars', 'April', 'Maj', 'Juni', 'Juli', 'Augusti', 'September', 'Oktober', 'November', 'December'
-];
 const dayNames = [
     'Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'
 ];
@@ -103,15 +100,12 @@ async function renderCalendarForMonth(y, mo, req, res) {
             var m = new Date(day.datum).getMonth() + 1;
             day.month = {
                 number: m,
-                name: monthNames[m - 1]
+                name: moment(day.datum).lang('sv').format('MMMM')
             };
             return day;
         });
-
-        var todayFilt = days.filter(x => moment(x.datum).isSame(today, 'day'))[0];
-        if (todayFilt)
         
-        var today = { weekday: d.lang('sv').format('dddd'), day: d.day(), week: todayFilt && todayFilt.vecka || undefined };
+        var today = { weekday: d.lang('sv').format('dddd'), day: d.date(), week: d.format('w'), month: d.lang('sv').format('MMMM') };
 
         var nextMonthMomentObject = moment(`${year}-${month}`).add(1, 'months');
         var prevMonthMomentObject = moment(`${year}-${month}`).subtract(1, 'months');
@@ -125,7 +119,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
             weekNumbers,
             month: {
                 number: month,
-                name: monthNames[month-1]
+                name: moment(`${year}-${month}`).lang('sv').format('MMMM')
             },
             today,
             nextQueryString,
