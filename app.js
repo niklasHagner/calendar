@@ -40,13 +40,12 @@ const dayNames = [
 ];
 
 app.get('/', async function (req, res) { //serve handlebars
-    var d = new Date();
-    var year = d.getFullYear();
-    var currentDay = d.getUTCDate();
-    var monthIndex = d.getMonth();
-    var month = monthIndex + 1;
+    var d = moment(new Date());
+    var year = d.format('YYYY');
+    var currentDay = d.date();
+    var month = d.month() + 1;
     var monthEndpoint = `${baseEndpoint}/${year}/${month}`;
-    renderCalendarForMonth(year, monthIndex, req, res);
+    renderCalendarForMonth(year, month, req, res);
 });
 
 app.get('/showCalendar', async function (req, res) {
@@ -64,22 +63,19 @@ app.get('/showCalendar', async function (req, res) {
 });
 
 async function renderCalendarForMonth(y, mo, req, res) {
-    var year, currentDay, monthIndex;
+    var year, currentDay;
     if (!y && !mo) {
-        var d = new Date();
-        currentDay = d.getUTCDate();
-        monthIndex = mo || d.getMonth();
-        year = y || d.getFullYear();
+        var d = moment(new Date());
+        month = mo;
+        year = y || d.format('YYYY');
     } else {
-        monthIndex = mo;
+        month = mo;
         year = y;
     }
-    var month = Number(monthIndex) + 1;
     var monthEndpoint = `${baseEndpoint}/${year}/${month}`;
 
     try {
         var data = await requestAsync(monthEndpoint);
-        // requestAsync(monthEndpoint).then(async function(data) {
         var days = data.dagar;
         var startingWeekday = dayNames.indexOf(data.dagar[0].veckodag);
         const weekNumbers = days
@@ -128,7 +124,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
             weekNumbers,
             month: {
                 number: month,
-                name: monthNames[month]
+                name: monthNames[month-1]
             },
             today,
             nextQueryString,
