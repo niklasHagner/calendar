@@ -64,8 +64,8 @@ app.get('/showCalendar', async function (req, res) {
 
 async function renderCalendarForMonth(y, mo, req, res) {
     var year, currentDay;
+    var d = moment(new Date());
     if (!y && !mo) {
-        var d = moment(new Date());
         month = mo;
         year = y || d.format('YYYY');
     } else {
@@ -108,9 +108,10 @@ async function renderCalendarForMonth(y, mo, req, res) {
             return day;
         });
 
-        var today = days.filter(x => moment(x.datum).isSame(today, 'day'))[0];
-        if (today)
-            today.day = currentDay;
+        var todayFilt = days.filter(x => moment(x.datum).isSame(today, 'day'))[0];
+        if (todayFilt)
+        
+        var today = { weekday: d.lang('sv').format('dddd'), day: d.day(), week: todayFilt && todayFilt.vecka || undefined };
 
         var nextMonthMomentObject = moment(`${year}-${month}`).add(1, 'months');
         var prevMonthMomentObject = moment(`${year}-${month}`).subtract(1, 'months');

@@ -7,7 +7,7 @@
 
 <div class="calendar">
   <div class="today-facts">
-    <span class="today-number">Idag: {{today.veckodag}} {{month.name}} {{today.day}}</span>
+    <span class="today-number">Idag: {{today.weekday}} {{month.name}} {{today.day}}{{#if today.week}}, vecka {{today.week}}{{/if}}</span>
   </div>
   
   <h1 class="month">
