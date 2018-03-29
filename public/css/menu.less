@@ -1,0 +1,32 @@
+
+.menu-bar {
+    white-space: nowrap;
+
+    .button {
+        cursor: pointer;
+        padding: 5px;
+        margin: 0px;
+        border: solid 1px tomato;
+        border-radius: 4px;
+        transition: 0.2s all;
+        font-size: 0.5em;
+        color: #666;
+
+        + .button {
+            margin-left: 5px;
+        }
+        &:hover, &:active {
+            border-color: crimson;
+            color: crimson;
+        }
+        :active {
+            background-color: darken(crimson, 15%);
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    }
+    a.button {
+        text-decoration: none;
+        color: red;
+    }
+}

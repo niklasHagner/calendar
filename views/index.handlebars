@@ -1,0 +1,87 @@
+<header>
+  <div class="menu-bar">
+      <a style="float: right" class="button btn-link" href="/next">Nästa månad</a>
+      <a style="float: left" class="button btn-link" href="/prev">Föregående månad</a>
+  </div>
+</header>
+
+<div class="calendar">
+  <div class="today-facts">
+    <span class="today-number">Idag: {{today.veckodag}} {{month.name}} {{today.day}}</span>
+  </div>
+  
+  <h1 class="month">
+    {{month.name}}
+  </h1>
+
+  <ol class="day-names">
+    <li>
+      Mån
+    </li>
+    <li>
+      Tis
+    </li>
+    <li>
+      Ons
+    </li>
+    <li>
+      Tor
+    </li>
+    <li>
+      Fre
+    </li>
+    <li class="weekend">
+      Lör
+    </li>
+    <li class="weekend">
+      Sön
+    </li>
+  </ol>
+
+
+  <section class="weekNumbers">
+    {{#each weekNumbers}}
+      <div>v{{this}}</div>
+    {{/each}}
+  </section>
+
+  {{!-- {
+    "datum": "2018-03-30",
+    "veckodag": "Fredag",
+    "arbetsfri dag": "Ja",
+    "röd dag": "Ja",
+    "vecka": "13",
+    "dag i vecka": "5",
+    "helgdag": "Långfredagen",
+    "namnsdag": [
+      "Holger",
+      "Holmfrid"
+    ],
+    "flaggdag": ""
+  } --}}
+  <ol class="days">
+    {{#each days}}
+       <li class = "{{#ifnoteq month.number ../month.number}}previousMonth{{/ifnoteq}}
+        {{#if isToday}}isToday{{/if}} 
+        {{#if redDay}}redDay{{/if}} 
+        {{#if helgDag}}helgDag{{/if}}
+        {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
+        <div class="date">
+          {{dayNumber}}
+        </div>
+        <div class="holiday">
+          {{helgdag}}
+        </div>
+        {{#ifnoteq month.number ../month.number}}
+          {{month.name}}
+        {{/ifnoteq}}
+        <div class="namedays">
+          {{#each namnsdag}}
+            <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
+          {{/each}}
+        </div>
+      </li>
+    {{/each}}
+    <li>
+  </ol>
+</div>
