@@ -71,10 +71,8 @@
         </div>
         <div class="holiday">
           {{helgdag}}
+          {{helgdagsafton}}
         </div>
-        {{#ifnoteq month.number ../month.number}}
-          {{month.name}}
-        {{/ifnoteq}}
         <div class="namedays">
           {{#each namnsdag}}
             <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}

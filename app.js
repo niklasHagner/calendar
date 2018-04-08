@@ -6,8 +6,8 @@ var path = require("path");
 var favicon = require("serve-favicon");
 var logger = require("morgan");
 var moment = require('moment');
-// var bodyParser = require("body-parser");
 
+moment.locale('sv');
 var app = express();
 app.use(express.static(__dirname + '/public'));
 app.engine(
@@ -21,12 +21,6 @@ app.engine(
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "handlebars");
 // app.use(logger("dev"));
-// app.use(bodyParser.json());
-// app.use(
-//     bodyParser.urlencoded({
-//         extended: true
-//     })
-// );
 app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
@@ -37,7 +31,7 @@ const dayNames = [
 ];
 
 app.get('/', async function (req, res) { //serve handlebars
-    var d = moment(new Date());
+    var d = moment();
     var year = d.format('YYYY');
     var currentDay = d.date();
     var month = d.month() + 1;
@@ -61,7 +55,7 @@ app.get('/showCalendar', async function (req, res) {
 
 async function renderCalendarForMonth(y, mo, req, res) {
     var year, currentDay;
-    var d = moment(new Date());
+    var d = moment();
     if (!y && !mo) {
         month = mo;
         year = y || d.format('YYYY');
@@ -100,15 +94,15 @@ async function renderCalendarForMonth(y, mo, req, res) {
             var m = new Date(day.datum).getMonth() + 1;
             day.month = {
                 number: m,
-                name: moment(day.datum).lang('sv').format('MMMM')
+                name: moment(day.datum).format('MMMM')
             };
             return day;
         });
         
-        var today = { weekday: d.lang('sv').format('dddd'), day: d.date(), week: d.format('w'), month: d.lang('sv').format('MMMM') };
+        var today = { weekday: d.format('dddd'), day: d.date(), week: d.format('w'), month: d.format('MMMM') };
 
-        var nextMonthMomentObject = moment(`${year}-${month}`).add(1, 'months');
-        var prevMonthMomentObject = moment(`${year}-${month}`).subtract(1, 'months');
+        var nextMonthMomentObject = moment(`${year}-${month}-01`).add(1, 'months');
+        var prevMonthMomentObject = moment(`${year}-${month}-01`).subtract(1, 'months');
         var nextQueryString = `showCalendar?year=${nextMonthMomentObject.format('YYYY')}&month=${nextMonthMomentObject.format('MM')}`;
         var prevQueryString = `showCalendar?year=${prevMonthMomentObject.format('YYYY')}&month=${prevMonthMomentObject.format('MM')}`;
 
@@ -119,7 +113,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
             weekNumbers,
             month: {
                 number: month,
-                name: moment(`${year}-${month}`).lang('sv').format('MMMM')
+                name: moment(`${year}-${month}-01`).format('MMMM')
             },
             today,
             nextQueryString,
