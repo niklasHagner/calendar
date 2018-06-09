@@ -30,10 +30,10 @@ const dayNames = [
     'Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'
 ];
 
+let d, currentDay;
 app.get('/', async function (req, res) { //serve handlebars
     var d = moment();
     var year = d.format('YYYY');
-    var currentDay = d.date();
     var month = d.month() + 1;
     var monthEndpoint = `${baseEndpoint}/${year}/${month}`;
     renderCalendarForMonth(year, month, req, res);
@@ -54,6 +54,9 @@ app.get('/showCalendar', async function (req, res) {
 });
 
 async function renderCalendarForMonth(y, mo, req, res) {
+    var d = moment();
+    currentDay = d.date();
+
     var year, currentDay;
     var d = moment();
     if (!y && !mo) {
