@@ -1,14 +1,16 @@
 <header>
   <div class="menu-bar">
-      <a style="float: right" class="button btn-link" href="/{{nextQueryString}}">Nästa månad</a>
-      <a style="float: left" class="button btn-link" href="/{{prevQueryString}}">Föregående månad</a>
+  
+    <div class="today-facts">
+      <span class="today-number">Idag: <strong>{{today.weekday}} {{today.month}} {{today.day}}{{#if today.week}}</strong>, vecka {{today.week}}{{/if}}</span>
+    </div>
+    <a style="float: left" class="button btn-link" href="/{{prevQueryString}}">Föregående månad</a>      
+    <a style="float: right" class="button btn-link" href="/{{nextQueryString}}">Nästa månad</a>
+    
   </div>
 </header>
 
 <div class="calendar">
-  <div class="today-facts">
-    <span class="today-number">Idag: {{today.weekday}} {{today.month}} {{today.day}}{{#if today.week}}, vecka {{today.week}}{{/if}}</span>
-  </div>
   
   <h1 class="month">
     {{month.name}}
