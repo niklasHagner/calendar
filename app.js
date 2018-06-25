@@ -91,7 +91,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
         days = days.map((day) => {
             var dayNumber = new Date(day.datum).getUTCDate();
             day.dayNumber = dayNumber;
-            day.isToday = dayNumber === currentDay;
+            day.isToday = d.isSame(moment(day.datum), "day")
             day.redDay = day['röd dag'] === 'Ja' && day.veckodag !== 'Lördag' && day.veckodag !== 'Söndag';
             day.helgDag = day.helgdag && day.helgdag.length > 0;
             var m = new Date(day.datum).getMonth() + 1;
