@@ -10,18 +10,18 @@
     "express": "^4.13.3",
     "express-handlebars": "^3.0.0",
     "moment": "^2.21.0",
-    "morgan": "^1.6.1",
+    "morgan": "^1.9.1",
     "octopus-deploy-client": "^0.1.1",
     "request-promise": "^4.2.2",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.2",
-    "grunt-contrib-less": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt": "^1.0.3",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-develop": "^0.4.0",
     "load-grunt-tasks": "^3.2.0",
-    "request": "^2.60.0",
+    "request": "^2.88.0",
     "time-grunt": "^1.2.1"
   }
 }
