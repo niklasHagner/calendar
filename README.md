@@ -1,5 +1,12 @@
 # Calendar
-A swedish calendar with weeknames
+A swedish calendar featuring all the date stuff swedes need
+
+* week numbers
+* name days
+* official red holidays days 
+* plus other holidays
+
+![screenshot](https://i.imgur.com/5WdY1qz.png)
 
 ## Tech
 + node + express
