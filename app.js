@@ -1,9 +1,9 @@
 var express = require('express');
 var exphbs = require("express-handlebars");
-var request = require('request');
 var path = require("path");
 var favicon = require("serve-favicon");
 var moment = require('moment');
+var requestAwait = require("request-promise");
 
 moment.locale('sv');
 var app = express();
@@ -127,7 +127,6 @@ async function renderCalendarForMonth(y, mo, req, res) {
 }
 
 async function requestAsync(url) {
-    var requestAwait = require("request-promise");
     return await requestAwait({
         uri: url,
         json: true
