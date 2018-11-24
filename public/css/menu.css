@@ -1,0 +1,31 @@
+.menu-bar {
+  white-space: nowrap;
+  text-align: center;
+}
+.menu-bar .button {
+  cursor: pointer;
+  padding: 5px;
+  margin: 0px;
+  border: solid 1px tomato;
+  border-radius: 4px;
+  transition: 0.2s all;
+  font-size: 0.5em;
+  color: #666;
+}
+.menu-bar .button + .button {
+  margin-left: 5px;
+}
+.menu-bar .button:hover,
+.menu-bar .button:active {
+  border-color: crimson;
+  color: crimson;
+}
+.menu-bar .button :active {
+  background-color: #960e29;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.menu-bar a.button {
+  text-decoration: none;
+  color: red;
+}
