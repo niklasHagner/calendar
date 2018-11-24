@@ -16,7 +16,7 @@ A swedish calendar featuring all the date stuff swedes need
 ## How to
 1. `grunt` in the root directory to compile LESS to CSS, and start the server
 
-2. browse to `http://localhost:8000`
+2. browse to `http://localhost:8001`
 
 ## Credits
 * api from api.dryg.net

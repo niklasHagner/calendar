@@ -1,10 +1,8 @@
 var express = require('express');
 var exphbs = require("express-handlebars");
-var fs = require('fs');
 var request = require('request');
 var path = require("path");
 var favicon = require("serve-favicon");
-var logger = require("morgan");
 var moment = require('moment');
 
 moment.locale('sv');
@@ -20,7 +18,6 @@ app.engine(
 );
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "handlebars");
-// app.use(logger("dev"));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
@@ -30,12 +27,11 @@ const dayNames = [
     'Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'
 ];
 
-let d, currentDay;
+
 app.get('/', async function (req, res) { //serve handlebars
     var d = moment();
     var year = d.format('YYYY');
     var month = d.month() + 1;
-    var monthEndpoint = `${baseEndpoint}/${year}/${month}`;
     renderCalendarForMonth(year, month, req, res);
 });
 
@@ -49,15 +45,13 @@ app.get('/showCalendar', async function (req, res) {
         year,
         month
     } = queryParams;
-    var monthEndpoint = `${baseEndpoint}/${year}/${month}`;
     renderCalendarForMonth(year, month, req, res);
 });
 
 async function renderCalendarForMonth(y, mo, req, res) {
     var d = moment();
-    currentDay = d.date();
 
-    var year, currentDay;
+    var year;
     var d = moment();
     if (!y && !mo) {
         month = mo;
@@ -101,7 +95,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
             };
             return day;
         });
-        
+
         var today = { weekday: d.format('dddd'), day: d.date(), week: d.format('w'), month: d.format('MMMM') };
 
         var nextMonthMomentObject = moment(`${year}-${month}-01`).add(1, 'months');
@@ -140,22 +134,7 @@ async function requestAsync(url) {
     });
 }
 
-function requestPromise(url) {
-    return new Promise(function (resolve, reject) {
-        request(url, function (err, response, body) {
-            if (err)
-                return reject(err);
-            try {
-                console.log(response.statusCode);
-                resolve(body);
-            } catch (e) {
-                reject(e);
-            }
-        });
-    });
-}
-
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 8001;
 app.listen(port);
 console.log('Running server on port ' + port);
 exports = module.exports = app;

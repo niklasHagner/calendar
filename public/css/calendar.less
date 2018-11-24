@@ -1,21 +1,8 @@
-
-
-/*-----------CALENDAR-----------*/
-
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
 
-.clearfix:after,
-.calendar ol:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
 
 
-/* ==========
-      Setup Page */
+/* BASICS */
 
 *,
 *:before,
@@ -33,8 +20,15 @@ body {
 }
 
 
-/* ================
-      Calendar Styling */
+/* Calendar Styling */
+.clearfix:after,
+.calendar ol:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
 
 .calendar {
     background: white;
@@ -129,9 +123,13 @@ body {
     color: #ddd;
 }
 
-/*CUsTOM*/
 .previousMonth {
     background-color: #f2f2f2;
+    .date,
+    .namedays {
+        font-weight: normal;
+        color: #999;
+    }
 }
 .weekend {
     color: tomato;
