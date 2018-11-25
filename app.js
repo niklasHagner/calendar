@@ -3,7 +3,7 @@ var exphbs = require("express-handlebars");
 var path = require("path");
 var favicon = require("serve-favicon");
 var moment = require('moment');
-var requestAwait = require("request-promise");
+var request = require("axios");
 
 moment.locale('sv');
 var app = express();
@@ -63,7 +63,8 @@ async function renderCalendarForMonth(y, mo, req, res) {
     var monthEndpoint = `${baseEndpoint}/${year}/${month}`;
 
     try {
-        var data = await requestAsync(monthEndpoint);
+        var data = await request(monthEndpoint);
+        data = data.data;
         var days = data.dagar;
         var startingWeekday = dayNames.indexOf(data.dagar[0].veckodag);
         const weekNumbers = days
@@ -77,7 +78,8 @@ async function renderCalendarForMonth(y, mo, req, res) {
 
         var previousMonth = month - 1;
         var previousMonthEndpoint = `${baseEndpoint}/${year}/${previousMonth}`;
-        var previousMonthData = await requestAsync(previousMonthEndpoint);
+        var previousMonthData = await request(previousMonthEndpoint);
+        previousMonthData = previousMonthData.data;
         previousMonthData = previousMonthData;
         var previousDays = previousMonthData.dagar.splice(previousMonthData.dagar.length - startingWeekday, startingWeekday);
         days = previousDays.concat(days);
@@ -124,13 +126,6 @@ async function renderCalendarForMonth(y, mo, req, res) {
             title: "error"
         });
     }
-}
-
-async function requestAsync(url) {
-    return await requestAwait({
-        uri: url,
-        json: true
-    });
 }
 
 var port = process.env.PORT || 8001;
