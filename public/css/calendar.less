@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 body {
     padding: 10px;
     background-color: #f2f2f2;
@@ -16,6 +23,9 @@ body {
 
 
 /* Calendar Styling */
+
+@rowHeight: 135px;
+
 .clearfix:after,
 .calendar ol:after {
     content: ".";
@@ -71,7 +81,7 @@ body {
 .calendar .days li {
     border-bottom: 1px solid #eee;
     border-left: 1px solid #eee;
-    height: 100px;
+    height: @rowHeight;
 }
 
 .calendar .days li .date {
@@ -170,7 +180,7 @@ body {
     overflow: visible;
     div {
         padding-top: 5px;
-        height: 100px;
+        height: @rowHeight;
     }
 }
 

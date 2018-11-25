@@ -4,6 +4,7 @@ var path = require("path");
 var favicon = require("serve-favicon");
 var moment = require('moment');
 var request = require("axios");
+var {themeDays} = require("./themeDays");
 
 moment.locale('sv');
 var app = express();
@@ -65,8 +66,15 @@ async function renderCalendarForMonth(y, mo, req, res) {
     try {
         var data = await request(monthEndpoint);
         data = data.data;
-        var days = data.dagar;
-        var startingWeekday = dayNames.indexOf(data.dagar[0].veckodag);
+
+        //add themeDays to calendar-api-data
+        var days = data.dagar.map((d) => {
+            const matchingThemeDay = themeDays.find((themeDay) => { return moment(themeDay.dayName).diff(moment(d.datum), 'days') === 0 });
+            d.themeDays = (matchingThemeDay) ? matchingThemeDay.events : [];
+            return d;
+        });
+
+        var startingWeekday = dayNames.indexOf(days[0].veckodag);
         const weekNumbers = days
             .filter((obj, idx, arr) => (
                 arr.findIndex((o) => o.vecka === obj.vecka) === idx
@@ -95,6 +103,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
                 number: m,
                 name: moment(day.datum).format('MMMM')
             };
+            day.themeDays = day.themeDays;
             return day;
         });
 
