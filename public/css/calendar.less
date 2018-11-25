@@ -201,17 +201,36 @@ body {
     }
 }
 
+
+.calendar-list {
+    @media screen and (min-width: @mobileWidth) {
+        display: none;
+    }
+    .weekNumbers {
+        display: none !important;
+    }
+    .day-names,
+    .previousMonth {
+        display: none !important;
+    }
+
+    > .days > li {
+        width: 100%;
+        display: block;
+    }
+}
+
 /* mobile view overrides */
 @media screen and (max-width: @mobileWidth) {
 
     .calendar {
-       padding: 0;
-       border-radius: 0;
+        padding: 0;
+        border-radius: 0;
     }
-    .themedays {
-        display: none !important;
-    }
-    .weekNumbers {
-        display: none !important;
+
+    .calendar-grid {
+        .weekNumbers {
+            display: none !important;
+        }
     }
 }

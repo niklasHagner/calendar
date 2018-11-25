@@ -173,16 +173,29 @@ body {
 .today-facts strong {
   text-transform: capitalize;
 }
+@media screen and (min-width: 768px) {
+  .calendar-list {
+    display: none;
+  }
+}
+.calendar-list .weekNumbers {
+  display: none !important;
+}
+.calendar-list .day-names,
+.calendar-list .previousMonth {
+  display: none !important;
+}
+.calendar-list > .days > li {
+  width: 100%;
+  display: block;
+}
 /* mobile view overrides */
 @media screen and (max-width: 768px) {
   .calendar {
     padding: 0;
     border-radius: 0;
   }
-  .themedays {
-    display: none !important;
-  }
-  .weekNumbers {
+  .calendar-grid .weekNumbers {
     display: none !important;
   }
 }
