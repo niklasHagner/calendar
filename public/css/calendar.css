@@ -178,16 +178,16 @@ body {
     display: none;
   }
 }
-.calendar-list .weekNumbers {
-  display: none !important;
-}
-.calendar-list .day-names,
-.calendar-list .previousMonth {
+.calendar-list .previousMonth,
+.calendar-list .day-names {
   display: none !important;
 }
 .calendar-list > .days > li {
   width: 100%;
   display: block;
+}
+.calendar-list > .days > li:first-of-type {
+  border-top: solid 1px #eee;
 }
 /* mobile view overrides */
 @media screen and (max-width: 768px) {
@@ -195,7 +195,23 @@ body {
     padding: 0;
     border-radius: 0;
   }
-  .calendar-grid .weekNumbers {
+  .calendar-grid .weekNumbers,
+  .calendar-grid .namedays,
+  .calendar-grid .themedays,
+  .calendar-grid .holiday,
+  .calendar-grid .prevmonthname {
+    display: none !important;
+  }
+  .calendar-grid .holiday {
+    font-size: 11px;
+  }
+  .calendar-grid > .days > li {
+    height: 50px;
+  }
+}
+/* desktop view overrides */
+@media screen and (min-width: 768px) {
+  .menu-bar-bottom {
     display: none !important;
   }
 }

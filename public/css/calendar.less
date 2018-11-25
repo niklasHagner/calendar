@@ -206,17 +206,18 @@ body {
     @media screen and (min-width: @mobileWidth) {
         display: none;
     }
-    .weekNumbers {
-        display: none !important;
-    }
-    .day-names,
-    .previousMonth {
+    .previousMonth,
+    .day-names {
         display: none !important;
     }
 
     > .days > li {
         width: 100%;
         display: block;
+
+        &:first-of-type {
+            border-top: solid 1px #eee;
+        }
     }
 }
 
@@ -229,8 +230,28 @@ body {
     }
 
     .calendar-grid {
-        .weekNumbers {
+        .weekNumbers,
+        .namedays,
+        .themedays,
+        .holiday,
+        .prevmonthname {
             display: none !important;
         }
+
+        .holiday {
+            font-size: 11px;
+        }
+
+        > .days > li {
+            height: 50px;
+        }
+    }
+}
+
+/* desktop view overrides */
+@media screen and (min-width: @mobileWidth) {
+
+    .menu-bar-bottom {
+        display: none !important;
     }
 }
