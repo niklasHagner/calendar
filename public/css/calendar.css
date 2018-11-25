@@ -195,6 +195,9 @@ body {
     padding: 0;
     border-radius: 0;
   }
+  .menu-bar {
+    height: 60px;
+  }
   .calendar-grid .weekNumbers,
   .calendar-grid .namedays,
   .calendar-grid .themedays,
