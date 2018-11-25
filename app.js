@@ -110,6 +110,9 @@ async function renderCalendarForMonth(y, mo, req, res) {
         var selectedMonth = { days: data.dagar, month: selectedDate.format('MMMM') };
         var today = { weekday: d.format('dddd'), day: d.date(), week: d.format('w'), month: d.format('MMMM') };
 
+        var todayExtra = days.find(d => d.isToday);
+        today = { ...today, ...todayExtra};
+
         var nextMonthMomentObject = moment(`${year}-${month}-01`).add(1, 'months');
         var prevMonthMomentObject = moment(`${year}-${month}-01`).subtract(1, 'months');
         var nextQueryString = `showCalendar?year=${nextMonthMomentObject.format('YYYY')}&month=${nextMonthMomentObject.format('MM')}`;

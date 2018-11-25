@@ -189,6 +189,13 @@ body {
 .calendar-list > .days > li:first-of-type {
   border-top: solid 1px #eee;
 }
+.calendar-list .days li {
+  height: auto;
+  padding-bottom: 8px;
+}
+.calendar-list .days li:nth-child(n+29) {
+  border-bottom: 1px solid #eee;
+}
 /* mobile view overrides */
 @media screen and (max-width: 768px) {
   .calendar {
