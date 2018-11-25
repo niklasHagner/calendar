@@ -1,4 +1,8 @@
-/* BASICS */
+/* Variables */
+@calendarRowHeight: 135px;
+@mobileWidth: 768px;
+
+/* Basics */
 
 *,
 *:before,
@@ -14,18 +18,20 @@ p {
 }
 
 body {
-    padding: 10px;
+    margin: 0;
+    padding: 10px 0;
     background-color: #f2f2f2;
     color: grey;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
+
+    @media screen and (min-width: @mobileWidth) {
+        padding: 20px;
+    }
 }
 
 
 /* Calendar Styling */
-
-@rowHeight: 135px;
-
 .clearfix:after,
 .calendar ol:after {
     content: ".";
@@ -81,7 +87,7 @@ body {
 .calendar .days li {
     border-bottom: 1px solid #eee;
     border-left: 1px solid #eee;
-    height: @rowHeight;
+    height: @calendarRowHeight;
 }
 
 .calendar .days li .date {
@@ -132,7 +138,8 @@ body {
 .previousMonth {
     background-color: #f2f2f2;
     .date,
-    .namedays {
+    .namedays,
+    .themedays {
         font-weight: normal;
         color: #999;
     }
@@ -157,7 +164,8 @@ body {
         color: white;
     }
 }
-.namedays {
+.namedays,
+.themedays {
     font-weight: normal;
     font-size: 0.75em;
 }
@@ -180,7 +188,7 @@ body {
     overflow: visible;
     div {
         padding-top: 5px;
-        height: @rowHeight;
+        height: @calendarRowHeight;
     }
 }
 
@@ -190,5 +198,20 @@ body {
 
     strong {
         text-transform: capitalize;
+    }
+}
+
+/* mobile view overrides */
+@media screen and (max-width: @mobileWidth) {
+
+    .calendar {
+       padding: 0;
+       border-radius: 0;
+    }
+    .themedays {
+        display: none !important;
+    }
+    .weekNumbers {
+        display: none !important;
     }
 }

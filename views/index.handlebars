@@ -50,9 +50,11 @@
           {{#each namnsdag}}
             <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
           {{/each}}
-           {{#each themeDays}}
-            <p>{{this}}</p>
-          {{/each}}
+        </div>
+        <div class="themedays">
+            {{#each themeDays}}
+                <p>{{this}}</p>
+            {{/each}}
         </div>
       </li>
     {{/each}}
