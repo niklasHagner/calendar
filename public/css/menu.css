@@ -7,7 +7,7 @@
   padding: 5px;
   margin: 0px;
   border: solid 1px tomato;
-  transition: 0.2s all;
+  transition: 0.2s background;
   font-size: 12px;
   color: #666;
 }
@@ -16,13 +16,11 @@
 }
 .menu-bar .button:hover,
 .menu-bar .button:active {
-  border-color: crimson;
-  color: crimson;
+  background-color: tomato;
+  color: white;
 }
-.menu-bar .button :active {
-  background-color: #960e29;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.menu-bar .button:active {
+  box-shadow: 0 0 5px #666;
 }
 .menu-bar a.button {
   text-decoration: none;
