@@ -52,7 +52,6 @@ async function renderCalendarForMonth(y, mo, req, res) {
     var d = moment();
 
     var year;
-    var d = moment();
     if (!y && !mo) {
         month = mo;
         year = y || d.format('YYYY');
@@ -60,6 +59,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
         month = mo;
         year = y;
     }
+    var selectedDate = moment(`${year}-${month}`);
     var monthEndpoint = `${baseEndpoint}/${year}/${month}`;
 
     try {
@@ -76,8 +76,8 @@ async function renderCalendarForMonth(y, mo, req, res) {
                 return x.vecka
             })
 
-        var previousMonth = month - 1;
-        var previousMonthEndpoint = `${baseEndpoint}/${year}/${previousMonth}`;
+        var prevMonth = selectedDate.clone().subtract(1, 'months');
+        var previousMonthEndpoint = `${baseEndpoint}/${prevMonth.year()}/${prevMonth.month()+1}`; //month() returns zero-based index
         var previousMonthData = await request(previousMonthEndpoint);
         previousMonthData = previousMonthData.data;
         previousMonthData = previousMonthData;
@@ -98,6 +98,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
             return day;
         });
 
+        var selectedMonth = { days: data.dagar, month: selectedDate.format('MMMM') };
         var today = { weekday: d.format('dddd'), day: d.date(), week: d.format('w'), month: d.format('MMMM') };
 
         var nextMonthMomentObject = moment(`${year}-${month}-01`).add(1, 'months');
@@ -115,6 +116,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
                 name: moment(`${year}-${month}-01`).format('MMMM')
             },
             today,
+            selectedMonth,
             nextQueryString,
             prevQueryString
         });

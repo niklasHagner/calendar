@@ -65,13 +65,13 @@
   --}}
   <ol class="days">
     {{#each days}}
-       <li class = "{{#ifnoteq month.name ../today.month}}previousMonth{{/ifnoteq}}
+       <li class = "{{#ifnoteq month.name ../selectedMonth.month}}previousMonth{{/ifnoteq}}
         {{#if isToday}}isToday{{/if}}
         {{#if redDay}}redDay{{/if}}
         {{#if helgDag}}helgDag{{/if}}
         {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
         <div class="date">
-          {{dayNumber}} {{#ifnoteq month.name ../today.month}}{{month.name}}{{/ifnoteq}}
+          {{dayNumber}} {{#ifnoteq month.name ../selectedMonth.month}}{{month.name}}{{/ifnoteq}}
         </div>
         <div class="holiday">
           {{helgdag}}
