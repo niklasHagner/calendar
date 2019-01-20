@@ -59,30 +59,28 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-}
 
-.calendar ol li {
-    float: left;
-    width: calc(~'100%/7 - 20px'); // leave space for weekNumbers
-    padding-left: 5px;
-    padding-right: 5px;
-    overflow: hidden;
-    word-wrap: break-word;
-    hyphens: auto;
+    li {
+        float: left;
+        width: calc(~'100%/7');
+        padding-left: 5px;
+        padding-right: 5px;
+        overflow: hidden;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
 }
 
 .calendar .day-names {
     border-bottom: 1px solid #eee;
     background-color: #555;
     color: white;
-    padding-left: 20px;
 
     li {
         text-transform: uppercase;
         margin: .5em 0;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: calc(~'100%/7 - 20px'); // leave space for weekNumbers
     }
 }
 
@@ -109,26 +107,6 @@ body {
     }
 }
 
-.calendar .days li .event.span-2 {
-    width: 200%;
-}
-
-.calendar .days li .event.begin {
-    border-radius: 1em 0 0 1em;
-}
-
-.calendar .days li .event.end {
-    border-radius: 0 1em 1em 0;
-}
-
-.calendar .days li .event.all-day {
-    background: #9987B5;
-}
-
-.calendar .days li .event.clear {
-    background: none;
-}
-
 .calendar .days li:nth-child(n+29) {
     border-bottom: none;
 }
@@ -146,12 +124,14 @@ body {
         color: #999;
     }
 }
+
 .weekend {
     color: tomato;
     .date {
         color: tomato;
     }
 }
+
 .helgDag {
     background-color: rgb(230, 136, 151);
     color: white;
@@ -159,6 +139,7 @@ body {
         color: white;
     }
 }
+
 .redDay {
     background-color: crimson;
     color: white;
@@ -166,11 +147,13 @@ body {
         color: white;
     }
 }
+
 .namedays,
 .themedays {
     font-weight: normal;
     font-size: 0.75em;
 }
+
 .isToday {
     border: solid 2px #555 !important;
     .date {
@@ -244,6 +227,7 @@ body {
     }
 
     .calendar-grid {
+        .weekNumbers,
         .namedays,
         .themedays,
         .holiday,
@@ -258,8 +242,22 @@ body {
         > .days > li {
             height: 50px;
         }
+
+        .day-names li {
+            visibility: hidden;
+
+            &:first-letter {
+                visibility: visible;
+            }
+        }
+    }
+
+    .weekNumbers {
+        margin-left: -24px;
+        font-size: 12px;
     }
 }
+
 
 /* desktop view overrides */
 @media screen and (min-width: @mobileWidth) {

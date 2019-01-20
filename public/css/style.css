@@ -52,7 +52,7 @@ body {
 }
 .calendar ol li {
   float: left;
-  width: calc(100%/7 - 20px);
+  width: calc(100%/7);
   padding-left: 5px;
   padding-right: 5px;
   overflow: hidden;
@@ -63,14 +63,12 @@ body {
   border-bottom: 1px solid #eee;
   background-color: #555;
   color: white;
-  padding-left: 20px;
 }
 .calendar .day-names li {
   text-transform: uppercase;
   margin: 0.5em 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: calc(100%/7 - 20px);
 }
 .calendar .days li {
   border-bottom: 1px solid #eee;
@@ -91,21 +89,6 @@ body {
   text-overflow: ellipsis;
   border-radius: 1em;
   margin-bottom: 1px;
-}
-.calendar .days li .event.span-2 {
-  width: 200%;
-}
-.calendar .days li .event.begin {
-  border-radius: 1em 0 0 1em;
-}
-.calendar .days li .event.end {
-  border-radius: 0 1em 1em 0;
-}
-.calendar .days li .event.all-day {
-  background: #9987B5;
-}
-.calendar .days li .event.clear {
-  background: none;
 }
 .calendar .days li:nth-child(n+29) {
   border-bottom: none;
@@ -207,6 +190,7 @@ body {
   .menu-bar {
     height: 60px;
   }
+  .calendar-grid .weekNumbers,
   .calendar-grid .namedays,
   .calendar-grid .themedays,
   .calendar-grid .holiday,
@@ -218,6 +202,16 @@ body {
   }
   .calendar-grid > .days > li {
     height: 50px;
+  }
+  .calendar-grid .day-names li {
+    visibility: hidden;
+  }
+  .calendar-grid .day-names li:first-letter {
+    visibility: visible;
+  }
+  .weekNumbers {
+    margin-left: -24px;
+    font-size: 12px;
   }
 }
 /* desktop view overrides */
