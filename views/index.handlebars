@@ -1,7 +1,7 @@
 <div style="max-width: 420px; margin: 0 auto 8px auto;">
     <div class="today-facts">
-        <p>Idag är det <b>{{#if today.helgdag}}today.helgdag{{/if}} {{#if today.helgdagsafton}}today.helgdagsafton{{/if}} {{#if today.redDay}}(röd dag){{/if}}</b></p>
-        <p class="today-number">{{today.weekday}} {{today.month.name}} {{today.day}}</p>
+        <p>Idag är det {{#if today.helgdag}}today.helgdag{{/if}} {{#if today.helgdagsafton}}today.helgdagsafton{{/if}} {{#if today.redDay}}(röd dag){{/if}}</p>
+        <p class="today-number" style="font-weight:bold;">{{today.weekday}} {{today.month.name}} {{today.day}}</p>
         <p>vecka {{today.week}}</p>
         <br>
         {{#if today.namnsdag}}
