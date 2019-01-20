@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build:styles": "lessc assets/less/main.less public/css/style.css",
+    "build": "npm run build:styles"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -13,11 +15,6 @@
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-contrib-less": "^2.0.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-develop": "^0.4.0",
-    "load-grunt-tasks": "^3.2.0",
-    "time-grunt": "^1.2.1"
+    "less": "^3.9.0"
   }
 }

@@ -63,7 +63,7 @@ body {
 
 .calendar ol li {
     float: left;
-    width: 14.28571%;
+    width: calc(~'100%/7 - 20px'); // leave space for weekNumbers
     padding-left: 5px;
     padding-right: 5px;
     overflow: hidden;
@@ -75,36 +75,38 @@ body {
     border-bottom: 1px solid #eee;
     background-color: #555;
     color: white;
-}
+    padding-left: 20px;
 
-.calendar .day-names li {
-    text-transform: uppercase;
-    margin: .5em 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    li {
+        text-transform: uppercase;
+        margin: .5em 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: calc(~'100%/7 - 20px'); // leave space for weekNumbers
+    }
 }
 
 .calendar .days li {
     border-bottom: 1px solid #eee;
     border-left: 1px solid #eee;
     height: @calendarRowHeight;
-}
 
-.calendar .days li .date {
-    margin: .5em 0;
-}
+    .date {
+        margin: .5em 0;
+    }
 
-.calendar .days li .event {
-    background: #6EB590;
-    font-size: .75em;
-    padding: 0 .75em;
-    line-height: 2em;
-    color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border-radius: 1em;
-    margin-bottom: 1px;
+    .event {
+        background: #6EB590;
+        font-size: .75em;
+        padding: 0 .75em;
+        line-height: 2em;
+        color: white;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-radius: 1em;
+        margin-bottom: 1px;
+    }
 }
 
 .calendar .days li .event.span-2 {
@@ -242,7 +244,6 @@ body {
     }
 
     .calendar-grid {
-        .weekNumbers,
         .namedays,
         .themedays,
         .holiday,

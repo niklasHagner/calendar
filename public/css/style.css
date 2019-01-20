@@ -52,7 +52,7 @@ body {
 }
 .calendar ol li {
   float: left;
-  width: 14.28571%;
+  width: calc(100%/7 - 20px);
   padding-left: 5px;
   padding-right: 5px;
   overflow: hidden;
@@ -63,12 +63,14 @@ body {
   border-bottom: 1px solid #eee;
   background-color: #555;
   color: white;
+  padding-left: 20px;
 }
 .calendar .day-names li {
   text-transform: uppercase;
   margin: 0.5em 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: calc(100%/7 - 20px);
 }
 .calendar .days li {
   border-bottom: 1px solid #eee;
@@ -205,7 +207,6 @@ body {
   .menu-bar {
     height: 60px;
   }
-  .calendar-grid .weekNumbers,
   .calendar-grid .namedays,
   .calendar-grid .themedays,
   .calendar-grid .holiday,
@@ -224,4 +225,32 @@ body {
   .menu-bar-bottom {
     display: none !important;
   }
+}
+.menu-bar {
+  white-space: nowrap;
+  text-align: center;
+}
+.menu-bar .button {
+  cursor: pointer;
+  padding: 5px;
+  margin: 0px;
+  border: solid 1px tomato;
+  transition: 0.2s background;
+  font-size: 12px;
+  color: #666;
+}
+.menu-bar .button + .button {
+  margin-left: 5px;
+}
+.menu-bar .button:hover,
+.menu-bar .button:active {
+  background-color: tomato;
+  color: white;
+}
+.menu-bar .button:active {
+  box-shadow: 0 0 5px #666;
+}
+.menu-bar a.button {
+  text-decoration: none;
+  color: red;
 }
