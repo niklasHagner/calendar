@@ -60,7 +60,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
         month = mo;
         year = y;
     }
-    var selectedDate = moment(`${year}-${month}`);
+    var selectedDate = moment(`${year}-${month}`, "YYYY-MM");
     var monthEndpoint = `${baseEndpoint}/${year}/${month}`;
 
     try {
@@ -69,7 +69,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
 
         //add themeDays to calendar-api-data
         var days = data.dagar.map((d) => {
-            const matchingThemeDay = themeDays.find((themeDay) => { return moment(themeDay.dayName).diff(moment(d.datum), 'days') === 0 });
+            const matchingThemeDay = themeDays.find((themeDay) => { return moment(themeDay.dayName, "DD MMMM YYYY").diff(moment(d.datum, "YYYY-MM-DD"), 'days') === 0 });
             d.themeDays = (matchingThemeDay) ? matchingThemeDay.events : [];
             return d;
         });
@@ -95,13 +95,13 @@ async function renderCalendarForMonth(y, mo, req, res) {
         days = days.map((day) => {
             var dayNumber = new Date(day.datum).getUTCDate();
             day.dayNumber = dayNumber;
-            day.isToday = d.isSame(moment(day.datum), "day")
+            day.isToday = d.isSame(moment(day.datum, "YYYY-MM-DD"), "day")
             day.redDay = day['röd dag'] === 'Ja' && day.veckodag !== 'Lördag' && day.veckodag !== 'Söndag';
             day.helgDag = day.helgdag && day.helgdag.length > 0;
             var m = new Date(day.datum).getMonth() + 1;
             day.month = {
                 number: m,
-                name: moment(day.datum).format('MMMM')
+                name: moment(day.datum, "YYYY-MM-DD").format('MMMM')
             };
             day.themeDays = day.themeDays;
             return day;
@@ -113,8 +113,8 @@ async function renderCalendarForMonth(y, mo, req, res) {
         var todayExtra = days.find(d => d.isToday);
         today = { ...today, ...todayExtra};
 
-        var nextMonthMomentObject = moment(`${year}-${month}-01`).add(1, 'months');
-        var prevMonthMomentObject = moment(`${year}-${month}-01`).subtract(1, 'months');
+        var nextMonthMomentObject = moment(`${year}-${month}-01`, "YYYY-MM-DD").add(1, 'months');
+        var prevMonthMomentObject = moment(`${year}-${month}-01`, "YYYY-MM-DD").subtract(1, 'months');
         var nextQueryString = `showCalendar?year=${nextMonthMomentObject.format('YYYY')}&month=${nextMonthMomentObject.format('MM')}`;
         var prevQueryString = `showCalendar?year=${prevMonthMomentObject.format('YYYY')}&month=${prevMonthMomentObject.format('MM')}`;
 
@@ -125,7 +125,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
             weekNumbers,
             month: {
                 number: month,
-                name: moment(`${year}-${month}-01`).format('MMMM')
+                name: moment(`${year}-${month}-01`, "YYYY-MM-DD").format('MMMM')
             },
             today,
             selectedMonth,
