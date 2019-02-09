@@ -14,9 +14,9 @@ A swedish calendar featuring all the date stuff swedes need
 + LESS
 
 ## How to
-1. `grunt` in the root directory to compile LESS to CSS, and start the server
-
-2. browse to `http://localhost:8001`
+1. `npm run build` to compile LESS to CSS
+2. `npm start` to start the node server
+3. Browse to `http://localhost:8001`
 
 ## Credits
 * api from api.dryg.net
