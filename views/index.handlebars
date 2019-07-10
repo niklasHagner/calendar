@@ -93,7 +93,8 @@
             {{#if helgDag}}helgDag{{/if}}
             {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
             <div class="date">
-            {{dayNumber}} {{#ifnoteq month.name ../selectedMonth.month}}{{month.name}}{{/ifnoteq}}
+              {{dayNumber}} {{#ifnoteq month.name ../selectedMonth.month}}{{month.name}}{{/ifnoteq}}
+              <span>{{veckodag}}</span>
             </div>
             <div class="holiday">
             {{helgdag}}
