@@ -2,11 +2,20 @@ var express = require('express');
 var exphbs = require("express-handlebars");
 var path = require("path");
 var favicon = require("serve-favicon");
-var moment = require('moment');
+var dayjs = require('dayjs')
 var request = require("axios");
 var {themeDays} = require("./themeDays");
+require('dayjs/locale/sv')
 
-moment.locale('sv');
+var utc = require('dayjs/plugin/utc') // dependent on utc plugin
+var timezone = require('dayjs/plugin/timezone')
+var isToday = require('dayjs/plugin/isToday')
+dayjs.extend(isToday)
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.tz.setDefault("Sweden/Stockholm")
+dayjs.locale('sv')
+
 var app = express();
 app.use(express.static(__dirname + '/public'));
 app.engine(
@@ -22,7 +31,7 @@ app.set("view engine", "handlebars");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
-const baseEndpoint = 'https://api.dryg.net/dagar/v2.1';
+const baseEndpoint = 'https://sholiday.faboul.se/dagar/v2.1';
 
 const dayNames = [
     'Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'
@@ -30,7 +39,7 @@ const dayNames = [
 
 
 app.get('/', async function (req, res) { //serve handlebars
-    var d = moment();
+    var d = dayjs();
     var year = d.format('YYYY');
     var month = d.month() + 1;
     renderCalendarForMonth(year, month, req, res);
@@ -50,7 +59,7 @@ app.get('/showCalendar', async function (req, res) {
 });
 
 async function renderCalendarForMonth(y, mo, req, res) {
-    var d = moment();
+    var d = dayjs();
 
     var year;
     if (!y && !mo) {
@@ -60,19 +69,22 @@ async function renderCalendarForMonth(y, mo, req, res) {
         month = mo;
         year = y;
     }
-    var selectedDate = moment(`${year}-${month}`, "YYYY-MM");
-    var monthEndpoint = `${baseEndpoint}/${year}/${month}`;
+    var selectedDate = dayjs(year, month);
+    var fullApiUrl = `${baseEndpoint}/${year}`;
 
     try {
-        var data = await request(monthEndpoint);
-        data = data.data;
+        var response = await request(fullApiUrl);
+        data = response.data;
 
-        //add themeDays to calendar-api-data
+        //Extend api-data with themeDays from file
         var days = data.dagar.map((d) => {
-            const matchingThemeDay = themeDays.find((themeDay) => { return moment(themeDay.dayName, "DD MMMM YYYY").diff(moment(d.datum, "YYYY-MM-DD"), 'days') === 0 });
+            const matchingThemeDay = themeDays.find((themeDay) => {
+                return dayjs(themeDay.dayName, "DD MMMM YYYY").diff(dayjs(d.datum, "YYYY-MM-DD"), 'days') === 0;
+            });
             d.themeDays = (matchingThemeDay) ? matchingThemeDay.events : [];
             return d;
         });
+        days = data.dagar;
 
         var startingWeekday = dayNames.indexOf(days[0].veckodag);
         const weekNumbers = days
@@ -84,24 +96,26 @@ async function renderCalendarForMonth(y, mo, req, res) {
                 return x.vecka
             })
 
-        var prevMonth = selectedDate.clone().subtract(1, 'months');
-        var previousMonthEndpoint = `${baseEndpoint}/${prevMonth.year()}/${prevMonth.month()+1}`; //month() returns zero-based index
-        var previousMonthData = await request(previousMonthEndpoint);
-        previousMonthData = previousMonthData.data;
-        previousMonthData = previousMonthData;
-        var previousDays = previousMonthData.dagar.splice(previousMonthData.dagar.length - startingWeekday, startingWeekday);
-        days = previousDays.concat(days);
+        var prevMonth = selectedDate.clone().subtract(1, 'month');
+
+        const isPrevMonthDifferentYear = prevMonth.year() !== selectedDate.year();
+        if (isPrevMonthDifferentYear) { //requires extra API call
+            var previousMonthEndpoint = `${baseEndpoint}/${prevMonth.year()}`;
+            var prevMonthResponse = await request(previousMonthEndpoint);
+            var previousMonthData = prevMonthResponse.data;
+            var previousDays = previousMonthData.dagar.splice(previousMonthData.dagar.length - startingWeekday, startingWeekday);
+            days = previousDays.concat(days);
+        }
 
         days = days.map((day) => {
             var dayNumber = new Date(day.datum).getUTCDate();
             day.dayNumber = dayNumber;
-            day.isToday = d.isSame(moment(day.datum, "YYYY-MM-DD"), "day")
+            day.isToday = dayjs(day.datum).isToday()
             day.redDay = day['röd dag'] === 'Ja' && day.veckodag !== 'Lördag' && day.veckodag !== 'Söndag';
             day.helgDag = day.helgdag && day.helgdag.length > 0;
-            var m = new Date(day.datum).getMonth() + 1;
             day.month = {
-                number: m,
-                name: moment(day.datum, "YYYY-MM-DD").format('MMMM')
+                number: dayjs(day.datum).month(),
+                name: dayjs(day.datum, "YYYY-MM-DD").format('MMMM')
             };
             day.themeDays = day.themeDays;
             return day;
@@ -110,11 +124,11 @@ async function renderCalendarForMonth(y, mo, req, res) {
         var selectedMonth = { days: data.dagar, month: selectedDate.format('MMMM') };
         var today = { weekday: d.format('dddd'), day: d.date(), week: d.format('w'), month: d.format('MMMM') };
 
-        var todayExtra = days.find(d => d.isToday);
+        var todayExtra = days.find(d => dayjs(d.datum).isToday());
         today = { ...today, ...todayExtra};
 
-        var nextMonthMomentObject = moment(`${year}-${month}-01`, "YYYY-MM-DD").add(1, 'months');
-        var prevMonthMomentObject = moment(`${year}-${month}-01`, "YYYY-MM-DD").subtract(1, 'months');
+        var nextMonthMomentObject = dayjs(`${year}-${month}-01`, "YYYY-MM-DD").add(1, 'months');
+        var prevMonthMomentObject = dayjs(`${year}-${month}-01`, "YYYY-MM-DD").subtract(1, 'months');
         var nextQueryString = `showCalendar?year=${nextMonthMomentObject.format('YYYY')}&month=${nextMonthMomentObject.format('MM')}`;
         var prevQueryString = `showCalendar?year=${prevMonthMomentObject.format('YYYY')}&month=${prevMonthMomentObject.format('MM')}`;
 
@@ -125,7 +139,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
             weekNumbers,
             month: {
                 number: month,
-                name: moment(`${year}-${month}-01`, "YYYY-MM-DD").format('MMMM')
+                name: dayjs(`${year}-${month}-01`, "YYYY-MM-DD").format('MMMM')
             },
             today,
             selectedMonth,
