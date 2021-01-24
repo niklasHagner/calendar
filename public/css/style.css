@@ -188,6 +188,12 @@ body {
 .calendar-list .day-names {
   display: none !important;
 }
+.calendar-list h2 {
+  color: #eee;
+  background-color: #555;
+  text-align: center;
+  padding: 20px 5px;
+}
 .calendar-list > .days > li {
   width: 100%;
   display: block;
