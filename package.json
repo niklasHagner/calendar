@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node app.js",
+    "build-and-run": "npm run build && node app.js",
     "build:styles": "lessc assets/less/main.less public/css/style.css",
     "build": "npm run build:styles"
   },

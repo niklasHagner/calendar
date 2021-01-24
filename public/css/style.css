@@ -139,6 +139,17 @@ body {
 .isToday .date {
   font-size: 1.5em;
 }
+.weeknumber {
+  font-weight: bold;
+  background-color: tomato;
+  font-size: 12px;
+  padding: 5px 10px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 6px;
+  color: white;
+  margin-left: 10px;
+}
 .weekNumbers {
   float: left;
   display: flex;
