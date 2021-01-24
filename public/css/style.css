@@ -130,6 +130,9 @@ body {
   font-weight: normal;
   font-size: 0.75em;
 }
+.themedays {
+  margin-top: 5px;
+}
 .isToday {
   border: solid 2px #555 !important;
 }
@@ -154,6 +157,11 @@ body {
 .today-facts {
   font-weight: normal;
   margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  .today-facts {
+    padding: 10px;
+  }
 }
 .today-facts strong {
   text-transform: capitalize;
