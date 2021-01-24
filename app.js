@@ -5,15 +5,20 @@ var favicon = require("serve-favicon");
 var dayjs = require('dayjs')
 var request = require("axios");
 var {themeDays} = require("./themeDays");
-require('dayjs/locale/sv')
+
+var isToday = require('dayjs/plugin/isToday')
+dayjs.extend(isToday)
+
+var weekOfYear = require('dayjs/plugin/weekOfYear')
+dayjs.extend(weekOfYear)
 
 var utc = require('dayjs/plugin/utc') // dependent on utc plugin
 var timezone = require('dayjs/plugin/timezone')
-var isToday = require('dayjs/plugin/isToday')
-dayjs.extend(isToday)
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.tz.setDefault("Sweden/Stockholm")
+
+require('dayjs/locale/sv')
 dayjs.locale('sv')
 
 var app = express();
@@ -126,7 +131,7 @@ async function renderCalendarForMonth(y, mo, req, res) {
         });
 
         var selectedMonth = { days: data.dagar, month: selectedDate.format('MMMM') };
-        var today = { weekday: d.format('dddd'), day: d.date(), week: d.format('w'), month: d.format('MMMM') };
+        var today = { weekday: d.format('dddd'), day: d.date(), week: d.week(), month: d.format('MMMM') };
 
         var todayExtra = days.find(d => dayjs(d.datum).isToday());
         today = { ...today, ...todayExtra};
