@@ -76,6 +76,11 @@ async function renderCalendarForMonth(y, mo, req, res) {
         var response = await request(fullApiUrl);
         data = response.data;
 
+        data.dagar = data.dagar.filter(x => {
+            var monthNumber = Number(x.datum.split("-")[1]);
+            return monthNumber === month;
+        });
+
         //Extend api-data with themeDays from file
         var days = data.dagar.map((d) => {
             const matchingThemeDay = themeDays.find((themeDay) => {
@@ -84,7 +89,6 @@ async function renderCalendarForMonth(y, mo, req, res) {
             d.themeDays = (matchingThemeDay) ? matchingThemeDay.events : [];
             return d;
         });
-        days = data.dagar;
 
         var startingWeekday = dayNames.indexOf(days[0].veckodag);
         const weekNumbers = days
