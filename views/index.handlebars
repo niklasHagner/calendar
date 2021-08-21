@@ -49,13 +49,13 @@
 
   <ol class="days">
     {{#each days}}
-       <li class = "{{#ifnoteq month.name ../selectedMonth.month}}previousMonth{{/ifnoteq}}
+       <li class = "{{#ifnoteq month.name ../selectedMonth.monthName}}previousMonth{{/ifnoteq}}
         {{#if isToday}}isToday{{/if}}
         {{#if redDay}}redDay{{/if}}
         {{#if helgDag}}helgDag{{/if}}
         {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
         <div class="date">
-          {{dayNumber}} <span class="prevmonthname">{{#ifnoteq month.name ../selectedMonth.month}}{{month.name}}{{/ifnoteq}}</span>
+          {{dayNumber}} <span class="prevmonthname">{{#ifnoteq month.name ../selectedMonth.monthName}}{{month.name}}{{/ifnoteq}}</span>
         </div>
         <div class="holiday">
           {{helgdag}}
@@ -83,19 +83,19 @@
     <a style="float: right" class="button" href="{{nextQueryString}}">Nästa månad</a>
 </div>
 
-
+{{!-- Mobile only --}}
 <div class="calendar calendar-list">
   <h2>{{month.name}} - detaljer</h2>
 
   <ol class="days">
     {{#each days}}
-        {{#ifeq month.name ../selectedMonth.month}}
+        {{#ifeq month.name ../selectedMonth.monthName}}
         <li class = "{{#if isToday}}isToday{{/if}}
             {{#if redDay}}redDay{{/if}}
             {{#if helgDag}}helgDag{{/if}}
             {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
             <div class="date">
-              {{dayNumber}} {{#ifnoteq month.name ../selectedMonth.month}}{{month.name}}{{/ifnoteq}}
+              {{dayNumber}} {{#ifnoteq month.name ../selectedMonth.monthName}}{{month.name}}{{/ifnoteq}}
               <span>{{veckodag}}</span>
             </div>
             <div class="holiday">
@@ -119,7 +119,68 @@
   </ol>
 </div>
 
+
+
 <menu class="menu-bar menu-bar-bottom" style="background-color: white;" >
     <a style="float: left" class="button" href="/{{prevQueryString}}">Föregående månad</a>
     <a style="float: right" class="button" href="/{{nextQueryString}}">Nästa månad</a>
 </menu>
+
+
+{{!-- 
+  Show entire year
+  Experimental feature
+--}}
+
+{{!-- {{#each months}}
+    <div class="calendar calendar-grid">
+        <h1 class="month">
+            {{this.name}}
+        </h1>
+
+        <ol class="day-names">
+            <li>Mån</li>
+            <li>Tis</li>
+            <li>Ons</li>
+            <li>Tor</li>
+            <li>Fre</li>
+            <li class="weekend">Lör</li>
+            <li class="weekend">Sön</li>
+        </ol>
+
+        <section class="weekNumbers">
+            {{#each this.weekNumbers}}
+            <div>v{{this}}</div>
+            {{/each}}
+        </section>
+
+        <ol class="days">
+            {{#each this.days}}
+            <li class = "{{#ifnoteq month.name ../selectedMonth.monthName}}previousMonth{{/ifnoteq}}
+                {{#if isToday}}isToday{{/if}}
+                {{#if redDay}}redDay{{/if}}
+                {{#if helgDag}}helgDag{{/if}}
+                {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
+                <div class="date">
+                {{dayNumber}} <span class="prevmonthname">{{#ifnoteq month.name ../selectedMonth.monthName}}{{month.name}}{{/ifnoteq}}</span>
+                </div>
+                <div class="holiday">
+                {{helgdag}}
+                {{helgdagsafton}}
+                </div>
+                <div class="namedays">
+                {{#each namnsdag}}
+                    <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
+                {{/each}}
+                </div>
+                <div class="themedays">
+                    {{#each themeDays}}
+                        <p>{{this}}</p>
+                    {{/each}}
+                </div>
+            </li>
+            {{/each}}
+            <li>
+        </ol>
+    </div>
+{{/each}} --}}
