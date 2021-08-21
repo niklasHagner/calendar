@@ -61,15 +61,15 @@ body {
   word-wrap: break-word;
   hyphens: auto;
 }
-.calendar .day-names {
+.calendar ol.day-names {
   border-bottom: 1px solid #eee;
   background-color: #555;
   color: white;
 }
-.calendar .day-names li {
+.calendar ol.day-names li {
   text-transform: uppercase;
   margin: 0.5em 0;
-  overflow: hidden;
+  overflow: visible;
   text-overflow: ellipsis;
 }
 .calendar .days li {
@@ -117,7 +117,9 @@ body {
   background-color: #e68897;
   color: white;
 }
-.helgDag .date {
+.helgDag .date,
+.helgDag .namedays,
+.helgDag .themedays {
   color: white;
 }
 .redDay {
