@@ -92,11 +92,11 @@ async function renderCalendarForMonth(yearString, monthStringWithLeadingZero, re
             return d;
         });
 
-        var monthsWithDays = [];
+        var allMonthObjectsDuringThisYear = [];
         allDaysOfYear.forEach(day => {
             var currentIterationMonthNumber = Number(day.datum.split("-")[1]);
             var zeroIndexedMonthNumber = currentIterationMonthNumber -1;
-            var foundObj = monthsWithDays.find(m => zeroIndexedMonthNumber == m.zeroIndexedMonthNumber );
+            var foundObj = allMonthObjectsDuringThisYear.find(m => zeroIndexedMonthNumber == m.zeroIndexedMonthNumber );
             if (foundObj) {
                 foundObj.days.push(day);
             } else {
@@ -107,7 +107,7 @@ async function renderCalendarForMonth(yearString, monthStringWithLeadingZero, re
                     firstDatumOfMonth: day.datum,
                     name: dayjs(day.datum, "YYYY-MM-DD").format('MMMM'),
                 }
-                monthsWithDays.push(newMonthObj);
+                allMonthObjectsDuringThisYear.push(newMonthObj);
             }
         });
 
@@ -138,7 +138,7 @@ async function renderCalendarForMonth(yearString, monthStringWithLeadingZero, re
         } else {
             var prevMonthZeroIndex = currentRenderingMonthZeroIndex -1;
             if (prevMonthZeroIndex > -1) {
-                var previousMonthData = monthsWithDays[prevMonthZeroIndex];
+                var previousMonthData = allMonthObjectsDuringThisYear[prevMonthZeroIndex];
                 var previousDays = previousMonthData.days.splice(previousMonthData.days.length - mondayIndex, mondayIndex);
                 days = previousDays.concat(days);
             }
@@ -152,10 +152,12 @@ async function renderCalendarForMonth(yearString, monthStringWithLeadingZero, re
         var todayExtra = days.find(d => dayjs(d.datum).isToday());
         today = { ...today, ...todayExtra};
 
-        var nextMonthMomentObject = dayjs(`${year}-${month}-01`, "YYYY-MM-DD").add(1, 'months');
+        var nextYearObject = dayjs(`${year+1}-01-01`, "YYYY-MM-DD");
+        var startOfYear = dayjs(`${year}-01-01`, "YYYY-MM-DD").subtract(1, 'months');
         var prevMonthMomentObject = dayjs(`${year}-${month}-01`, "YYYY-MM-DD").subtract(1, 'months');
-        var nextQueryString = `showCalendar?year=${nextMonthMomentObject.format('YYYY')}&month=${nextMonthMomentObject.format('MM')}`;
-        var prevQueryString = `showCalendar?year=${prevMonthMomentObject.format('YYYY')}&month=${prevMonthMomentObject.format('MM')}`;
+        var prevDateObj = prevMonthMomentObject;
+        var nextQueryString = `showCalendar?year=${nextYearObject.format('YYYY')}&month=${nextYearObject.format('MM')}`;
+        var prevQueryString = `showCalendar?year=${prevDateObj.format('YYYY')}&month=${prevDateObj.format('MM')}`;
 
         const weekNumbers = days
         .filter((obj, idx, arr) => (
@@ -179,7 +181,8 @@ async function renderCalendarForMonth(yearString, monthStringWithLeadingZero, re
             selectedMonth,
             nextQueryString,
             prevQueryString,
-            months: monthsWithDays
+            months: allMonthObjectsDuringThisYear,
+            remainingMonths: allMonthObjectsDuringThisYear.filter(x => x.zeroIndexedMonthNumber > month -1)
         });
     } catch (e) {
         console.log("ERROR", e);
