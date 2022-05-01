@@ -3,7 +3,8 @@
         <h2 style="text-transform: capitalize;">{{today.weekday}} {{today.month.name}} {{today.day}}
             <span class="weeknumber">vecka {{today.week}}</span>
         </h2>
-        <p>{{#if today.helgdag}}today.helgdag{{/if}} {{#if today.helgdagsafton}}today.helgdagsafton{{/if}} {{#if today.redDay}}(röd dag){{/if}}</p>
+        <p>
+          {{#if today.helgdag}}Helgdag: {{today.helgdag}}{{/if}} {{#if today.helgdagsafton}}Helgdag: {{today.helgdagsafton}}{{/if}} {{#if today.redDay}}(röd dag){{/if}}</p>
         {{#if today.namnsdag}}
             <div>
                 {{#each today.namnsdag}}
