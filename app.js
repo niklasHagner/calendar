@@ -89,6 +89,10 @@ async function renderCalendarForMonth(yearString, monthStringWithLeadingZero, re
                 return dayjs(themeDay.dayName, "DD MMMM YYYY").diff(dayjs(d.datum, "YYYY-MM-DD"), 'days') === 0;
             });
             d.themeDays = (matchingThemeDay) ? matchingThemeDay.events : [];
+
+            //Normalize weekNumber from '01' to '1'
+            if (d.vecka[0] === "0") d.vecka = d.vecka.substr(1, 1);
+
             return d;
         });
 
@@ -109,6 +113,10 @@ async function renderCalendarForMonth(yearString, monthStringWithLeadingZero, re
                 }
                 allMonthObjectsDuringThisYear.push(newMonthObj);
             }
+        });
+
+        allMonthObjectsDuringThisYear.forEach((month) => {
+            month.weekNumbers = getUniqueWeekNumbersForArrayOfDays(month.days);
         });
 
         days = allDaysOfYear.filter(x => {
@@ -159,20 +167,11 @@ async function renderCalendarForMonth(yearString, monthStringWithLeadingZero, re
         var nextQueryString = `showCalendar?year=${nextYearObject.format('YYYY')}&month=${nextYearObject.format('MM')}`;
         var prevQueryString = `showCalendar?year=${prevDateObj.format('YYYY')}&month=${prevDateObj.format('MM')}`;
 
-        const weekNumbers = days
-        .filter((obj, idx, arr) => (
-            arr.findIndex((o) => o.vecka === obj.vecka) === idx
-        ))
-        .map((x) => {
-            if (x.vecka[0] === "0") x.vecka = x.vecka.substr(1, 1);
-            return x.vecka
-        })
-
         res.render("index", {
             config: global.config,
             days, //the selected month days plus perhaps some days from the prev month
             year,
-            weekNumbers,
+            weekNumbers: getUniqueWeekNumbersForArrayOfDays(days),
             month: {
                 number: month,
                 name: dayjs(`${year}-${month}-01`, "YYYY-MM-DD").format('MMMM')
@@ -192,6 +191,12 @@ async function renderCalendarForMonth(yearString, monthStringWithLeadingZero, re
             title: "error"
         });
     }
+}
+
+function getUniqueWeekNumbersForArrayOfDays(days) {
+    const weeks= days.map(x => x.vecka);
+    const uniqueWeeks = [...new Set(weeks)];
+    return uniqueWeeks;
 }
 
 function getExtendedArrayOfDays(dayArray) {
