@@ -94,6 +94,7 @@ async function renderCalendarForMonth(yearString, monthStringWithLeadingZero, re
                 return themeDay.date === d.datum;
             });
             d.themeDays = (matchingThemeDay) ? matchingThemeDay.themeDays : [];
+            d.themeDays =  d.themeDays.slice(0,2); // GUI only has room for 3 themeDays
 
             //Normalize weekNumber from '01' to '1'
             if (d.vecka[0] === "0") d.vecka = d.vecka.substr(1, 1);
