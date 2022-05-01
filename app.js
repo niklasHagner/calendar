@@ -1,13 +1,14 @@
 var express = require('express');
 var exphbs = require("express-handlebars");
 var path = require("path");
+var request = require("axios");
 var favicon = require("serve-favicon");
 var dayjs = require('dayjs')
-var request = require("axios");
-var {themeDays} = require("./themeDays");
-
 var isToday = require('dayjs/plugin/isToday')
-dayjs.extend(isToday)
+dayjs.extend(isToday);
+const fs = require('fs');
+const util = require('util');
+const readFile = (fileName) => util.promisify(fs.readFile)(fileName, 'utf8');
 
 var weekOfYear = require('dayjs/plugin/weekOfYear')
 dayjs.extend(weekOfYear)
@@ -15,11 +16,10 @@ dayjs.extend(weekOfYear)
 var utc = require('dayjs/plugin/utc') // dependent on utc plugin
 var timezone = require('dayjs/plugin/timezone');
 const { months } = require('dayjs/locale/sv');
+require('dayjs/locale/sv')
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.tz.setDefault("Sweden/Stockholm")
-
-require('dayjs/locale/sv')
 dayjs.locale('sv')
 
 var app = express();
@@ -84,11 +84,16 @@ async function renderCalendarForMonth(yearString, monthStringWithLeadingZero, re
         data = response.data;
 
         //Extend api-data with themeDays from file
+        const themeDayFileRaw = await readFile('./temadagar.json');
+        console.log(themeDayFileRaw);
+        const themeDayFile = JSON.parse(themeDayFileRaw);
+        const daysScraped = themeDayFile.daysScraped;
+
         var allDaysOfYear = data.dagar.map((d) => {
-            const matchingThemeDay = themeDays.find((themeDay) => {
-                return dayjs(themeDay.dayName, "DD MMMM YYYY").diff(dayjs(d.datum, "YYYY-MM-DD"), 'days') === 0;
+            const matchingThemeDay = daysScraped.find((themeDay) => {
+                return themeDay.date === d.datum;
             });
-            d.themeDays = (matchingThemeDay) ? matchingThemeDay.events : [];
+            d.themeDays = (matchingThemeDay) ? matchingThemeDay.themeDays : [];
 
             //Normalize weekNumber from '01' to '1'
             if (d.vecka[0] === "0") d.vecka = d.vecka.substr(1, 1);
