@@ -79,6 +79,7 @@ body {
 }
 .calendar .days li .date {
   margin: 0.5em 0;
+  display: inline-block;
 }
 .calendar .days li .event {
   background: #6EB590;
@@ -98,6 +99,14 @@ body {
 .calendar .days li.outside .date {
   color: #ddd;
 }
+.days .themedays p {
+  margin-top: 5px;
+}
+
+.calendar-grid.is-in-the-past {
+  display: none;
+}
+
 .not-this-month {
   background-color: #f2f2f2;
 }
@@ -138,11 +147,17 @@ body {
 .themedays {
   margin-top: 5px;
 }
-.isToday {
+.calendar .days li.isToday {
   border: solid 2px #555 !important;
 }
-.isToday .date {
-  font-size: 1.5em;
+.calendar .days li.isToday .date {
+  padding: 4px;
+  margin-top: 1px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: white;
 }
 .weeknumber {
   font-weight: bold;
@@ -182,6 +197,7 @@ body {
 .today-facts strong {
   text-transform: capitalize;
 }
+
 @media screen and (min-width: 768px) {
   .calendar-list {
     display: none;

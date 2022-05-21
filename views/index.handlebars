@@ -1,10 +1,11 @@
 <header style="max-width: 420px; margin: 0 auto 8px auto;">
     <div class="today-facts">
-        <h2 style="text-transform: capitalize;">{{today.weekday}} {{today.month.name}} {{today.day}}
+        <h2 style="text-transform: capitalize;">{{today.weekday}} {{today.day}} {{today.month.name}}
             <span class="weeknumber">vecka {{today.week}}</span>
         </h2>
         <p>
-          {{#if today.helgdag}}Helgdag: {{today.helgdag}}{{/if}} {{#if today.helgdagsafton}}Helgdag: {{today.helgdagsafton}}{{/if}} {{#if today.redDay}}(röd dag){{/if}}</p>
+          {{#if today.helgdag}}Helgdag: {{today.helgdag}}{{/if}} {{#if today.helgdagsafton}}Helgdag: {{today.helgdagsafton}}{{/if}} {{#if today.redDay}}(röd dag){{/if}}
+        </p>
         {{#if today.namnsdag}}
             <div>
                 {{#each today.namnsdag}}
@@ -15,13 +16,13 @@
         {{/if}}
 
         {{#if today.themeDays}}
-            <br>
-            <div>
-                Temadagar:
-                {{#each today.themeDays}}
-                    {{#if @index}}, {{/if}}
-                    <span>{{this}}</span>
-                {{/each}}
+            <div class="todays-themedays">
+                <strong>Temadagar:</strong>
+                <ul>
+                  {{#each today.themeDays}}
+                      <li>{{this}}</li>
+                  {{/each}}
+                </ul>
             </div>
         {{/if}}
     </div>
@@ -31,106 +32,47 @@
     </nav>
 </header>
 
-<div class="calendar calendar-grid">
-  <h1 class="month">
-    {{currentMonth.name}}
-  </h1>
-
-  <ol class="day-names">
-    <li>Mån</li>
-    <li>Tis</li>
-    <li>Ons</li>
-    <li>Tor</li>
-    <li>Fre</li>
-    <li class="weekend">Lör</li>
-    <li class="weekend">Sön</li>
-  </ol>
-
-  <section class="weekNumbers">
-    {{#each currentMonth.weekNumbers}}
-      <div>v{{this}}</div>
-    {{/each}}
-  </section>
-
-  <ol class="days">
-    {{#each currentMonth.days}}
-       <li class = "{{#ifnoteq currentMonth.name ../../selectedMonth.monthName}}not-this-month{{/ifnoteq}}
-        {{#if isToday}}isToday{{/if}}
-        {{#if redDay}}redDay{{/if}}
-        {{#if helgDag}}helgDag{{/if}}
-        {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
-        <div class="date">
-          {{dayNumber}} <span class="prevmonthname">{{#ifnoteq month.name ../../selectedMonth.monthName}}{{currentMonth.name}}{{/ifnoteq}}</span>
-        </div>
-        <div class="holiday">
-          {{helgdag}}
-          {{helgdagsafton}}
-        </div>
-        <div class="namedays">
-          {{#each namnsdag}}
-            <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
-          {{/each}}
-        </div>
-        <div class="themedays">
-            {{#each themeDays}}
-                <p>{{this}}</p>
-            {{/each}}
-        </div>
-      </li>
-    {{/each}}
-    <li>
-  </ol>
-</div>
-
-<br>
-
 {{!-- Mobile only --}}
 <div class="calendar calendar-list">
-  <h2>{{month.name}} - detaljer</h2>
-
-  <ol class="days">
-    {{#each days}}
-      {{#ifeq currentMonth.name ../selectedMonth.monthName}}
-        <li class = "{{#if isToday}}isToday{{/if}}
-            {{#if redDay}}redDay{{/if}}
-            {{#if helgDag}}helgDag{{/if}}
-            {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
-            <div class="date">
-              {{dayNumber}} {{#ifnoteq currentMonth.name ../selectedMonth.monthName}}{{month.name}}{{/ifnoteq}}
-              <span>{{veckodag}}</span>
-            </div>
-            <div class="holiday">
-            {{helgdag}}
-            {{helgdagsafton}}
-            </div>
-            <div class="namedays">
-            {{#each namnsdag}}
-                <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
-            {{/each}}
-            </div>
-            <div class="themedays">
-                {{#each themeDays}}
-                    <p>{{this}}</p>
+  {{#each currentYear.months}}
+    <div class="mobile-month">
+      <h2>{{this.name}} - detaljer</h2>
+      <ol class="days">
+        {{#each this.days}}
+          {{#ifeq this.name ../selectedMonth.monthName}}
+            <li class = "{{#if isToday}}isToday{{/if}}
+                {{#if redDay}}redDay{{/if}}
+                {{#if helgDag}}helgDag{{/if}}
+                {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
+                <div class="date">
+                  {{dayNumber}} {{#ifnoteq this.name ../selectedMonth.monthName}}{{month.name}}{{/ifnoteq}}
+                  <span>{{veckodag}}</span>
+                </div>
+                <div class="holiday">
+                {{helgdag}}
+                {{helgdagsafton}}
+                </div>
+                <div class="namedays">
+                {{#each namnsdag}}
+                    <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
                 {{/each}}
-            </div>
-        </li>
-      {{/ifeq}}
-    {{/each}}
-  </ol>
+                </div>
+                <div class="themedays">
+                    {{#each themeDays}}
+                        <p>{{this}}</p>
+                    {{/each}}
+                </div>
+            </li>
+          {{/ifeq}}
+        {{/each}}
+      </ol>
+    </div>
+  {{/each}}
 </div>
 
-{{!-- <menu class="menu-bar menu-bar-bottom" style="background-color: white;" >
-    <a style="float: left" class="button" href="/{{prevQueryString}}">Föregående månad</a>
-    <a style="float: right" class="button" href="/{{nextQueryString}}">Nästa år</a>
-</menu> --}}
-
-{{!-- 
-  Show entire year
-  Experimental feature
---}}
-
-{{#each restOfYear.months}}
-    <div class="calendar calendar-grid">
+{{!-- Desktop --}}
+{{#each currentYear.months}}
+    <div class="calendar calendar-grid {{#ifeq this.isInThePast true}}is-in-the-past{{/ifeq}}">
         <h1 class="month">
           {{this.name}}
         </h1>
@@ -159,6 +101,7 @@
             {{/ifeq}}
             {{#ifnoteq this.isBlank true }}
                 <li class = "
+                    {{#ifnoteq currentMonth.name ../../selectedMonth.monthName}}not-this-month{{/ifnoteq}}
                     {{#if isToday}}isToday{{/if}}
                     {{#if redDay}}redDay{{/if}}
                     {{#if helgDag}}helgDag{{/if}}

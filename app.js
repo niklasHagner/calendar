@@ -111,6 +111,7 @@ async function renderCalendar(year, month, req, res) {
             //Normalize weekNumber from '01' to '1'
             if (day.vecka[0] === "0") day.vecka = day.vecka.substr(1, 1);
 
+            day.isInThePast = currentTimeObj.dayJsObject.isAfter(dayjs(day.datum));
             return day;
         });
 
@@ -129,6 +130,7 @@ async function renderCalendar(year, month, req, res) {
                     monthZeroIndex: day.monthZeroIndex,
                     monthName: dayjs(day.datum).format("MMMM"),
                     firstDatumOfMonth: day.datum,
+                    isInThePast: day.isInThePast,
                     name: dayjs(day.datum, "YYYY-MM-DD").format('MMMM'),
                     weekNumbers: getUniqueWeekNumbersForArrayOfDays([day])
                 }
@@ -156,9 +158,6 @@ async function renderCalendar(year, month, req, res) {
 
         const daysOfCurrentMonth = allDaysOfYear.filter(day => day.monthNumber === currentTimeObj.monthNumber);
 
-        const currentMonthObj = allMonthObjectsDuringThisYear.filter(x => x.monthZeroIndex === currentTimeObj.month);
-        const remainingMonths = allMonthObjectsDuringThisYear.filter(x => x.monthZeroIndex > currentTimeObj.month -1);
-
         //Add days from prev month in case that will be rendered if this month doesn't start on a monday
         // var prevMonth = currentTimeObj.dayJsObject.clone().subtract(1, 'month');
         // const isPrevMonthDifferentYear = prevMonth.year() !== currentTimeObj.dayJsObject.year();
@@ -180,7 +179,7 @@ async function renderCalendar(year, month, req, res) {
 
         var selectedMonth = { days: data.dagar, monthName: currentTimeObj.dayJsObject.format('MMMM') };
         
-        var todayFiltered = allDaysOfYear.filter(day => dayjs(day.datum).isToday());
+        var todayFiltered = allDaysOfYear.find(day => dayjs(day.datum).isToday());
         var today = { 
             weekday: d.format('dddd'), 
             day: d.date(), 
@@ -204,11 +203,11 @@ async function renderCalendar(year, month, req, res) {
             nextQueryString,
             prevQueryString,
             months: allMonthObjectsDuringThisYear,
-            restOfYear: {
-                months: remainingMonths
+            currentYear: {
+                months: allMonthObjectsDuringThisYear
             }
         };
-        console.log(JSON.stringify({ restOfYear: viewModel.restOfYear }));
+        // console.log(JSON.stringify({ currentYear: viewModel.currentYear }));
         res.render("index", viewModel);
     } catch (e) {
         console.log("ERROR", e);
