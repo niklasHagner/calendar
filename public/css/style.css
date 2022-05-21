@@ -98,12 +98,12 @@ body {
 .calendar .days li.outside .date {
   color: #ddd;
 }
-.previousMonth {
+.not-this-month {
   background-color: #f2f2f2;
 }
-.previousMonth .date,
-.previousMonth .namedays,
-.previousMonth .themedays {
+.not-this-month .date,
+.not-this-month .namedays,
+.not-this-month .themedays {
   font-weight: normal;
   color: #999;
 }
@@ -187,7 +187,7 @@ body {
     display: none;
   }
 }
-.calendar-list .previousMonth,
+.calendar-list .not-this-month,
 .calendar-list .day-names {
   display: none !important;
 }
