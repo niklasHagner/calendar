@@ -33,7 +33,7 @@
 
 <div class="calendar calendar-grid">
   <h1 class="month">
-    {{month.name}}
+    {{currentMonth.name}}
   </h1>
 
   <ol class="day-names">
@@ -47,20 +47,20 @@
   </ol>
 
   <section class="weekNumbers">
-    {{#each weekNumbers}}
+    {{#each currentMonth.weekNumbers}}
       <div>v{{this}}</div>
     {{/each}}
   </section>
 
   <ol class="days">
-    {{#each days}}
-       <li class = "{{#ifnoteq month.name ../selectedMonth.monthName}}previousMonth{{/ifnoteq}}
+    {{#each currentMonth.days}}
+       <li class = "{{#ifnoteq currentMonth.name ../../selectedMonth.monthName}}not-this-month{{/ifnoteq}}
         {{#if isToday}}isToday{{/if}}
         {{#if redDay}}redDay{{/if}}
         {{#if helgDag}}helgDag{{/if}}
         {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
         <div class="date">
-          {{dayNumber}} <span class="prevmonthname">{{#ifnoteq month.name ../selectedMonth.monthName}}{{month.name}}{{/ifnoteq}}</span>
+          {{dayNumber}} <span class="prevmonthname">{{#ifnoteq month.name ../../selectedMonth.monthName}}{{currentMonth.name}}{{/ifnoteq}}</span>
         </div>
         <div class="holiday">
           {{helgdag}}
@@ -90,13 +90,13 @@
 
   <ol class="days">
     {{#each days}}
-      {{#ifeq month.name ../selectedMonth.monthName}}
+      {{#ifeq currentMonth.name ../selectedMonth.monthName}}
         <li class = "{{#if isToday}}isToday{{/if}}
             {{#if redDay}}redDay{{/if}}
             {{#if helgDag}}helgDag{{/if}}
             {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
             <div class="date">
-              {{dayNumber}} {{#ifnoteq month.name ../selectedMonth.monthName}}{{month.name}}{{/ifnoteq}}
+              {{dayNumber}} {{#ifnoteq currentMonth.name ../selectedMonth.monthName}}{{month.name}}{{/ifnoteq}}
               <span>{{veckodag}}</span>
             </div>
             <div class="holiday">
@@ -129,10 +129,10 @@
   Experimental feature
 --}}
 
-{{#each remainingMonths}}
+{{#each restOfYear.months}}
     <div class="calendar calendar-grid">
         <h1 class="month">
-            {{this.name}}
+          {{this.name}}
         </h1>
 
         <ol class="day-names">
@@ -153,29 +153,35 @@
 
         <ol class="days">
           {{#each this.days}}
-            <li class = "{{#ifnoteq month.name ../selectedMonth.monthName}}previousMonth{{/ifnoteq}}
-                {{#if isToday}}isToday{{/if}}
-                {{#if redDay}}redDay{{/if}}
-                {{#if helgDag}}helgDag{{/if}}
-                {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
-                <div class="date">
-                  {{dayNumber}} <span class="prevmonthname">{{#ifnoteq month.name ../selectedMonth.monthName}}{{month.name}}{{/ifnoteq}}</span>
-                </div>
-                <div class="holiday">
-                  {{helgdag}}
-                  {{helgdagsafton}}
-                </div>
-                <div class="namedays">
-                  {{#each namnsdag}}
-                      <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
-                  {{/each}}
-                </div>
-                <div class="themedays">
-                  {{#each themeDays}}
-                      <p>{{this}}</p>
-                  {{/each}}
-                </div>
-            </li>
+            {{#ifeq this.isBlank true}}
+              <li>
+              </li>
+            {{/ifeq}}
+            {{#ifnoteq this.isBlank true }}
+                <li class = "
+                    {{#if isToday}}isToday{{/if}}
+                    {{#if redDay}}redDay{{/if}}
+                    {{#if helgDag}}helgDag{{/if}}
+                    {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
+                    <div class="date">
+                      {{dayNumber}}
+                    </div>
+                    <div class="holiday">
+                      {{helgdag}}
+                      {{helgdagsafton}}
+                    </div>
+                    <div class="namedays">
+                      {{#each namnsdag}}
+                          <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
+                      {{/each}}
+                    </div>
+                    <div class="themedays">
+                      {{#each themeDays}}
+                          <p>{{this}}</p>
+                      {{/each}}
+                    </div>
+                </li>
+            {{/ifnoteq}}
           {{/each}}
           <li>
         </ol>
