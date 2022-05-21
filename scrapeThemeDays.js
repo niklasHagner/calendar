@@ -56,7 +56,10 @@ request(endPoint).then((axiosResponse) => {
             //dayname is something like "2 Maj"
             const splitDayMonth = dayAndSweMonth.split(" ");
             let dayInt = splitDayMonth[0];
-            const dayStr = dayInt.indexOf(0) !== "0" ? `0${dayInt}` : dayInt;
+            let dayStr = `${dayInt}`;  
+            if (dayStr.length === 1) {
+                dayStr = "0" + dayStr;
+            }
             const swedishMonth = splitDayMonth[1];
             const montStr = mapSweMonthToStandardMonthNum(swedishMonth);
             const yyyymmdd = `${year}-${montStr}-${dayStr}`;
