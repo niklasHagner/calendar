@@ -13,5 +13,8 @@ module.exports = {
     },
     add: function (a, b) {
         return a + b;
-    }
+    },
+    JSON: function(obj) {
+        return JSON.stringify(obj, null, 3);
+    },    
 }
