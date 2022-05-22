@@ -1,0 +1,7506 @@
+{
+  "year": 2022,
+  "currentMonth": {
+    "days": [
+      {
+        "datum": "2022-05-01",
+        "veckodag": "Söndag",
+        "arbetsfri dag": "Ja",
+        "röd dag": "Ja",
+        "vecka": "17",
+        "dag i vecka": "7",
+        "helgdag": "Första Maj",
+        "namnsdag": [
+          "Valborg"
+        ],
+        "flaggdag": "Första maj",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 1,
+        "isToday": false,
+        "redDay": false,
+        "helgDag": true,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-02",
+        "veckodag": "Måndag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "18",
+        "dag i vecka": "1",
+        "namnsdag": [
+          "Filip",
+          "Filippa"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 2,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-03",
+        "veckodag": "Tisdag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "18",
+        "dag i vecka": "2",
+        "namnsdag": [
+          "John",
+          "Jane"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 3,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-04",
+        "veckodag": "Onsdag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "18",
+        "dag i vecka": "3",
+        "namnsdag": [
+          "Monika",
+          "Mona"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 4,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-05",
+        "veckodag": "Torsdag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "18",
+        "dag i vecka": "4",
+        "namnsdag": [
+          "Gotthard",
+          "Erhard"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 5,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-06",
+        "veckodag": "Fredag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "18",
+        "dag i vecka": "5",
+        "namnsdag": [
+          "Marit",
+          "Rita"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 6,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-07",
+        "veckodag": "Lördag",
+        "arbetsfri dag": "Ja",
+        "röd dag": "Nej",
+        "vecka": "18",
+        "dag i vecka": "6",
+        "namnsdag": [
+          "Carina",
+          "Carita"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 7,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-08",
+        "veckodag": "Söndag",
+        "arbetsfri dag": "Ja",
+        "röd dag": "Ja",
+        "vecka": "18",
+        "dag i vecka": "7",
+        "namnsdag": [
+          "Åke"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 8,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-09",
+        "veckodag": "Måndag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "19",
+        "dag i vecka": "1",
+        "namnsdag": [
+          "Reidar",
+          "Reidun"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 9,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-10",
+        "veckodag": "Tisdag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "19",
+        "dag i vecka": "2",
+        "namnsdag": [
+          "Esbjörn",
+          "Styrbjörn"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 10,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-11",
+        "veckodag": "Onsdag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "19",
+        "dag i vecka": "3",
+        "namnsdag": [
+          "Märta",
+          "Märit"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 11,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-12",
+        "veckodag": "Torsdag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "19",
+        "dag i vecka": "4",
+        "namnsdag": [
+          "Charlotta",
+          "Lotta"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 12,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-13",
+        "veckodag": "Fredag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "19",
+        "dag i vecka": "5",
+        "namnsdag": [
+          "Linnea",
+          "Linn"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 13,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-14",
+        "veckodag": "Lördag",
+        "arbetsfri dag": "Ja",
+        "röd dag": "Nej",
+        "vecka": "19",
+        "dag i vecka": "6",
+        "namnsdag": [
+          "Halvard",
+          "Halvar"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 14,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-15",
+        "veckodag": "Söndag",
+        "arbetsfri dag": "Ja",
+        "röd dag": "Ja",
+        "vecka": "19",
+        "dag i vecka": "7",
+        "namnsdag": [
+          "Sofia",
+          "Sonja"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 15,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-16",
+        "veckodag": "Måndag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "20",
+        "dag i vecka": "1",
+        "namnsdag": [
+          "Ronald",
+          "Ronny"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 16,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-17",
+        "veckodag": "Tisdag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "20",
+        "dag i vecka": "2",
+        "namnsdag": [
+          "Rebecka",
+          "Ruben"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 17,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-18",
+        "veckodag": "Onsdag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "20",
+        "dag i vecka": "3",
+        "namnsdag": [
+          "Erik"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 18,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-19",
+        "veckodag": "Torsdag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "20",
+        "dag i vecka": "4",
+        "namnsdag": [
+          "Maj",
+          "Majken"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 19,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-20",
+        "veckodag": "Fredag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "20",
+        "dag i vecka": "5",
+        "namnsdag": [
+          "Karolina",
+          "Carola"
+        ],
+        "flaggdag": "",
+        "themeDays": [],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 20,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-21",
+        "veckodag": "Lördag",
+        "arbetsfri dag": "Ja",
+        "röd dag": "Nej",
+        "vecka": "20",
+        "dag i vecka": "6",
+        "namnsdag": [
+          "Konstantin",
+          "Conny"
+        ],
+        "flaggdag": "",
+        "themeDays": [
+          "Världsdagen för kulturell mångfald för dialog och utveckling",
+          "Internationella whiskydagen"
+        ],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 21,
+        "isToday": true,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-22",
+        "veckodag": "Söndag",
+        "arbetsfri dag": "Ja",
+        "röd dag": "Ja",
+        "vecka": "20",
+        "dag i vecka": "7",
+        "namnsdag": [
+          "Hemming",
+          "Henning"
+        ],
+        "flaggdag": "",
+        "themeDays": [
+          "Internationella dagen för biologiskt mångfald",
+          "Picknickens dag"
+        ],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 22,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-23",
+        "veckodag": "Måndag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "21",
+        "dag i vecka": "1",
+        "namnsdag": [
+          "Desideria",
+          "Desirée"
+        ],
+        "flaggdag": "",
+        "themeDays": [
+          "Internationella sköldpaddsdagen",
+          "Internationella dagen för utrotning av obstetrisk fistula"
+        ],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 23,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-24",
+        "veckodag": "Tisdag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "21",
+        "dag i vecka": "2",
+        "namnsdag": [
+          "Ivan",
+          "Vanja"
+        ],
+        "flaggdag": "",
+        "themeDays": [
+          "Nationalparkernas dag"
+        ],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 24,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-25",
+        "veckodag": "Onsdag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "21",
+        "dag i vecka": "3",
+        "dag före arbetsfri helgdag": "Ja",
+        "namnsdag": [
+          "Urban"
+        ],
+        "flaggdag": "",
+        "themeDays": [
+          "Internationella nörddagen",
+          "Handduksdagen"
+        ],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 25,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-26",
+        "veckodag": "Torsdag",
+        "arbetsfri dag": "Ja",
+        "röd dag": "Ja",
+        "vecka": "21",
+        "dag i vecka": "4",
+        "helgdag": "Kristi himmelsfärdsdag",
+        "namnsdag": [
+          "Vilhelmina",
+          "Vilma"
+        ],
+        "flaggdag": "",
+        "themeDays": [
+          "Folknykterhetens dag",
+          "Första metardagen"
+        ],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 26,
+        "isToday": false,
+        "redDay": true,
+        "helgDag": true,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-27",
+        "veckodag": "Fredag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "21",
+        "dag i vecka": "5",
+        "klämdag": "Ja",
+        "namnsdag": [
+          "Beda",
+          "Blenda"
+        ],
+        "flaggdag": "",
+        "themeDays": [
+          "Muffinsdagen",
+          "Ostens dag"
+        ],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 27,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-28",
+        "veckodag": "Lördag",
+        "arbetsfri dag": "Ja",
+        "röd dag": "Nej",
+        "vecka": "21",
+        "dag i vecka": "6",
+        "namnsdag": [
+          "Ingeborg",
+          "Borghild"
+        ],
+        "flaggdag": "",
+        "themeDays": [
+          "Den stressfria dagen",
+          "Internationella krama en musiker-dagen"
+        ],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 28,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-29",
+        "veckodag": "Söndag",
+        "arbetsfri dag": "Ja",
+        "röd dag": "Ja",
+        "vecka": "21",
+        "dag i vecka": "7",
+        "namnsdag": [
+          "Yvonne",
+          "Jeanette"
+        ],
+        "flaggdag": "Veterandagen",
+        "themeDays": [
+          "Internationella dagen för FN:s fredsbevarande personal",
+          "Mors dag"
+        ],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 29,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-30",
+        "veckodag": "Måndag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "22",
+        "dag i vecka": "1",
+        "namnsdag": [
+          "Vera",
+          "Veronika"
+        ],
+        "flaggdag": "",
+        "themeDays": [
+          "Internationella MS-dagen",
+          "Fönsterrenoveringens dag"
+        ],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 30,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      },
+      {
+        "datum": "2022-05-31",
+        "veckodag": "Tisdag",
+        "arbetsfri dag": "Nej",
+        "röd dag": "Nej",
+        "vecka": "22",
+        "dag i vecka": "2",
+        "namnsdag": [
+          "Petronella",
+          "Pernilla"
+        ],
+        "flaggdag": "",
+        "themeDays": [
+          "Internationella dagen mot tobak"
+        ],
+        "isInThePast": false,
+        "monthNumber": 5,
+        "monthZeroIndex": 4,
+        "dayNumber": 31,
+        "isToday": false,
+        "redDay": false,
+        "month": {
+          "number": 4,
+          "dateString": "maj"
+        }
+      }
+    ],
+    "number": 5,
+    "dateString": "maj",
+    "weekNumbers": [
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22"
+    ]
+  },
+  "today": {
+    "weekday": "lördag",
+    "day": 21,
+    "week": 20,
+    "month": {
+      "number": 4,
+      "dateString": "maj"
+    },
+    "datum": "2022-05-21",
+    "veckodag": "Lördag",
+    "arbetsfri dag": "Ja",
+    "röd dag": "Nej",
+    "vecka": "20",
+    "dag i vecka": "6",
+    "namnsdag": [
+      "Konstantin",
+      "Conny"
+    ],
+    "flaggdag": "",
+    "themeDays": [
+      "Världsdagen för kulturell mångfald för dialog och utveckling",
+      "Internationella whiskydagen"
+    ],
+    "isInThePast": false,
+    "monthNumber": 5,
+    "monthZeroIndex": 4,
+    "dayNumber": 21,
+    "isToday": true,
+    "redDay": false
+  },
+  "nextQueryString": "showCalendar?year=2023&month=01",
+  "prevQueryString": "showCalendar?year=2022&month=04",
+  "months": [
+    {
+      "days": [
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "datum": "2022-01-01",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "52",
+          "dag i vecka": "6",
+          "helgdag": "Nyårsdagen",
+          "namnsdag": [],
+          "flaggdag": "Nyårsdagen",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 1,
+          "isToday": false,
+          "redDay": false,
+          "helgDag": true,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-02",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "52",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Svea"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 2,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-03",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "1",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Alfred",
+            "Alfrida"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 3,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-04",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "1",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Rut"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 4,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-05",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "1",
+          "dag i vecka": "3",
+          "helgdagsafton": "Trettondagsafton",
+          "dag före arbetsfri helgdag": "Ja",
+          "namnsdag": [
+            "Hanna",
+            "Hannele"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 5,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-06",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "1",
+          "dag i vecka": "4",
+          "helgdag": "Trettondedag jul",
+          "namnsdag": [
+            "Kasper",
+            "Melker",
+            "Baltsar"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 6,
+          "isToday": false,
+          "redDay": true,
+          "helgDag": true,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-07",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "1",
+          "dag i vecka": "5",
+          "klämdag": "Ja",
+          "namnsdag": [
+            "August",
+            "Augusta"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 7,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-08",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "1",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Erland"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 8,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-09",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "1",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Gunnar",
+            "Gunder"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 9,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-10",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "2",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Sigurd",
+            "Sigbritt"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 10,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-11",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "2",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Jan",
+            "Jannike"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 11,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-12",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "2",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Frideborg",
+            "Fridolf"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 12,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-13",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "2",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Knut"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 13,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-14",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "2",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Felix",
+            "Felicia"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 14,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-15",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "2",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Laura",
+            "Lorentz"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 15,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-16",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "2",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Hjalmar",
+            "Helmer"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 16,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-17",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "3",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Anton",
+            "Tony"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 17,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-18",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "3",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Hilda",
+            "Hildur"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 18,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-19",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "3",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Henrik"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 19,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-20",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "3",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Fabian",
+            "Sebastian"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 20,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-21",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "3",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Agnes",
+            "Agneta"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 21,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-22",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "3",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Vincent",
+            "Viktor"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 22,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-23",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "3",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Frej",
+            "Freja"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 23,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-24",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "4",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Erika"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 24,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-25",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "4",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Paul",
+            "Pål"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 25,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-26",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "4",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Bodil",
+            "Boel"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 26,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-27",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "4",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Göte",
+            "Göta"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 27,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-28",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "4",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Karl",
+            "Karla"
+          ],
+          "flaggdag": "Kung Carl XVI Gustafs namnsdag",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 28,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-29",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "4",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Diana"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 29,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-30",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "4",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Gunilla",
+            "Gunhild"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 30,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        },
+        {
+          "datum": "2022-01-31",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "5",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Ivar",
+            "Joar"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 1,
+          "monthZeroIndex": 0,
+          "dayNumber": 31,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 0,
+            "dateString": "januari"
+          }
+        }
+      ],
+      "monthZeroIndex": 0,
+      "monthName": "januari",
+      "firstDatumOfMonth": "2022-01-01",
+      "isInThePast": true,
+      "dateString": "januari",
+      "weekNumbers": [
+        null,
+        "52",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "firstDayNameInMonth": "Lördag"
+    },
+    {
+      "days": [
+        {
+          "isBlank": true
+        },
+        {
+          "datum": "2022-02-01",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "5",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Max",
+            "Maximilian"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 1,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-02",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "5",
+          "dag i vecka": "3",
+          "namnsdag": [],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 2,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-03",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "5",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Disa",
+            "Hjördis"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 3,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-04",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "5",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Ansgar",
+            "Anselm"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 4,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-05",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "5",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Agata",
+            "Agda"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 5,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-06",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "5",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Dorotea",
+            "Doris"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 6,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-07",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "6",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Rikard",
+            "Dick"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 7,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-08",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "6",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Berta",
+            "Bert"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 8,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-09",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "6",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Fanny",
+            "Franciska"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 9,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-10",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "6",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Iris"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 10,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-11",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "6",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Yngve",
+            "Inge"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 11,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-12",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "6",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Evelina",
+            "Evy"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 12,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-13",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "6",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Agne",
+            "Ove"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 13,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-14",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "7",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Valentin"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 14,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-15",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "7",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Sigfrid"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 15,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-16",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "7",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Julia",
+            "Julius"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 16,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-17",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "7",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Alexandra",
+            "Sandra"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 17,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-18",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "7",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Frida",
+            "Fritiof"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 18,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-19",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "7",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Gabriella",
+            "Ella"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 19,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-20",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "7",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Vivianne"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 20,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-21",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "8",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Hilding"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 21,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-22",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "8",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Pia"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 22,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-23",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "8",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Torsten",
+            "Torun"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 23,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-24",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "8",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Mattias",
+            "Mats"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 24,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-25",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "8",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Sigvard",
+            "Sivert"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 25,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-26",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "8",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Torgny",
+            "Torkel"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 26,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-27",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "8",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Lage"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 27,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        },
+        {
+          "datum": "2022-02-28",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "9",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Maria"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 2,
+          "monthZeroIndex": 1,
+          "dayNumber": 28,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 1,
+            "dateString": "februari"
+          }
+        }
+      ],
+      "monthZeroIndex": 1,
+      "monthName": "februari",
+      "firstDatumOfMonth": "2022-02-01",
+      "isInThePast": true,
+      "dateString": "februari",
+      "weekNumbers": [
+        null,
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "firstDayNameInMonth": "Tisdag"
+    },
+    {
+      "days": [
+        {
+          "isBlank": true
+        },
+        {
+          "datum": "2022-03-01",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "9",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Albin",
+            "Elvira"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 1,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-02",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "9",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Ernst",
+            "Erna"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 2,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-03",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "9",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Gunborg",
+            "Gunvor"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 3,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-04",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "9",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Adrian",
+            "Adriana"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 4,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-05",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "9",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Tora",
+            "Tove"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 5,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-06",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "9",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Ebba",
+            "Ebbe"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 6,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-07",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "10",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Camilla"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 7,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-08",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "10",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Siv",
+            "Saga"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 8,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-09",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "10",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Torbjörn",
+            "Torleif"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 9,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-10",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "10",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Edla",
+            "Ada"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 10,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-11",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "10",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Edvin",
+            "Egon"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 11,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-12",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "10",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Viktoria"
+          ],
+          "flaggdag": "Kronprinsessan Victorias namnsdag",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 12,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-13",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "10",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Greger"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 13,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-14",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "11",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Matilda",
+            "Maud"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 14,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-15",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "11",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Kristoffer",
+            "Christel"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 15,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-16",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "11",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Herbert",
+            "Gilbert"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 16,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-17",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "11",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Gertrud"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 17,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-18",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "11",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Edvard",
+            "Edmund"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 18,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-19",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "11",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Josef",
+            "Josefina"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 19,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-20",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "11",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Joakim",
+            "Kim"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 20,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-21",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "12",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Bengt"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 21,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-22",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "12",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Kennet",
+            "Kent"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 22,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-23",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "12",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Gerda",
+            "Gerd"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 23,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-24",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "12",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Gabriel",
+            "Rafael"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 24,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-25",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "12",
+          "dag i vecka": "5",
+          "namnsdag": [],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 25,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-26",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "12",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Emanuel"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 26,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-27",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "12",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Rudolf",
+            "Ralf"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 27,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-28",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "13",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Malkolm",
+            "Morgan"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 28,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-29",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "13",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Jonas",
+            "Jens"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 29,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-30",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "13",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Holger",
+            "Holmfrid"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 30,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        },
+        {
+          "datum": "2022-03-31",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "13",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Ester"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 3,
+          "monthZeroIndex": 2,
+          "dayNumber": 31,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 2,
+            "dateString": "mars"
+          }
+        }
+      ],
+      "monthZeroIndex": 2,
+      "monthName": "mars",
+      "firstDatumOfMonth": "2022-03-01",
+      "isInThePast": true,
+      "dateString": "mars",
+      "weekNumbers": [
+        null,
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "firstDayNameInMonth": "Tisdag"
+    },
+    {
+      "days": [
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "datum": "2022-04-01",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "13",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Harald",
+            "Hervor"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 1,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-02",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "13",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Gudmund",
+            "Ingemund"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 2,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-03",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "13",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Ferdinand",
+            "Nanna"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 3,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-04",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "14",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Marianne",
+            "Marlene"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 4,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-05",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "14",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Irene",
+            "Irja"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 5,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-06",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "14",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Vilhelm",
+            "William"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 6,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-07",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "14",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Irma",
+            "Irmelin"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 7,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-08",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "14",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Nadja",
+            "Tanja"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 8,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-09",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "14",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Otto",
+            "Ottilia"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 9,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-10",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "14",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Ingvar",
+            "Ingvor"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 10,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-11",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "15",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Ulf",
+            "Ylva"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 11,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-12",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "15",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Liv"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 12,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-13",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "15",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Artur",
+            "Douglas"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 13,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-14",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "15",
+          "dag i vecka": "4",
+          "helgdagsafton": "Skärtorsdagen",
+          "dag före arbetsfri helgdag": "Ja",
+          "namnsdag": [
+            "Tiburtius"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 14,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-15",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "15",
+          "dag i vecka": "5",
+          "helgdag": "Långfredagen",
+          "namnsdag": [
+            "Olivia",
+            "Oliver"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 15,
+          "isToday": false,
+          "redDay": true,
+          "helgDag": true,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-16",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "15",
+          "dag i vecka": "6",
+          "helgdag": "Påskafton",
+          "namnsdag": [
+            "Patrik",
+            "Patricia"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 16,
+          "isToday": false,
+          "redDay": false,
+          "helgDag": true,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-17",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "15",
+          "dag i vecka": "7",
+          "helgdag": "Påskdagen",
+          "namnsdag": [
+            "Elias",
+            "Elis"
+          ],
+          "flaggdag": "Påskdagen",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 17,
+          "isToday": false,
+          "redDay": false,
+          "helgDag": true,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-18",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "16",
+          "dag i vecka": "1",
+          "helgdag": "Annandag påsk",
+          "namnsdag": [
+            "Valdemar",
+            "Volmar"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 18,
+          "isToday": false,
+          "redDay": true,
+          "helgDag": true,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-19",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "16",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Olaus",
+            "Ola"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 19,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-20",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "16",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Amalia",
+            "Amelie"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 20,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-21",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "16",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Anneli",
+            "Annika"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 21,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-22",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "16",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Allan",
+            "Glenn"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 22,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-23",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "16",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Georg",
+            "Göran"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 23,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-24",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "16",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Vega"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 24,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-25",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "17",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Markus"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 25,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-26",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "17",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Teresia",
+            "Terese"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 26,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-27",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "17",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Engelbrekt"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 27,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-28",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "17",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Ture",
+            "Tyra"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 28,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-29",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "17",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Tyko"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 29,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        },
+        {
+          "datum": "2022-04-30",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "17",
+          "dag i vecka": "6",
+          "helgdagsafton": "Valborgsmässoafton",
+          "namnsdag": [
+            "Mariana"
+          ],
+          "flaggdag": "Kung Carl XVI Gustafs födelsedag",
+          "themeDays": [],
+          "isInThePast": true,
+          "monthNumber": 4,
+          "monthZeroIndex": 3,
+          "dayNumber": 30,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 3,
+            "dateString": "april"
+          }
+        }
+      ],
+      "monthZeroIndex": 3,
+      "monthName": "april",
+      "firstDatumOfMonth": "2022-04-01",
+      "isInThePast": true,
+      "dateString": "april",
+      "weekNumbers": [
+        null,
+        "13",
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "firstDayNameInMonth": "Fredag"
+    },
+    {
+      "days": [
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isB…a": "4",
+          "namnsdag": [
+            "Ellen",
+            "Lena"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Surströmmingens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 18,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-19",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "33",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Magnus",
+            "Måns"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för humanitärt arbete",
+            "Luftfartsdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 19,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-20",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "33",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Bernhard",
+            "Bernt"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Honungens dag",
+            "Hemlösa djurs dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 20,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-21",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "33",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Jon",
+            "Jonna"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Världsentreprenörsdagen",
+            "Alla pensionärers dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 21,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-22",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "34",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Henrietta",
+            "Henrika"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella müslidagen",
+            "Internationella minnesdagen för människor som fallit offer för våldsdåd relaterade till religion..."
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 22,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-23",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "34",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Signe",
+            "Signhild"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen till minne av slaveriet och dess avskaffande",
+            "Köttbullens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 23,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-24",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "34",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Bartolomeus"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Årsdagen av Plutos degradering",
+            "Bartolomeidagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 24,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-25",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "34",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Lovisa",
+            "Louise"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Polisens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 25,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-26",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "34",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Östen"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Alla hundars dag",
+            "Jämställdhetsdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 26,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-27",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "34",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Rolf",
+            "Raoul"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Squaredansens dag",
+            "Sveriges Raoul Wallenbergdag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 27,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-28",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "34",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Fatima",
+            "Leila"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Arkeologidagen",
+            "Porslinets dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 28,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-29",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "35",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Hans",
+            "Hampus"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen mot kärnvapenprov"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 29,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-30",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "35",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Albert",
+            "Albertina"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för offren för påtvingade försvinnanden"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 30,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        },
+        {
+          "datum": "2022-08-31",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "35",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Arvid",
+            "Vidar"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella förebildsdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 8,
+          "monthZeroIndex": 7,
+          "dayNumber": 31,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 7,
+            "dateString": "augusti"
+          }
+        }
+      ],
+      "monthZeroIndex": 7,
+      "monthName": "augusti",
+      "firstDatumOfMonth": "2022-08-01",
+      "isInThePast": false,
+      "dateString": "augusti",
+      "weekNumbers": [
+        "31",
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "firstDayNameInMonth": "Måndag"
+    },
+    {
+      "days": [
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "datum": "2022-09-01",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "35",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Sam",
+            "Samuel"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Fluortantens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 1,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-02",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "35",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Justus",
+            "Justina"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 2,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-03",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "35",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Alfhild",
+            "Alva"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Ostronets dag",
+            "Internationella bacondagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 3,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-04",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "35",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Gisela"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Dansbandens dag",
+            "Svampens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 4,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-05",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "36",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Adela",
+            "Heidi"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för välgörenhet",
+            "Labor day"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 5,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-06",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "36",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Lilian",
+            "Lilly"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 6,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-07",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "36",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Kevin",
+            "Roy"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Salamins dag",
+            "Stora duchennesdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 7,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-08",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "36",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Alma",
+            "Hulda"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella läskunnighetsdagen",
+            "Internationella fysioterapins dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 8,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-09",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "36",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Anita",
+            "Annette"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Yrkesförarens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 9,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-10",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "36",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Tord",
+            "Turid"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Geologins dag",
+            "Internationella suicidpreventiva dagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 10,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-11",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "36",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Dagny",
+            "Helny"
+          ],
+          "flaggdag": "Val till Sveriges riksdag",
+          "themeDays": [
+            "Kebabens dag",
+            "Kulturarvsdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 11,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-12",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "37",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Åsa",
+            "Åslög"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "TV-spelsdagen",
+            "Europeiska migrändagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 12,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-13",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "37",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Sture"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 13,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-14",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "37",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Ida"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för atopiskt eksem"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 14,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-15",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "37",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Sigrid",
+            "Siri"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för demokrati",
+            "Internationella lymfomdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 15,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-16",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "37",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Dag",
+            "Daga"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för bevarande av ozonskiktet"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 16,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-17",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "37",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Hildegard",
+            "Magnhild"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "4H-dagen",
+            "Software freedom day"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 17,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-18",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "37",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Orvar"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "E-bokens dag",
+            "Brunchens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 18,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-19",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "38",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Fredrika"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella piratdagen",
+            "Messmörets dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 19,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-20",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "38",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Elise",
+            "Lisa"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Bålens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 20,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-21",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "38",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Matteus"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella Alzheimerdagen",
+            "Internationella fredsdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 21,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-22",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "38",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Maurits",
+            "Moritz"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella bilfria dagen",
+            "Hobbitdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 22,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-23",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "38",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Tekla",
+            "Tea"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella teckenspråksdagen",
+            "D-vitaminens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 23,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-24",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "38",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Gerhard",
+            "Gert"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Skiljetecknets dag",
+            "Dagvattnets dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 24,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-25",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "38",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Tryggve"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Äpplets dag",
+            "Internationella farmaceutdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 25,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-26",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "39",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Enar",
+            "Einar"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Europeiska språkdagen",
+            "Hummerpremiären"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 26,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-27",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "39",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Dagmar",
+            "Rigmor"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Tjänstepensionens dag",
+            "Världsturismdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 27,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-28",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "39",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Lennart",
+            "Leonard"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella rabiesdagen ",
+            "Neurodagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 28,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-29",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "39",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Mikael",
+            "Mikaela"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Kaffets dag",
+            "Internationella hjärtdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 29,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        },
+        {
+          "datum": "2022-09-30",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "39",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Helge"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Janssons-dagen",
+            "International Blasphemy Rights Day"
+          ],
+          "isInThePast": false,
+          "monthNumber": 9,
+          "monthZeroIndex": 8,
+          "dayNumber": 30,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 8,
+            "dateString": "september"
+          }
+        }
+      ],
+      "monthZeroIndex": 8,
+      "monthName": "september",
+      "firstDatumOfMonth": "2022-09-01",
+      "isInThePast": false,
+      "dateString": "september",
+      "weekNumbers": [
+        null,
+        "35",
+        "36",
+        "37",
+        "38",
+        "39"
+      ],
+      "firstDayNameInMonth": "Torsdag"
+    },
+    {
+      "days": [
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "datum": "2022-10-01",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "39",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Ragnar",
+            "Ragna"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Bröstcancerdagen",
+            "Internationella dagen för äldre"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 1,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-02",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "39",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Ludvig",
+            "Love"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Den helige Mikaels dag",
+            "Gräddtårtans dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 2,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-03",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "40",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Evald",
+            "Osvald"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för boende- och bebyggelsefrågor",
+            "Alla pojkvänners dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 3,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-04",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "40",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Frans",
+            "Frank"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Djurens dag",
+            "Internationella vodkadagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 4,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-05",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "40",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Bror"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för lärare"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 5,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-06",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "40",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Jenny",
+            "Jennifer"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Nationella anhörigdagen",
+            "Internationella CP-dagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 6,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-07",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "40",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Birgitta",
+            "Britta"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Elmotorns dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 7,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-08",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "40",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Nils"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Vägledningens dag",
+            "Musikens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 8,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-09",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "40",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Ingrid",
+            "Inger"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Världspostunionens dag",
+            "Minnesdag för avskaffandet av Sveriges transatlantiska slavhandel"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 9,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-10",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "41",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Harry",
+            "Harriet"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Världsdagen för mental hälsa",
+            "Grötens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 10,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-11",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "41",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Erling",
+            "Jarl"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Äpplemustens Dag",
+            "Internationella flickdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 11,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-12",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "41",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Valfrid",
+            "Manfred"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Civilkuragets dag",
+            "Internationella dagen för begränsning av naturkatastrofer "
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 12,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-13",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "41",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Berit",
+            "Birgit"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "International Suit Up Day",
+            "Världssyndagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 13,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-14",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "41",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Stellan"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Räkmackans dag",
+            "Världsdagen för synskadade"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 14,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-15",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "41",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Hedvig",
+            "Hillevi"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Fetaostens dag",
+            "Internationella beröringsdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 15,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-16",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "41",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Finn"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Steve Jobs Day",
+            "Världslivsmedelsdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 16,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-17",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "42",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Antonia",
+            "Toini"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för utrotande av fattigdom",
+            "Alla chefers dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 17,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-18",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "42",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Lukas"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella klimakteriedagen",
+            "Chokladmuffins dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 18,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-19",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "42",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Tore",
+            "Tor"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella gin och tonic-dagen",
+            "Nationella dagen för Strävhårig foxterrier"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 19,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-20",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "42",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Sibylla"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Grynkorvens dag",
+            "Internationella flygledardagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 20,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-21",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "42",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Ursula",
+            "Yrsa"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella champagnedagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 21,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-22",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "42",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Marika",
+            "Marita"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "INTERNATIONELLA CAPS LOCK-DAGEN",
+            "Hackkorvens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 22,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-23",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "42",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Severin",
+            "Sören"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella moldagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 23,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-24",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "43",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Evert",
+            "Eilert"
+          ],
+          "flaggdag": "FN-dagen",
+          "themeDays": [
+            "FN-dagen",
+            "Världsdagen för information om utvecklingsfrågor"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 24,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-25",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "43",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Inga",
+            "Ingalill"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Världspastadagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 25,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-26",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "43",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Amanda",
+            "Rasmus"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Potatisens dag",
+            "Hjärnskadedagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 26,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-27",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "43",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Sabina"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Arbetsterapins dag",
+            "Internationella nalledagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 27,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-28",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "43",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Simon",
+            "Simone"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Bilens dag",
+            "Internationella animationens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 28,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-29",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "43",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Viola"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella psoriasisdagen",
+            "Internets dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 29,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-30",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "43",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Elsa",
+            "Isabella"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Dennis Ritchie-dagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 30,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        },
+        {
+          "datum": "2022-10-31",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "44",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Edit",
+            "Edgar"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Grannens dag",
+            "Halloween"
+          ],
+          "isInThePast": false,
+          "monthNumber": 10,
+          "monthZeroIndex": 9,
+          "dayNumber": 31,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 9,
+            "dateString": "oktober"
+          }
+        }
+      ],
+      "monthZeroIndex": 9,
+      "monthName": "oktober",
+      "firstDatumOfMonth": "2022-10-01",
+      "isInThePast": false,
+      "dateString": "oktober",
+      "weekNumbers": [
+        null,
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "firstDayNameInMonth": "Lördag"
+    },
+    {
+      "days": [
+        {
+          "isBlank": true
+        },
+        {
+          "datum": "2022-11-01",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "44",
+          "dag i vecka": "2",
+          "namnsdag": [],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella vegandagen",
+            "Allhelgonadagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 1,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-02",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "44",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Tobias"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "De dödas dag",
+            "Internationella dagen för att för att upphäva straffrihet för brott mot journalister"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 2,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-03",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "44",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Hubert",
+            "Hugo"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella stoutdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 3,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-04",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "44",
+          "dag i vecka": "5",
+          "helgdagsafton": "Allhelgonaafton",
+          "dag före arbetsfri helgdag": "Ja",
+          "namnsdag": [
+            "Sverker"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Lutfiskens dag",
+            "No hate day"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 4,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-05",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "44",
+          "dag i vecka": "6",
+          "helgdag": "Alla helgons dag",
+          "namnsdag": [
+            "Eugen",
+            "Eugenia"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Alla helgons dag",
+            "Guy Fawkes Day"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 5,
+          "isToday": false,
+          "redDay": false,
+          "helgDag": true,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-06",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "44",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Gustav Adolf"
+          ],
+          "flaggdag": "Gustav Adolfsdagen",
+          "themeDays": [
+            "Alla själars dag",
+            "Gustav Adolfsdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 6,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-07",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "45",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Ingegerd",
+            "Ingela"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Frysrättens dag",
+            "Kladdkakans dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 7,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-08",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "45",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Vendela"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Dödshälsningsdagen",
+            "Infraservicedagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 8,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-09",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "45",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Teodor",
+            "Teodora"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella refluxdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 9,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-10",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "45",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Martin",
+            "Martina"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Mårtensafton",
+            "World Quality Day"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 10,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-11",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "45",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Mårten"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Chokladens dag",
+            "Nordiska klimatdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 11,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-12",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "45",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Konrad",
+            "Kurt"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Alla krossade hjärtans dag",
+            "Arkivens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 12,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-13",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "45",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Kristian",
+            "Krister"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Fars dag",
+            "Smörgåstårtans dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 13,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-14",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "46",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Emil",
+            "Emilia"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Världsdiabetesdagen",
+            "Ostkakans dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 14,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-15",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "46",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Leopold"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Fängslade författares dag",
+            "Musikterapins dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 15,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-16",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "46",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Vibeke",
+            "Viveka"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för tolerans",
+            "Internationella KOL-dagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 16,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-17",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "46",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Naemi",
+            "Naima"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Världsfilosofidagen",
+            "Internationella prematurdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 17,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-18",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "46",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Lillemor",
+            "Moa"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Adoptionernas dag",
+            "Europeiska antibiotikadagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 18,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-19",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "46",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Elisabet",
+            "Lisbet"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella mansdagen",
+            "Internationella toalettdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 19,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-20",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "46",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Pontus",
+            "Marina"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Barnkonventionsdagen",
+            "Industrialiseringsdagen för Afrika"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 20,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-21",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "47",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Helga",
+            "Olga"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Musikfri dag",
+            "Världsdagen för TV"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 21,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-22",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "47",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Cecilia",
+            "Sissela"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Wienerbrödets dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 22,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-23",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "47",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Klemens"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Sankt Clemens dag",
+            "Internationella hattdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 23,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-24",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "47",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Gudrun",
+            "Rune"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Thanksgiving"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 24,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-25",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "47",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Katarina",
+            "Katja"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen mot våld mot kvinnor",
+            "Pälsfria fredagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 25,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-26",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "47",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Linus"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 26,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-27",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "47",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Astrid",
+            "Asta"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Kattens dag",
+            "Första advent"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 27,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-28",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "48",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Malte"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Cyber Monday",
+            "Flaskmatardagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 28,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-29",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "48",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Sune"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella solidaritetsdagen med det palestinska folket",
+            "Vinylskivans dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 29,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        },
+        {
+          "datum": "2022-11-30",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "48",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Andreas",
+            "Anders"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Guldsmedens dag",
+            "Kåldolmens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 11,
+          "monthZeroIndex": 10,
+          "dayNumber": 30,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 10,
+            "dateString": "november"
+          }
+        }
+      ],
+      "monthZeroIndex": 10,
+      "monthName": "november",
+      "firstDatumOfMonth": "2022-11-01",
+      "isInThePast": false,
+      "dateString": "november",
+      "weekNumbers": [
+        null,
+        "44",
+        "45",
+        "46",
+        "47",
+        "48"
+      ],
+      "firstDayNameInMonth": "Tisdag"
+    },
+    {
+      "days": [
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "isBlank": true
+        },
+        {
+          "datum": "2022-12-01",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "48",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Oskar",
+            "Ossian"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Brandvarnardagen",
+            "Internationella AIDS-dagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 1,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-02",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "48",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Beata",
+            "Beatrice"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för avskaffande av slaveri",
+            "Modelljärnvägens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 2,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-03",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "48",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Lydia"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Drick en öl-dagen",
+            "Internationella dagen för handikappade"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 3,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-04",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "48",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Barbara",
+            "Barbro"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Armbandsklockans dag",
+            "Andra advent"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 4,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-05",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "49",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Sven"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för frivilligas arbete för ekonomisk och social utveckling",
+            "Internationella volontärdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 5,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-06",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "49",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Nikolaus",
+            "Niklas"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Nikolausdagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 6,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-07",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "49",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Angela",
+            "Angelika"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för civil luftfart"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 7,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-08",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "49",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Virginia"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 8,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-09",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "49",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Anna"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen mot korruption",
+            "Pepparkakans dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 9,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-10",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "49",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Malin",
+            "Malena"
+          ],
+          "flaggdag": "Nobeldagen",
+          "themeDays": [
+            "Internationella djurrättsdagen",
+            "Mänskliga rättigheternas dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 10,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-11",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "49",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Daniel",
+            "Daniela"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella dagen för världens berg",
+            "Tangons dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 11,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-12",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "50",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Alexander",
+            "Alexis"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Julstjärnans dag",
+            "Internationella dagen för neutralitet"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 12,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-13",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "50",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Lucia"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Luciadagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 13,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-14",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "50",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Sten",
+            "Sixten"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella ap-dagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 14,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-15",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "50",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Gottfrid"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 15,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-16",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "50",
+          "dag i vecka": "5",
+          "namnsdag": [
+            "Assar"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Jultröjans dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 16,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-17",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "50",
+          "dag i vecka": "6",
+          "namnsdag": [
+            "Stig"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 17,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-18",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "50",
+          "dag i vecka": "7",
+          "namnsdag": [
+            "Abraham"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella migrationsdagen",
+            "Kakans dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 18,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-19",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "51",
+          "dag i vecka": "1",
+          "namnsdag": [
+            "Isak"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 19,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-20",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "51",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Israel",
+            "Moses"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Internationella mänskliga solidaritetens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 20,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-21",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "51",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Tomas"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Tomasdagen",
+            "Kortfilmens dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 21,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-22",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "51",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Natanael",
+            "Jonatan"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 22,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-23",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "51",
+          "dag i vecka": "5",
+          "dag före arbetsfri helgdag": "Ja",
+          "namnsdag": [
+            "Adam"
+          ],
+          "flaggdag": "Drottning Silvias födelsedag",
+          "themeDays": [
+            "Drottningens födelsedag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 23,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-24",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "51",
+          "dag i vecka": "6",
+          "helgdag": "Julafton",
+          "namnsdag": [
+            "Eva"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Julafton"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 24,
+          "isToday": false,
+          "redDay": false,
+          "helgDag": true,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-25",
+          "veckodag": "Söndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "51",
+          "dag i vecka": "7",
+          "helgdag": "Juldagen",
+          "namnsdag": [],
+          "flaggdag": "Juldagen",
+          "themeDays": [
+            "Juldagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 25,
+          "isToday": false,
+          "redDay": false,
+          "helgDag": true,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-26",
+          "veckodag": "Måndag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Ja",
+          "vecka": "52",
+          "dag i vecka": "1",
+          "helgdag": "Annandag jul",
+          "namnsdag": [
+            "Stefan",
+            "Staffan"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Annandag jul"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 26,
+          "isToday": false,
+          "redDay": true,
+          "helgDag": true,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-27",
+          "veckodag": "Tisdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "52",
+          "dag i vecka": "2",
+          "namnsdag": [
+            "Johannes",
+            "Johan"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Nationella regifting-dagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 27,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-28",
+          "veckodag": "Onsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "52",
+          "dag i vecka": "3",
+          "namnsdag": [
+            "Benjamin"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Värnlösa barns dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 28,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-29",
+          "veckodag": "Torsdag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "52",
+          "dag i vecka": "4",
+          "namnsdag": [
+            "Natalia",
+            "Natalie"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Statisternas dag"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 29,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-30",
+          "veckodag": "Fredag",
+          "arbetsfri dag": "Nej",
+          "röd dag": "Nej",
+          "vecka": "52",
+          "dag i vecka": "5",
+          "dag före arbetsfri helgdag": "Ja",
+          "namnsdag": [
+            "Abel",
+            "Set"
+          ],
+          "flaggdag": "",
+          "themeDays": [],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 30,
+          "isToday": false,
+          "redDay": false,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        },
+        {
+          "datum": "2022-12-31",
+          "veckodag": "Lördag",
+          "arbetsfri dag": "Ja",
+          "röd dag": "Nej",
+          "vecka": "52",
+          "dag i vecka": "6",
+          "helgdag": "Nyårsafton",
+          "namnsdag": [
+            "Sylvester"
+          ],
+          "flaggdag": "",
+          "themeDays": [
+            "Nyårsafton",
+            "Internationella Expect a better tomorrow-dagen"
+          ],
+          "isInThePast": false,
+          "monthNumber": 12,
+          "monthZeroIndex": 11,
+          "dayNumber": 31,
+          "isToday": false,
+          "redDay": false,
+          "helgDag": true,
+          "month": {
+            "number": 11,
+            "dateString": "december"
+          }
+        }
+      ],
+      "monthZeroIndex": 11,
+      "monthName": "december",
+      "firstDatumOfMonth": "2022-12-01",
+      "isInThePast": false,
+      "dateString": "december",
+      "weekNumbers": [
+        null,
+        "48",
+        "49",
+        "50",
+        "51",
+        "52"
+      ],
+      "firstDayNameInMonth": "Torsdag"
+    }
+  ]
+}
+}

@@ -132,7 +132,6 @@ async function renderCalendar(year, month, req, res) {
                     firstDatumOfMonth: day.datum,
                     isInThePast: day.isInThePast,
                     name: dayjs(day.datum, "YYYY-MM-DD").format('MMMM'),
-                    weekNumbers: getUniqueWeekNumbersForArrayOfDays([day])
                 }
                 allMonthObjectsDuringThisYear.push(newMonthObj);
             }
@@ -140,6 +139,7 @@ async function renderCalendar(year, month, req, res) {
 
         //Separate pass to extend completed monthObjects
         allMonthObjectsDuringThisYear = allMonthObjectsDuringThisYear.map((monthObj) => {
+            monthObj.weekNumbers = getUniqueWeekNumbersForArrayOfDays(monthObj.days);
             var firstDayName = monthObj.days[0].veckodag;
             const blankDaysAtStartOfMonth = SWEDISH_WEEKDAY_NAMES.indexOf(firstDayName);
             for(let i=0; i < blankDaysAtStartOfMonth; i++) {
@@ -149,7 +149,7 @@ async function renderCalendar(year, month, req, res) {
             return {
                 ...monthObj,
                 firstDayNameInMonth: firstDayName,
-                weekNumbers: getUniqueWeekNumbersForArrayOfDays([monthObj.days[0]])
+                weekNumbers: getUniqueWeekNumbersForArrayOfDays(monthObj.days)
             }
         });
 
@@ -199,7 +199,6 @@ async function renderCalendar(year, month, req, res) {
                 weekNumbers: getUniqueWeekNumbersForArrayOfDays(daysOfCurrentMonth),
             },
             today,
-            selectedMonth,
             nextQueryString,
             prevQueryString,
             months: allMonthObjectsDuringThisYear,
@@ -220,7 +219,7 @@ async function renderCalendar(year, month, req, res) {
 }
 
 function getUniqueWeekNumbersForArrayOfDays(days) {
-    const weeks = days.map(x => x.vecka);
+    const weeks = days.map(day => day.vecka).filter(w => typeof w === "string");
     const uniqueWeeks = [...new Set(weeks)];
     return uniqueWeeks;
 }
