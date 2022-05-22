@@ -1,35 +1,5 @@
 /* Variables */
 @calendarRowHeight: 135px;
-@mobileWidth: 768px;
-
-/* Basics */
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-p {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-body {
-    margin: 0;
-    padding: 10px 0;
-    background-color: #f2f2f2;
-    color: grey;
-    font-family: 'helvetica', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-
-    @media screen and (min-width: @mobileWidth) {
-        padding: 20px;
-    }
-}
-
 
 /* Calendar Styling */
 .clearfix:after,
@@ -52,7 +22,10 @@ body {
     margin-bottom: 0;
     font-size: 3em;
     text-align: center;
-    text-transform: uppercase;
+    font-family: 'Vollkorn', serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.4;
 }
 
 .calendar ol {
@@ -73,11 +46,14 @@ body {
 
 .calendar ol.day-names {
     border-bottom: 1px solid #eee;
-    background-color: #555;
+    background-color: #444;
     color: white;
+    font-family: 'Vollkorn', serif;
+    
+    font-weight: 600;
 
     li {
-        text-transform: uppercase;
+        font-size: 18px;
         margin: .5em 0;
         overflow: visible;
         text-overflow: ellipsis;
@@ -127,9 +103,9 @@ body {
 }
 
 .weekend {
-    color: tomato;
+    color: crimson;
     .date {
-        color: tomato;
+        color: crimson;
     }
 }
 
@@ -159,7 +135,7 @@ body {
 }
 
 .isToday {
-    border: solid 2px #555 !important;
+    border: solid 2px #444 !important;
     .date {
         padding: 4px;
         margin-top: 1px;
@@ -172,7 +148,7 @@ body {
 }
 
 .weeknumber {
-    color: tomato;
+    color: #5b88d0;
     margin-left: 10px;
 }
 
@@ -196,6 +172,13 @@ body {
     font-weight: normal;
     margin-bottom: 5px;
 
+    h2 {
+        text-transform: capitalize;
+        font-family: 'Vollkorn', serif;
+        font-weight: 600;
+        font-size: 33px;
+    }
+
     @media screen and (max-width: 768px) {
         padding: 10px;
     }
@@ -210,24 +193,29 @@ body {
     @media screen and (min-width: @mobileWidth) {
         display: none;
     }
-    .not-this-month,
-    .day-names {
+    .not-this-month {
         display: none !important;
     }
 
     h2 {
         color: #eee;
-        background-color: #555;
+        background-color: #444;
         text-align: center;
         padding: 20px 5px;
     }
 
-    > .days > li {
-        width: 100%;
+    .days li {
         display: block;
+        width: 100%;
+        height: auto;
+        padding-bottom: 8px;
 
         &:first-of-type {
             border-top: solid 1px #eee;
+        }
+
+        &:nth-child(n+29) {
+            border-bottom: 1px solid #eee;
         }
 
         .themedays {
@@ -236,19 +224,16 @@ body {
             }
         }
     }
+}
 
-    .days li {
-        height: auto;
-        padding-bottom: 8px;
-        &:nth-child(n+29) {
-            border-bottom: 1px solid #eee;
-        }
+.calendar {
+    &.is-in-the-past {
+        display: none;
     }
 }
 
 /* mobile view overrides */
 @media screen and (max-width: @mobileWidth) {
-
     .calendar {
         padding: 0;
         border-radius: 0;
@@ -265,10 +250,6 @@ body {
         .holiday,
         .prevmonthname {
             display: none !important;
-        }
-
-        &.is-in-the-past {
-            display: none;
         }
 
         .holiday {

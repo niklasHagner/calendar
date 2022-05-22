@@ -1,29 +1,4 @@
 /* Variables */
-/* Basics */
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-p {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-body {
-  margin: 0;
-  padding: 10px 0;
-  background-color: #f2f2f2;
-  color: grey;
-  font-family: 'helvetica', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-}
-@media screen and (min-width: 768px) {
-  body {
-    padding: 20px;
-  }
-}
 /* Calendar Styling */
 .clearfix:after,
 .calendar ol:after {
@@ -42,10 +17,11 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 3em;
-  color: #eee;
-  background-color: #555;
   text-align: center;
-  text-transform: uppercase;
+  font-family: 'Vollkorn', serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.4;
 }
 .calendar ol {
   list-style: none;
@@ -63,11 +39,13 @@ body {
 }
 .calendar ol.day-names {
   border-bottom: 1px solid #eee;
-  background-color: #555;
+  background-color: #444;
   color: white;
+  font-family: 'Vollkorn', serif;
+  font-weight: 600;
 }
 .calendar ol.day-names li {
-  text-transform: uppercase;
+  font-size: 18px;
   margin: 0.5em 0;
   overflow: visible;
   text-overflow: ellipsis;
@@ -99,14 +77,6 @@ body {
 .calendar .days li.outside .date {
   color: #ddd;
 }
-.days .themedays p {
-  margin-top: 5px;
-}
-
-.calendar-grid.is-in-the-past {
-  display: none;
-}
-
 .not-this-month {
   background-color: #f2f2f2;
 }
@@ -117,10 +87,10 @@ body {
   color: #999;
 }
 .weekend {
-  color: tomato;
+  color: crimson;
 }
 .weekend .date {
-  color: tomato;
+  color: crimson;
 }
 .helgDag {
   background-color: #e68897;
@@ -144,13 +114,10 @@ body {
   font-size: 0.75em;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.themedays {
-  margin-top: 5px;
+.isToday {
+  border: solid 2px #444 !important;
 }
-.calendar .days li.isToday {
-  border: solid 2px #555 !important;
-}
-.calendar .days li.isToday .date {
+.isToday .date {
   padding: 4px;
   margin-top: 1px;
   display: inline-flex;
@@ -160,14 +127,7 @@ body {
   background: white;
 }
 .weeknumber {
-  font-weight: bold;
-  background-color: tomato;
-  font-size: 12px;
-  padding: 5px 10px;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 6px;
-  color: white;
+  color: #5b88d0;
   margin-left: 10px;
 }
 .weekNumbers {
@@ -189,6 +149,12 @@ body {
   font-weight: normal;
   margin-bottom: 5px;
 }
+.today-facts h2 {
+  text-transform: capitalize;
+  font-family: 'Vollkorn', serif;
+  font-weight: 600;
+  font-size: 33px;
+}
 @media screen and (max-width: 768px) {
   .today-facts {
     padding: 10px;
@@ -197,35 +163,37 @@ body {
 .today-facts strong {
   text-transform: capitalize;
 }
-
 @media screen and (min-width: 768px) {
   .calendar-list {
     display: none;
   }
 }
-.calendar-list .not-this-month,
-.calendar-list .day-names {
+.calendar-list .not-this-month {
   display: none !important;
 }
 .calendar-list h2 {
   color: #eee;
-  background-color: #555;
+  background-color: #444;
   text-align: center;
   padding: 20px 5px;
 }
-.calendar-list > .days > li {
-  width: 100%;
-  display: block;
-}
-.calendar-list > .days > li:first-of-type {
-  border-top: solid 1px #eee;
-}
 .calendar-list .days li {
+  display: block;
+  width: 100%;
   height: auto;
   padding-bottom: 8px;
 }
+.calendar-list .days li:first-of-type {
+  border-top: solid 1px #eee;
+}
 .calendar-list .days li:nth-child(n+29) {
   border-bottom: 1px solid #eee;
+}
+.calendar-list .days li .themedays p {
+  margin-top: 5px;
+}
+.calendar.is-in-the-past {
+  display: none;
 }
 /* mobile view overrides */
 @media screen and (max-width: 768px) {
@@ -274,7 +242,7 @@ body {
   cursor: pointer;
   padding: 5px;
   margin: 0px;
-  border: solid 1px tomato;
+  border: solid 1px #5b88d0;
   transition: 0.2s background;
   font-size: 12px;
   color: #666;
@@ -284,7 +252,7 @@ body {
 }
 .menu-bar .button:hover,
 .menu-bar .button:active {
-  background-color: tomato;
+  background-color: #5b88d0;
   color: white;
 }
 .menu-bar .button:active {
@@ -292,7 +260,7 @@ body {
 }
 .menu-bar a.button {
   text-decoration: none;
-  color: red;
+  color: #5b88d0;
 }
 @font-face {
   font-family: 'helvetica';
@@ -300,4 +268,47 @@ body {
   src: url('../fonts/HelveticaNeueBold.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueBold.woff') format('woff'), url('../fonts/HelveticaNeueBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/vollkorn/v20/0ybgGDoxxrvAnPhYGzMlQLzuMasz6Df27nauGQ.ttf) format('truetype');
+}
+/* Basics */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+body {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #f2f2f2;
+  color: #444;
+  font-family: 'helvetica', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding: 20px;
+  }
+}
+.sans-serif {
+  font-family: sans-serif;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  color: gray;
+}
+.mobile-month.not-this-month {
+  display: none !important;
 }

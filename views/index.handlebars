@@ -7,7 +7,7 @@
           {{#if today.helgdag}}Helgdag: {{today.helgdag}}{{/if}} {{#if today.helgdagsafton}}Helgdag: {{today.helgdagsafton}}{{/if}} {{#if today.redDay}}(röd dag){{/if}}
         </p>
         {{#if today.namnsdag}}
-            <div>
+            <div class="sans-serif">
                 {{#each today.namnsdag}}
                     <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
                 {{/each}}
@@ -16,7 +16,7 @@
         {{/if}}
 
         {{#if today.themeDays}}
-            <div class="todays-themedays">
+            <div class="todays-themedays sans-serif">
                 <strong>Temadagar:</strong>
                 <ul>
                   {{#each today.themeDays}}
@@ -35,17 +35,17 @@
 {{!-- Mobile only --}}
 <div class="calendar calendar-list">
   {{#each currentYear.months}}
-    <div class="mobile-month">
+    <div class="mobile-month {{#ifeq this.isInThePast true}}not-this-month{{/ifeq}}">
       <h2>{{this.name}} - detaljer</h2>
       <ol class="days">
         {{#each this.days}}
-          {{#ifeq this.name ../selectedMonth.monthName}}
+          {{#ifnoteq this.isBlank true }}
             <li class = "{{#if isToday}}isToday{{/if}}
                 {{#if redDay}}redDay{{/if}}
                 {{#if helgDag}}helgDag{{/if}}
                 {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
                 <div class="date">
-                  {{dayNumber}} {{#ifnoteq this.name ../selectedMonth.monthName}}{{month.name}}{{/ifnoteq}}
+                  {{dayNumber}} {{#ifnoteq this.name ../today.month.name}}{{month.name}}{{/ifnoteq}}
                   <span>{{veckodag}}</span>
                 </div>
                 <div class="holiday">
@@ -63,7 +63,7 @@
                     {{/each}}
                 </div>
             </li>
-          {{/ifeq}}
+          {{/ifnoteq}}
         {{/each}}
       </ol>
     </div>
@@ -96,12 +96,12 @@
         <ol class="days">
           {{#each this.days}}
             {{#ifeq this.isBlank true}}
-              <li>
+              <li class="not-this-month">
               </li>
             {{/ifeq}}
             {{#ifnoteq this.isBlank true }}
                 <li class = "
-                    {{#ifnoteq currentMonth.name ../../selectedMonth.monthName}}not-this-month{{/ifnoteq}}
+                    {{#ifeq this.isInThePast true}}not-this-month{{/ifeq}}
                     {{#if isToday}}isToday{{/if}}
                     {{#if redDay}}redDay{{/if}}
                     {{#if helgDag}}helgDag{{/if}}
