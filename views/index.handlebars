@@ -32,6 +32,70 @@
     </nav>
 </header>
 
+
+{{!-- Desktop and Mobile --}}
+{{#each currentYear.months}}
+  {{#ifnoteq this.isInThePast true}}
+    <div class="calendar calendar-grid {{#ifeq this.isCurrentMonth true}}is-current-month{{/ifeq}}">
+      <h1 class="month">
+        {{this.name}}
+      </h1>
+
+      <ol class="day-names">
+          <li>Mån</li>
+          <li>Tis</li>
+          <li>Ons</li>
+          <li>Tor</li>
+          <li>Fre</li>
+          <li class="weekend">Lör</li>
+          <li class="weekend">Sön</li>
+      </ol>
+
+      <section class="weekNumbers">
+        {{#each this.weekNumbers}}
+          <div>v{{this}}</div>
+        {{/each}}
+      </section>
+
+      <ol class="days">
+        {{#each this.days}}
+          {{#ifeq this.isBlank true}}
+            <li class="not-this-month">
+            </li>
+          {{/ifeq}}
+          {{#ifnoteq this.isBlank true }}
+              <li class = "
+                  {{#ifeq this.isInThePast true}}not-this-month{{/ifeq}}
+                  {{#if isToday}}isToday{{/if}}
+                  {{#if redDay}}redDay{{/if}}
+                  {{#if helgDag}}helgDag{{/if}}
+                  {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
+                  <div class="date">
+                    {{dayNumber}}
+                  </div>
+                  <div class="holiday">
+                    {{helgdag}}
+                    {{helgdagsafton}}
+                  </div>
+                  <div class="namedays">
+                    {{#each namnsdag}}
+                        <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
+                    {{/each}}
+                  </div>
+                  <div class="themedays">
+                    {{#each themeDays}}
+                        <p>{{this}}</p>
+                    {{/each}}
+                  </div>
+              </li>
+          {{/ifnoteq}}
+        {{/each}}
+        <li>
+      </ol>
+    </div>
+  {{/ifnoteq}}
+{{/each}}
+
 {{!-- Mobile only --}}
 <div class="calendar calendar-list">
   {{#each currentYear.months}}
@@ -70,63 +134,3 @@
   {{/each}}
 </div>
 
-{{!-- Desktop --}}
-{{#each currentYear.months}}
-    <div class="calendar calendar-grid {{#ifeq this.isInThePast true}}is-in-the-past{{/ifeq}}">
-        <h1 class="month">
-          {{this.name}}
-        </h1>
-
-        <ol class="day-names">
-            <li>Mån</li>
-            <li>Tis</li>
-            <li>Ons</li>
-            <li>Tor</li>
-            <li>Fre</li>
-            <li class="weekend">Lör</li>
-            <li class="weekend">Sön</li>
-        </ol>
-
-        <section class="weekNumbers">
-          {{#each this.weekNumbers}}
-            <div>v{{this}}</div>
-          {{/each}}
-        </section>
-
-        <ol class="days">
-          {{#each this.days}}
-            {{#ifeq this.isBlank true}}
-              <li class="not-this-month">
-              </li>
-            {{/ifeq}}
-            {{#ifnoteq this.isBlank true }}
-                <li class = "
-                    {{#ifeq this.isInThePast true}}not-this-month{{/ifeq}}
-                    {{#if isToday}}isToday{{/if}}
-                    {{#if redDay}}redDay{{/if}}
-                    {{#if helgDag}}helgDag{{/if}}
-                    {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}} {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}">
-                    <div class="date">
-                      {{dayNumber}}
-                    </div>
-                    <div class="holiday">
-                      {{helgdag}}
-                      {{helgdagsafton}}
-                    </div>
-                    <div class="namedays">
-                      {{#each namnsdag}}
-                          <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
-                      {{/each}}
-                    </div>
-                    <div class="themedays">
-                      {{#each themeDays}}
-                          <p>{{this}}</p>
-                      {{/each}}
-                    </div>
-                </li>
-            {{/ifnoteq}}
-          {{/each}}
-          <li>
-        </ol>
-    </div>
-{{/each}}

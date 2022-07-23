@@ -126,12 +126,14 @@ async function renderCalendar(year, month, req, res) {
                 foundObj.days.push(day);
             } else {
                 var newMonthObj = {
+                    name: dayjs(day.datum, "YYYY-MM-DD").format('MMMM'),
                     days: [day],
                     monthZeroIndex: day.monthZeroIndex,
                     monthName: dayjs(day.datum).format("MMMM"),
+                    year: dayjs(day.datum).format("YYYY"),
                     firstDatumOfMonth: day.datum,
                     isInThePast: day.isInThePast,
-                    name: dayjs(day.datum, "YYYY-MM-DD").format('MMMM'),
+                    isCurrentMonth: dayjs().year() === dayjs(day.datum).year() && dayjs().month() === dayjs(day.datum).month(),
                 }
                 allMonthObjectsDuringThisYear.push(newMonthObj);
             }
@@ -185,6 +187,7 @@ async function renderCalendar(year, month, req, res) {
             day: d.date(), 
             week: d.week(), 
             month: d.format('MMMM'),
+            year: d.format('YYYY'),
             ...todayFiltered
         };
 
