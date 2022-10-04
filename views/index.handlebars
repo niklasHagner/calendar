@@ -1,4 +1,4 @@
-<header style="max-width: 420px; margin: 0 auto 8px auto;">
+<header style="display: flex; flex-direction: column; align-items: center;">
     <div class="today-facts">
         <h2 style="text-transform: capitalize;">{{today.weekday}} {{today.day}} {{today.month.name}}
             <span class="weeknumber">vecka {{today.week}}</span>
@@ -27,8 +27,8 @@
         {{/if}}
     </div>
     <nav class="menu-bar" style="height:30px;">
-      <a style="float: left" class="button" href="{{prevQueryString}}">Tidigare</a>
-      <a style="float: right" class="button" href="{{nextQueryString}}">Nästa år</a>
+      <a style="" class="button" href="{{prevQueryString}}">Tidigare</a>
+      <a style="" class="button" href="{{nextQueryString}}">Nästa år</a>
     </nav>
 </header>
 
