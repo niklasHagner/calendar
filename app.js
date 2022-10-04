@@ -76,7 +76,7 @@ async function renderCalendar(year, month, req, res) {
     }
     
     //Prepare pagination links
-    var nextYearObject = dayjs(`${year+1}-01-01`, "YYYY-MM-DD");
+    var nextYearObject = dayjs(`${Number(year)+1}-01-01`, "YYYY-MM-DD");
     // var startOfYear = dayjs(`${year}-01-01`, "YYYY-MM-DD").subtract(1, 'months');
     var prevMonthMomentObject = dayjs(`${year}-${month}-01`, "YYYY-MM-DD").subtract(1, 'months');
     var prevDateObj = prevMonthMomentObject;
