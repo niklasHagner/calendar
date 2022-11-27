@@ -1,5 +1,4 @@
 /* Variables */
-/* Calendar Styling */
 .clearfix:after,
 .calendar ol:after {
   content: ".";
@@ -12,6 +11,12 @@
   background: white;
   padding: 1em 3em 3em 4em;
   border-radius: 10px;
+}
+.calendar p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .calendar .month {
   margin-top: 0;
@@ -280,19 +285,13 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/vollkorn/v20/0ybgGDoxxrvAnPhYGzMlQLzuMasz6Df27nauGQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/vollkorn/v21/0ybgGDoxxrvAnPhYGzMlQLzuMasz6Df27nauGQ.ttf) format('truetype');
 }
 /* Basics */
 *,
 *:before,
 *:after {
   box-sizing: border-box;
-}
-p {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 body {
   margin: 0;

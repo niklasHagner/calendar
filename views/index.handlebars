@@ -7,12 +7,12 @@
           {{#if today.helgdag}}Helgdag: {{today.helgdag}}{{/if}} {{#if today.helgdagsafton}}Helgdag: {{today.helgdagsafton}}{{/if}} {{#if today.redDay}}(röd dag){{/if}}
         </p>
         {{#if today.namnsdag}}
-            <div class="sans-serif">
+            <p class="sans-serif">
                 {{#each today.namnsdag}}
                     <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
                 {{/each}}
                 har namnsdag
-            </div>
+            </p>
         {{/if}}
 
         {{#if today.themeDays}}
