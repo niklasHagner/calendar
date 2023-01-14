@@ -24,7 +24,7 @@
   text-align: center;
 }
 .calendar header .month {
-  font-family: 'Montserrat', serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #4E4F4A;
   color: #F6E9DC;
   display: inline-block;
@@ -49,7 +49,7 @@
   border-bottom: 1px solid #e66053;
   background-color: #4E4F4A;
   color: white;
-  font-family: 'Montserrat', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .calendar ol.day-names li {
   font-size: 18px;
@@ -68,6 +68,8 @@
 .calendar .days li .date {
   margin: 0.5em 0;
   display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
 }
 .calendar .days li .event {
   background: #6EB590;
@@ -165,7 +167,7 @@
 }
 .today-facts h2 {
   text-transform: capitalize;
-  font-family: 'Montserrat', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 33px;
 }
 @media screen and (max-width: 768px) {
@@ -195,7 +197,7 @@
   background-color: #4E4F4A;
   display: inline-block;
   padding: 20px 5px;
-  font-family: 'Montserrat', serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: capitalize;
 }
 .mobile-calendar-list .days li {
@@ -218,6 +220,11 @@
 }
 /* mobile view overrides */
 @media screen and (max-width: 768px) {
+  .today-facts {
+    /* make room for logo */
+    margin-top: 37px;
+    margin-left: 54px;
+  }
   .calendar {
     padding: 0;
     border-radius: 0;
@@ -267,16 +274,16 @@
   color: #F6E9DC;
 }
 .menu-bar .button {
-  cursor: pointer;
-  background: #b8291b;
-  border-radius: 4px;
-  font-size: 12px;
-  height: 26px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 5px 10px 0;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  background: #b8291b;
+  border-radius: 4px;
+  font-size: 12px;
 }
 .menu-bar .button + .button {
   margin-left: 5px;
@@ -311,6 +318,12 @@
   src: url(https://fonts.gstatic.com/s/vollkorn/v21/0ybgGDoxxrvAnPhYGzMlQLzuMasz6Df2MHGuGQ.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Mr Dafoe';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/mrdafoe/v14/lJwE-pIzkS5NXuMMrFitibc.ttf) format('truetype');
+}
+@font-face {
   font-family: 'helvetica';
   src: url('../fonts/HelveticaNeueBold.eot');
   src: url('../fonts/HelveticaNeueBold.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueBold.woff') format('woff'), url('../fonts/HelveticaNeueBold.ttf') format('truetype');
@@ -335,11 +348,28 @@ body {
     padding: 20px;
   }
 }
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-header h1.logo {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  margin: 0;
+  transform: rotate(340deg);
+  -ms-transform: rotate(340deg);
+  -webkit-transform: rotate(340deg);
+  font-family: 'Mr Dafoe', cursive;
+  font-weight: 400;
+  font-size: 50px;
+  text-shadow: 1px 2px 0px #4b4343;
+}
 .sans-serif {
   font-family: sans-serif;
 }
 footer {
   text-align: center;
-  padding: 10px;
-  color: gray;
+  padding: 20px;
 }

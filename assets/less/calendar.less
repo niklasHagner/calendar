@@ -32,7 +32,7 @@
         text-align: center;
 
         .month {
-            font-family: 'Montserrat', sans-serif;;
+            font-family: 'Montserrat', sans-serif;
             background-color: @black;
             color: @cream;
             display: inline-block;
@@ -63,7 +63,7 @@
     border-bottom: 1px solid @red;
     background-color: @black;
     color: white;
-    font-family: 'Montserrat', sans-serif;;    
+    font-family: 'Montserrat', sans-serif;
 
     li {
         font-size: 18px;
@@ -84,7 +84,7 @@
         .date {
             margin: .5em 0;
             display: inline-block;
-            font-family: 'Montserrat', sans-serif;;
+            font-family: 'Montserrat', sans-serif;
             font-size: 1.4rem;
         }
     
@@ -199,7 +199,7 @@
 
     h2 {
         text-transform: capitalize;
-        font-family: 'Montserrat', sans-serif;;
+        font-family: 'Montserrat', sans-serif;
         font-size: 33px;
     }
 
@@ -232,7 +232,7 @@
             background-color: @black;
             display: inline-block;
             padding: 20px 5px;
-            font-family: 'Montserrat', sans-serif;;
+            font-family: 'Montserrat', sans-serif;
             text-transform: capitalize;
         }
     }
@@ -265,6 +265,11 @@
 
 /* mobile view overrides */
 @media screen and (max-width: @mobileWidth) {
+    .today-facts { /* make room for logo */
+        margin-top: 37px;
+        margin-left: 54px;
+    }
+
     .calendar {
         padding: 0;
         border-radius: 0;
