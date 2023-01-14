@@ -64,15 +64,26 @@ app.get('/showCalendar', async function (req, res) {
     renderCalendar(year, month, req, res);
 });
 
+/*---Expected input---
+    year: string.
+    month: string like '01' for january
+*/ 
 async function renderCalendar(year, month, req, res) {
     var d = dayjs();
 
+    /*---Expected format---
+        monthNumber: integer. 1 for January
+        dayNumber: integer. 1 for the first day of the month
+        month: { number: 0, name: 'januari'}
+    */ 
+    const dateObj = new Date(`${year}-${month}`);
+    const dayJsObject = dayjs(`${year}-${month}`);
     const currentTimeObj = {
         year: year,
-        month: month,
-        monthNumber: month,
-        monthZeroIndex: month -1,
-        dayJsObject: dayjs(`${year}-${month}`)
+        month: { number: dateObj.getMonth(), name: dayJsObject.format("MMMM") },
+        monthNumber: dateObj.getMonth()+1,
+        monthZeroIndex: dateObj.getMonth(),
+        dayJsObject
     }
     
     //Prepare pagination links
@@ -158,7 +169,7 @@ async function renderCalendar(year, month, req, res) {
 
         allDaysOfYear = getExtendedArrayOfDays(allDaysOfYear);
 
-        const daysOfCurrentMonth = allDaysOfYear.filter(day => day.monthNumber === currentTimeObj.monthNumber);
+        const daysOfCurrentMonth = allDaysOfYear.filter(calDay => calDay.monthNumber === currentTimeObj.monthNumber);
 
         //Add days from prev month in case that will be rendered if this month doesn't start on a monday
         // var prevMonth = currentTimeObj.dayJsObject.clone().subtract(1, 'month');
@@ -183,10 +194,10 @@ async function renderCalendar(year, month, req, res) {
         
         var todayFiltered = allDaysOfYear.find(day => dayjs(day.datum).isToday());
         var today = { 
-            weekday: d.format('dddd'), 
-            day: d.date(), 
-            week: d.week(), 
-            month: d.format('MMMM'),
+            dayName: d.format('dddd'), 
+            dayNumber: d.date(), 
+            weekNumber: d.week(), 
+            monthName: d.format('MMMM'),
             year: d.format('YYYY'),
             ...todayFiltered
         };
