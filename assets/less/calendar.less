@@ -28,10 +28,11 @@
         margin-inline-end: 0px;
     }
 
-    header {
+    .month-header {
         text-align: center;
+        background-color: @cream;
 
-        .month {
+        .month-title {
             font-family: 'Montserrat', sans-serif;
             background-color: @black;
             color: @cream;
@@ -47,12 +48,11 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
 
     li {
-        float: left;
-        width: calc(~'100%/7');
-        padding-left: 5px;
-        padding-right: 5px;
         overflow: hidden;
         word-wrap: break-word;
         hyphens: auto;
@@ -60,26 +60,76 @@
 }
 
 .calendar ol.day-names {
-    border-bottom: 1px solid @red;
-    background-color: @black;
-    color: white;
+    background-color: @red;
     font-family: 'Montserrat', sans-serif;
+    border-top: solid 2px @red;
 
     li {
+        padding: 10px 0;
         font-size: 18px;
-        margin: .5em 0;
-        overflow: visible;
-        text-overflow: ellipsis;
+        background: @cream;
+        text-align: center;
     }
 }
 
 .calendar .days {
-    background-color: @cream;
+    background-color: @red; //used as border via grid gap
 
     li {
-        border-bottom: 1px solid @red;
-        border-left: 1px solid @red;
         height: @calendarRowHeight;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: @cream;
+
+        &.isToday {
+            border: solid 2px #444;
+
+            .date {
+                padding: 4px;
+                margin-top: 1px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: white;
+            }
+        }
+
+
+        &.not-this-month {
+            .date,
+            .namedays,
+            .themedays {
+                font-weight: normal;
+                color: #999;
+            }
+        }
+
+        &.weekend {
+            color: crimson;
+            .date {
+                color: crimson;
+            }
+        }
+
+        &.helgDag {
+            background-color: rgb(230, 136, 151);
+            color: white;
+            .date,
+            .namedays,
+            .themedays {
+                color: white;
+            }
+        }
+
+        &.redDay {
+            background-color: crimson;
+            color: white;
+            .date {
+                color: white;
+            }
+        }
+
     
         .date {
             margin: .5em 0;
@@ -100,49 +150,6 @@
             border-radius: 1em;
             margin-bottom: 1px;
         }
-    }
-
-    li:nth-child(n+29) {
-        border-bottom: none;
-    }
-
-    li.outside .date {
-        color: #ddd;
-    }
-}
-
-.not-this-month {
-    background-color: @cream;
-    .date,
-    .namedays,
-    .themedays {
-        font-weight: normal;
-        color: #999;
-    }
-}
-
-.weekend {
-    color: crimson;
-    .date {
-        color: crimson;
-    }
-}
-
-.helgDag {
-    background-color: rgb(230, 136, 151);
-    color: white;
-    .date,
-    .namedays,
-    .themedays {
-        color: white;
-    }
-}
-
-.redDay {
-    background-color: crimson;
-    color: white;
-    .date {
-        color: white;
     }
 }
 
@@ -167,7 +174,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        background: white;
+        background-color: white !important;
     }
 }
 
@@ -224,36 +231,28 @@
         display: none !important;
     }
 
-    header {
+    .month-header {
         text-align: center;
 
-        h2 {
-            color: #eee;
-            background-color: @black;
-            display: inline-block;
-            padding: 20px 5px;
-            font-family: 'Montserrat', sans-serif;
+        .month-title {
             text-transform: capitalize;
         }
     }
 
-    .days li {
-        display: block;
-        width: 100%;
-        height: auto;
-        padding-bottom: 8px;
+    .days {
+        grid-template-columns: 1fr;
 
-        &:first-of-type {
-            border-top: solid 1px #eee;
-        }
-
-        &:nth-child(n+29) {
-            border-bottom: 1px solid #eee;
-        }
-
-        .themedays {
-            p {
-                margin-top:5px;
+        li {
+            display: block;
+            width: 100%;
+            height: auto;
+            padding-bottom: 8px;
+            padding-left: 8px;  
+    
+            .themedays {
+                p {
+                    margin-top:5px;
+                }
             }
         }
     }
@@ -300,11 +299,11 @@
             height: 50px;
         }
 
-        .day-names li {
-            visibility: hidden;
+        ol.day-names li { //show first letter only by setting the rest to invisible
+            font-size: 0;
 
             &:first-letter {
-                visibility: visible;
+                font-size: 16px;
             }
         }
     }

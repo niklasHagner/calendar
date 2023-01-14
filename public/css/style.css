@@ -20,10 +20,11 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.calendar header {
+.calendar .month-header {
   text-align: center;
+  background-color: #F6E9DC;
 }
-.calendar header .month {
+.calendar .month-header .month-title {
   font-family: 'Montserrat', sans-serif;
   background-color: #4E4F4A;
   color: #F6E9DC;
@@ -35,35 +36,74 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
 }
 .calendar ol li {
-  float: left;
-  width: calc(100%/7);
-  padding-left: 5px;
-  padding-right: 5px;
   overflow: hidden;
   word-wrap: break-word;
   hyphens: auto;
 }
 .calendar ol.day-names {
-  border-bottom: 1px solid #e66053;
-  background-color: #4E4F4A;
-  color: white;
+  background-color: #e66053;
   font-family: 'Montserrat', sans-serif;
+  border-top: solid 2px #e66053;
 }
 .calendar ol.day-names li {
+  padding: 10px 0;
   font-size: 18px;
-  margin: 0.5em 0;
-  overflow: visible;
-  text-overflow: ellipsis;
+  background: #F6E9DC;
+  text-align: center;
 }
 .calendar .days {
-  background-color: #F6E9DC;
+  background-color: #e66053;
 }
 .calendar .days li {
-  border-bottom: 1px solid #e66053;
-  border-left: 1px solid #e66053;
   height: 135px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #F6E9DC;
+}
+.calendar .days li.isToday {
+  border: solid 2px #444;
+}
+.calendar .days li.isToday .date {
+  padding: 4px;
+  margin-top: 1px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+}
+.calendar .days li.not-this-month .date,
+.calendar .days li.not-this-month .namedays,
+.calendar .days li.not-this-month .themedays {
+  font-weight: normal;
+  color: #999;
+}
+.calendar .days li.weekend {
+  color: crimson;
+}
+.calendar .days li.weekend .date {
+  color: crimson;
+}
+.calendar .days li.helgDag {
+  background-color: #e68897;
+  color: white;
+}
+.calendar .days li.helgDag .date,
+.calendar .days li.helgDag .namedays,
+.calendar .days li.helgDag .themedays {
+  color: white;
+}
+.calendar .days li.redDay {
+  background-color: crimson;
+  color: white;
+}
+.calendar .days li.redDay .date {
+  color: white;
 }
 .calendar .days li .date {
   margin: 0.5em 0;
@@ -82,43 +122,6 @@
   text-overflow: ellipsis;
   border-radius: 1em;
   margin-bottom: 1px;
-}
-.calendar .days li:nth-child(n+29) {
-  border-bottom: none;
-}
-.calendar .days li.outside .date {
-  color: #ddd;
-}
-.not-this-month {
-  background-color: #F6E9DC;
-}
-.not-this-month .date,
-.not-this-month .namedays,
-.not-this-month .themedays {
-  font-weight: normal;
-  color: #999;
-}
-.weekend {
-  color: crimson;
-}
-.weekend .date {
-  color: crimson;
-}
-.helgDag {
-  background-color: #e68897;
-  color: white;
-}
-.helgDag .date,
-.helgDag .namedays,
-.helgDag .themedays {
-  color: white;
-}
-.redDay {
-  background-color: crimson;
-  color: white;
-}
-.redDay .date {
-  color: white;
 }
 .namedays,
 .themedays {
@@ -139,7 +142,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: white;
+  background-color: white !important;
 }
 .weeknumber {
   color: #b8291b;
@@ -189,28 +192,21 @@
 .mobile-calendar-list .not-this-month {
   display: none !important;
 }
-.mobile-calendar-list header {
+.mobile-calendar-list .month-header {
   text-align: center;
 }
-.mobile-calendar-list header h2 {
-  color: #eee;
-  background-color: #4E4F4A;
-  display: inline-block;
-  padding: 20px 5px;
-  font-family: 'Montserrat', sans-serif;
+.mobile-calendar-list .month-header .month-title {
   text-transform: capitalize;
+}
+.mobile-calendar-list .days {
+  grid-template-columns: 1fr;
 }
 .mobile-calendar-list .days li {
   display: block;
   width: 100%;
   height: auto;
   padding-bottom: 8px;
-}
-.mobile-calendar-list .days li:first-of-type {
-  border-top: solid 1px #eee;
-}
-.mobile-calendar-list .days li:nth-child(n+29) {
-  border-bottom: 1px solid #eee;
+  padding-left: 8px;
 }
 .mobile-calendar-list .days li .themedays p {
   margin-top: 5px;
@@ -248,11 +244,11 @@
   .calendar-grid > .days > li {
     height: 50px;
   }
-  .calendar-grid .day-names li {
-    visibility: hidden;
+  .calendar-grid ol.day-names li {
+    font-size: 0;
   }
-  .calendar-grid .day-names li:first-letter {
-    visibility: visible;
+  .calendar-grid ol.day-names li:first-letter {
+    font-size: 16px;
   }
   .weekNumbers {
     margin-left: -24px;
@@ -340,7 +336,7 @@ body {
   margin: 0;
   background-color: #e66053;
   color: #eee;
-  font-family: 'helvetica', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 @media screen and (min-width: 768px) {

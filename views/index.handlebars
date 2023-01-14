@@ -38,8 +38,8 @@
 {{#each currentYear.months}}
   {{#ifnoteq this.isInThePast true}}
     <div class="calendar calendar-grid {{#ifeq this.isCurrentMonth true}}is-current-month{{/ifeq}}">
-      <header>
-        <h1 class="month">{{this.name}}</h1>
+      <header class="month-header">
+        <h2 class="month-title">{{this.name}}</h2>
       </header>
 
       <ol class="day-names">
@@ -101,8 +101,8 @@
 <div class="calendar mobile-calendar-list">
   {{#each currentYear.months}}
     <div class="{{#ifeq this.isInThePast true}}not-this-month{{/ifeq}}">
-      <header>
-        <h2>{{this.name}} - detaljer</h2>
+      <header class="month-header">
+        <h2 class="month-title">{{this.name}} - detaljer</h2>
       </header>
       <ol class="days">
         {{#each this.days}}
