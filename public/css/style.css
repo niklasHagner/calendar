@@ -8,9 +8,11 @@
   visibility: hidden;
 }
 .calendar {
-  background: white;
+  background: #e66053;
   padding: 1em 3em 3em 4em;
   border-radius: 10px;
+  margin-top: 20px;
+  color: #4E4F4A;
 }
 .calendar p {
   margin-block-start: 0;
@@ -18,15 +20,16 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.calendar .month {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 3em;
+.calendar header {
   text-align: center;
-  font-family: 'Vollkorn', serif;
-  font-weight: 600;
-  text-transform: capitalize;
-  line-height: 1.4;
+}
+.calendar header .month {
+  font-family: 'Montserrat', serif;
+  background-color: #4E4F4A;
+  color: #F6E9DC;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
 }
 .calendar ol {
   list-style: none;
@@ -43,11 +46,10 @@
   hyphens: auto;
 }
 .calendar ol.day-names {
-  border-bottom: 1px solid #eee;
-  background-color: #444;
+  border-bottom: 1px solid #e66053;
+  background-color: #4E4F4A;
   color: white;
-  font-family: 'Vollkorn', serif;
-  font-weight: 600;
+  font-family: 'Montserrat', serif;
 }
 .calendar ol.day-names li {
   font-size: 18px;
@@ -55,9 +57,12 @@
   overflow: visible;
   text-overflow: ellipsis;
 }
+.calendar .days {
+  background-color: #F6E9DC;
+}
 .calendar .days li {
-  border-bottom: 1px solid #eee;
-  border-left: 1px solid #eee;
+  border-bottom: 1px solid #e66053;
+  border-left: 1px solid #e66053;
   height: 135px;
 }
 .calendar .days li .date {
@@ -83,7 +88,7 @@
   color: #ddd;
 }
 .not-this-month {
-  background-color: #f2f2f2;
+  background-color: #F6E9DC;
 }
 .not-this-month .date,
 .not-this-month .namedays,
@@ -135,8 +140,9 @@
   background: white;
 }
 .weeknumber {
-  color: #5b88d0;
+  color: #b8291b;
   margin-left: 10px;
+  white-space: nowrap;
 }
 .weekNumbers {
   float: left;
@@ -145,7 +151,7 @@
   margin-left: -45px;
   padding-right: 20px;
   font-size: 1.2em;
-  color: lightgrey;
+  color: #F6E9DC;
   width: 0;
   overflow: visible;
 }
@@ -159,8 +165,7 @@
 }
 .today-facts h2 {
   text-transform: capitalize;
-  font-family: 'Vollkorn', serif;
-  font-weight: 600;
+  font-family: 'Montserrat', serif;
   font-size: 33px;
 }
 @media screen and (max-width: 768px) {
@@ -171,33 +176,41 @@
 .today-facts strong {
   text-transform: capitalize;
 }
+.mobile-calendar-list {
+  color: #4E4F4A;
+}
 @media screen and (min-width: 768px) {
-  .calendar-list {
+  .mobile-calendar-list {
     display: none;
   }
 }
-.calendar-list .not-this-month {
+.mobile-calendar-list .not-this-month {
   display: none !important;
 }
-.calendar-list h2 {
-  color: #eee;
-  background-color: #444;
+.mobile-calendar-list header {
   text-align: center;
-  padding: 20px 5px;
 }
-.calendar-list .days li {
+.mobile-calendar-list header h2 {
+  color: #eee;
+  background-color: #4E4F4A;
+  display: inline-block;
+  padding: 20px 5px;
+  font-family: 'Montserrat', serif;
+  text-transform: capitalize;
+}
+.mobile-calendar-list .days li {
   display: block;
   width: 100%;
   height: auto;
   padding-bottom: 8px;
 }
-.calendar-list .days li:first-of-type {
+.mobile-calendar-list .days li:first-of-type {
   border-top: solid 1px #eee;
 }
-.calendar-list .days li:nth-child(n+29) {
+.mobile-calendar-list .days li:nth-child(n+29) {
   border-bottom: 1px solid #eee;
 }
-.calendar-list .days li .themedays p {
+.mobile-calendar-list .days li .themedays p {
   margin-top: 5px;
 }
 .calendar.is-in-the-past {
@@ -249,29 +262,53 @@
   white-space: nowrap;
   text-align: center;
 }
+.menu-bar a.button {
+  text-decoration: none;
+  color: #F6E9DC;
+}
 .menu-bar .button {
   cursor: pointer;
-  padding: 5px;
-  margin: 0px;
-  border: solid 1px #5b88d0;
-  transition: 0.2s background;
+  background: #b8291b;
+  border-radius: 4px;
   font-size: 12px;
-  color: #666;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 5px 10px 0;
 }
 .menu-bar .button + .button {
   margin-left: 5px;
 }
 .menu-bar .button:hover,
 .menu-bar .button:active {
-  background-color: #5b88d0;
+  background: #8c1f14;
   color: white;
 }
 .menu-bar .button:active {
   box-shadow: 0 0 5px #666;
 }
-.menu-bar a.button {
-  text-decoration: none;
-  color: #5b88d0;
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/vollkorn/v21/0ybgGDoxxrvAnPhYGzMlQLzuMasz6Df2MHGuGQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'helvetica';
@@ -279,13 +316,6 @@
   src: url('../fonts/HelveticaNeueBold.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueBold.woff') format('woff'), url('../fonts/HelveticaNeueBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/vollkorn/v21/0ybgGDoxxrvAnPhYGzMlQLzuMasz6Df27nauGQ.ttf) format('truetype');
 }
 /* Basics */
 *,
@@ -295,9 +325,8 @@
 }
 body {
   margin: 0;
-  padding: 10px 0;
-  background-color: #f2f2f2;
-  color: #444;
+  background-color: #e66053;
+  color: #eee;
   font-family: 'helvetica', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
 }
@@ -313,7 +342,4 @@ footer {
   text-align: center;
   padding: 10px;
   color: gray;
-}
-.mobile-month.not-this-month {
-  display: none !important;
 }

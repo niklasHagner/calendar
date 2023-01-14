@@ -1,6 +1,10 @@
 /* Variables */
 @calendarRowHeight: 135px;
 
+@red: #e66053;
+@black: #4E4F4A;
+@cream: #F6E9DC;
+
 .clearfix:after,
 .calendar ol:after {
     content: ".";
@@ -11,9 +15,11 @@
 }
 
 .calendar {
-    background: white;
+    background: @red;
     padding: 1em 3em 3em 4em;
     border-radius: 10px;
+    margin-top: 20px;
+    color: @black;
 
     p {
         margin-block-start: 0;
@@ -21,18 +27,21 @@
         margin-inline-start: 0px;
         margin-inline-end: 0px;
     }
+
+    header {
+        text-align: center;
+
+        .month {
+            font-family: 'Montserrat', sans-serif;;
+            background-color: @black;
+            color: @cream;
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 0.5rem 2rem;
+        }
+    }
 }
 
-.calendar .month {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 3em;
-    text-align: center;
-    font-family: 'Vollkorn', serif;
-    font-weight: 600;
-    text-transform: capitalize;
-    line-height: 1.4;
-}
 
 .calendar ol {
     list-style: none;
@@ -51,12 +60,10 @@
 }
 
 .calendar ol.day-names {
-    border-bottom: 1px solid #eee;
-    background-color: #444;
+    border-bottom: 1px solid @red;
+    background-color: @black;
     color: white;
-    font-family: 'Vollkorn', serif;
-    
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;;    
 
     li {
         font-size: 18px;
@@ -66,40 +73,46 @@
     }
 }
 
-.calendar .days li {
-    border-bottom: 1px solid #eee;
-    border-left: 1px solid #eee;
-    height: @calendarRowHeight;
+.calendar .days {
+    background-color: @cream;
 
-    .date {
-        margin: .5em 0;
-        display: inline-block;
+    li {
+        border-bottom: 1px solid @red;
+        border-left: 1px solid @red;
+        height: @calendarRowHeight;
+    
+        .date {
+            margin: .5em 0;
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;;
+            font-size: 1.4rem;
+        }
+    
+        .event {
+            background: #6EB590;
+            font-size: .75em;
+            padding: 0 .75em;
+            line-height: 2em;
+            color: white;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border-radius: 1em;
+            margin-bottom: 1px;
+        }
     }
 
-    .event {
-        background: #6EB590;
-        font-size: .75em;
-        padding: 0 .75em;
-        line-height: 2em;
-        color: white;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        border-radius: 1em;
-        margin-bottom: 1px;
+    li:nth-child(n+29) {
+        border-bottom: none;
     }
-}
 
-.calendar .days li:nth-child(n+29) {
-    border-bottom: none;
-}
-
-.calendar .days li.outside .date {
-    color: #ddd;
+    li.outside .date {
+        color: #ddd;
+    }
 }
 
 .not-this-month {
-    background-color: #f2f2f2;
+    background-color: @cream;
     .date,
     .namedays,
     .themedays {
@@ -146,6 +159,7 @@
 
 .isToday {
     border: solid 2px #444 !important;
+
     .date {
         padding: 4px;
         margin-top: 1px;
@@ -158,8 +172,9 @@
 }
 
 .weeknumber {
-    color: #5b88d0;
+    color: darken(@red, 20%);
     margin-left: 10px;
+    white-space: nowrap;
 }
 
 .weekNumbers {
@@ -169,7 +184,7 @@
     margin-left: -45px;
     padding-right: 20px;
     font-size: 1.2em;
-    color: lightgrey;
+    color: @cream;
     width: 0;
     overflow: visible;
     div {
@@ -184,8 +199,7 @@
 
     h2 {
         text-transform: capitalize;
-        font-family: 'Vollkorn', serif;
-        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;;
         font-size: 33px;
     }
 
@@ -199,19 +213,28 @@
 }
 
 
-.calendar-list {
+.mobile-calendar-list {
+    color: @black;
+
     @media screen and (min-width: @mobileWidth) {
         display: none;
     }
+
     .not-this-month {
         display: none !important;
     }
 
-    h2 {
-        color: #eee;
-        background-color: #444;
+    header {
         text-align: center;
-        padding: 20px 5px;
+
+        h2 {
+            color: #eee;
+            background-color: @black;
+            display: inline-block;
+            padding: 20px 5px;
+            font-family: 'Montserrat', sans-serif;;
+            text-transform: capitalize;
+        }
     }
 
     .days li {
@@ -236,10 +259,8 @@
     }
 }
 
-.calendar {
-    &.is-in-the-past {
-        display: none;
-    }
+.calendar.is-in-the-past {
+    display: none;
 }
 
 /* mobile view overrides */

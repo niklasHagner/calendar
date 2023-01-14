@@ -1,7 +1,7 @@
 <header style="display: flex; flex-direction: column; align-items: center;">
     <div class="today-facts">
-        <h2 style="text-transform: capitalize;">{{today.weekday}} {{today.day}} {{today.month.name}}
-            <span class="weeknumber">vecka {{today.week}}</span>
+        <h2>{{today.dayName}} {{today.dayNumber}} {{today.monthName}} {{today.year}}
+            <span class="weeknumber">vecka {{today.weekNumber}}</span> 
         </h2>
         <p>
           {{#if today.helgdag}}Helgdag: {{today.helgdag}}{{/if}} {{#if today.helgdagsafton}}Helgdag: {{today.helgdagsafton}}{{/if}} {{#if today.redDay}}(röd dag){{/if}}
@@ -37,9 +37,9 @@
 {{#each currentYear.months}}
   {{#ifnoteq this.isInThePast true}}
     <div class="calendar calendar-grid {{#ifeq this.isCurrentMonth true}}is-current-month{{/ifeq}}">
-      <h1 class="month">
-        {{this.name}}
-      </h1>
+      <header>
+        <h1 class="month">{{this.name}}</h1>
+      </header>
 
       <ol class="day-names">
           <li>Mån</li>
@@ -97,10 +97,12 @@
 {{/each}}
 
 {{!-- Mobile only --}}
-<div class="calendar calendar-list">
+<div class="calendar mobile-calendar-list">
   {{#each currentYear.months}}
-    <div class="mobile-month {{#ifeq this.isInThePast true}}not-this-month{{/ifeq}}">
-      <h2>{{this.name}} - detaljer</h2>
+    <div class="{{#ifeq this.isInThePast true}}not-this-month{{/ifeq}}">
+      <header>
+        <h2>{{this.name}} - detaljer</h2>
+      </header>
       <ol class="days">
         {{#each this.days}}
           {{#ifnoteq this.isBlank true }}
