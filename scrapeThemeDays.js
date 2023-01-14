@@ -62,15 +62,16 @@ request(endPoint).then((axiosResponse) => {
         if (string === "december") return "12";
     }
 
-    const currentYearHeadline = Array.from(document.querySelectorAll("h2")).find(x => x.textContent === "Kalender med temadagar 2023");
-    const nextYearHeadline = Array.from(document.querySelectorAll("h2")).find(x => x.textContent === "Kalender med temadagar 2024");
-    const root = currentYearHeadline.parentElement;
+    const yearToScrape = "2024";
+    const startElement = Array.from(document.querySelectorAll("h2")).find(x => x.textContent === "Kalender med temadagar 2024");
+    const endElement = document.querySelector("#ezoic-pub-ad-placeholder-111");
+    const root = startElement.parentElement;
 
     const elementArray = Array.from(root.childNodes);
-    const elementsWithinYear = elementArray.slice(elementArray.indexOf(currentYearHeadline), elementArray.indexOf(nextYearHeadline));
+    const elementsWithinYear = elementArray.slice(elementArray.indexOf(startElement), elementArray.indexOf(endElement));
     const paragraphs = elementsWithinYear.filter(x => x.nodeName === "P");
 
-    const themeDays = paragraphs.map((para) => getThemeDaysForYear(para, "2023")).filter(x => x);
+    const themeDays = paragraphs.map((para) => getThemeDaysForYear(para, yearToScrape)).filter(x => x);
     console.log("themeDays.length", themeDays.length);
 
     const data = JSON.stringify({daysScraped: themeDays});

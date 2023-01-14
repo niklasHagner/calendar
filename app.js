@@ -98,7 +98,7 @@ async function renderCalendar(year, month, req, res) {
     var fullApiUrl = `${baseEndpoint}/${year}`;
 
     try {
-        /*  Example api data:
+        /*---Example api data---
             dagar:(365) []
             slutdatum:'2022-12-31'
             startdatum:'2022-01-01'
@@ -170,27 +170,6 @@ async function renderCalendar(year, month, req, res) {
         allDaysOfYear = getExtendedArrayOfDays(allDaysOfYear);
 
         const daysOfCurrentMonth = allDaysOfYear.filter(calDay => calDay.monthNumber === currentTimeObj.monthNumber);
-
-        //Add days from prev month in case that will be rendered if this month doesn't start on a monday
-        // var prevMonth = currentTimeObj.dayJsObject.clone().subtract(1, 'month');
-        // const isPrevMonthDifferentYear = prevMonth.year() !== currentTimeObj.dayJsObject.year();
-        // var mondayIndex = SWEDISH_WEEKDAY_NAMES.indexOf(daysOfCurrentMonth[0].veckodag);
-        // if (isPrevMonthDifferentYear) { //requires extra API call
-        //     var previousMonthEndpoint = `${baseEndpoint}/${prevMonth.year()}`;
-        //     var prevMonthResponse = await request(previousMonthEndpoint);
-        //     var previousMonthData = prevMonthResponse.data;
-        //     var previousDays = previousMonthData.dagar.splice(previousMonthData.dagar.length - mondayIndex, mondayIndex);
-        //     daysOfCurrentMonth = previousDays.concat(daysOfCurrentMonth);
-        // } else {
-        //     var prevMonthZeroIndex = currentTimeObj.monthZeroIndex -1;
-        //     if (prevMonthZeroIndex > -1) {
-        //         var previousMonthData = allMonthObjectsDuringThisYear[prevMonth];
-        //         var previousDays = previousMonthData.days.splice(previousMonthData.daysOfCurrentMonth.length - mondayIndex, mondayIndex);
-        //         daysOfCurrentMonth = previousDays.concat(daysOfCurrentMonth);
-        //     }
-        // }
-
-        var selectedMonth = { days: data.dagar, monthName: currentTimeObj.dayJsObject.format('MMMM') };
         
         var todayFiltered = allDaysOfYear.find(day => dayjs(day.datum).isToday());
         var today = { 
@@ -201,7 +180,6 @@ async function renderCalendar(year, month, req, res) {
             year: d.format('YYYY'),
             ...todayFiltered
         };
-
 
         const viewModel = {
             config: global.config,
