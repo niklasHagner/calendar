@@ -4,8 +4,8 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "nodemon",
-      "runtimeExecutable": "/Users/macpro/.nvm/versions/node/v16.15.0/bin/node",
+      "name": "Specific Node-version",
+      "runtimeExecutable": "${userHome}/.nvm/versions/node/v16.15.0/bin/node",
       "program": "${workspaceFolder}/app.js",
       "restart": true,
       "console": "integratedTerminal",
@@ -17,19 +17,5 @@
       "name": "Launch Program",
       "program": "${workspaceFolder}/app.js"
     },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Mocha Current File",
-      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-      "args": [
-        "--timeout",
-        "999999",
-        "--colors",
-        "${file}"
-      ],
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen"
-    }
   ]
 }
