@@ -1,19 +1,25 @@
-var express = require('express');
+var express = require("express");
 var exphbs = require("express-handlebars");
 var path = require("path");
 var request = require("axios");
 var favicon = require("serve-favicon");
-var dayjs = require('dayjs')
-var isToday = require('dayjs/plugin/isToday')
+var dayjs = require("dayjs")
+var isToday = require("dayjs/plugin/isToday")
 dayjs.extend(isToday);
-const fs = require('fs');
-const util = require('util');
-const readFile = (fileName) => util.promisify(fs.readFile)(fileName, 'utf8');
+const fs = require("fs");
+const util = require("util");
+const config = require("exp-config");
+
+const readFile = (fileName) => util.promisify(fs.readFile)(fileName, "utf8");
+
+const googleAnalyticsId = process.env.GOOGLEANALYTICSID || config.GOOGLEANALYTICSID;
+const googleAnalyticsScriptUrl =  'https://www.googoogleAnalyticsIdgletagmanager.com/gtag/js?id=' + googleAnalyticsId;
+
 
 var weekOfYear = require('dayjs/plugin/weekOfYear')
 dayjs.extend(weekOfYear)
 
-var utc = require('dayjs/plugin/utc') // dependent on utc plugin
+var utc = require('dayjs/plugin/utc');
 var timezone = require('dayjs/plugin/timezone');
 const { months } = require('dayjs/locale/sv');
 require('dayjs/locale/sv')
@@ -88,7 +94,6 @@ async function renderCalendar(year, month, req, res) {
     
     //Prepare pagination links
     var nextYearObject = dayjs(`${Number(year)+1}-01-01`, "YYYY-MM-DD");
-    // var startOfYear = dayjs(`${year}-01-01`, "YYYY-MM-DD").subtract(1, 'months');
     var prevMonthMomentObject = dayjs(`${year}-${month}-01`, "YYYY-MM-DD").subtract(1, 'months');
     var prevDateObj = prevMonthMomentObject;
     var nextQueryString = `showCalendar?year=${nextYearObject.format('YYYY')}&month=${nextYearObject.format('MM')}`;
@@ -193,10 +198,11 @@ async function renderCalendar(year, month, req, res) {
             today,
             nextQueryString,
             prevQueryString,
-            months: allMonthObjectsDuringThisYear,
             currentYear: {
                 months: allMonthObjectsDuringThisYear
-            }
+            },
+            googleAnalyticsId,
+            googleAnalyticsScriptUrl
         };
         // console.log(JSON.stringify({ currentYear: viewModel.currentYear }));
         res.render("index", viewModel);

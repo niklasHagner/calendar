@@ -1,12 +1,4 @@
 /* Variables */
-.clearfix:after,
-.calendar ol:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
 .calendar {
   background: #e66053;
   padding: 1em 3em 3em 4em;
@@ -49,6 +41,7 @@
   background-color: #e66053;
   font-family: 'Montserrat', sans-serif;
   border-top: solid 2px #e66053;
+  border-bottom: solid 2px #e66053;
 }
 .calendar ol.day-names li {
   padding: 10px 0;
@@ -60,7 +53,7 @@
   background-color: #e66053;
 }
 .calendar .days li {
-  height: 135px;
+  min-height: 135px;
   padding-left: 5px;
   padding-right: 5px;
   background-color: #F6E9DC;
@@ -161,7 +154,7 @@
   overflow: visible;
 }
 .weekNumbers div {
-  padding-top: 5px;
+  padding-top: 15px;
   height: 135px;
 }
 .today-facts {
@@ -366,6 +359,7 @@ body {
   font-family: sans-serif;
 }
 footer {
+  border-top: solid 2px #F6E9DC;
   text-align: center;
   padding: 20px;
 }

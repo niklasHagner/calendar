@@ -5,15 +5,6 @@
 @black: #4E4F4A;
 @cream: #F6E9DC;
 
-.clearfix:after,
-.calendar ol:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-
 .calendar {
     background: @red;
     padding: 1em 3em 3em 4em;
@@ -63,6 +54,7 @@
     background-color: @red;
     font-family: 'Montserrat', sans-serif;
     border-top: solid 2px @red;
+    border-bottom: solid 2px @red;
 
     li {
         padding: 10px 0;
@@ -76,7 +68,7 @@
     background-color: @red; //used as border via grid gap
 
     li {
-        height: @calendarRowHeight;
+        min-height: @calendarRowHeight;
         padding-left: 5px;
         padding-right: 5px;
         background-color: @cream;
@@ -194,8 +186,9 @@
     color: @cream;
     width: 0;
     overflow: visible;
+
     div {
-        padding-top: 5px;
+        padding-top: 15px;
         height: @calendarRowHeight;
     }
 }
