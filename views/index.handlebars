@@ -2,7 +2,7 @@
     <h1 class="logo">Kalendern</h1>
     <div class="today-facts">
         <h2>{{today.dayName}} {{today.dayNumber}} {{today.monthName}} {{today.year}}
-            <span class="weeknumber">vecka {{today.weekNumber}}</span> 
+            <span class="weeknumber">vecka {{today.weekNumber}}</span>
         </h2>
         <p>
           {{#if today.helgdag}}Helgdag: {{today.helgdag}}{{/if}} {{#if today.helgdagsafton}}Helgdag: {{today.helgdagsafton}}{{/if}} {{#if today.redDay}}(röd dag){{/if}}
@@ -37,7 +37,9 @@
 {{!-- Desktop and Mobile --}}
 {{#each currentYear.months}}
   {{#ifnoteq this.isInThePast true}}
-    <div class="calendar calendar-grid {{#ifeq this.isCurrentMonth true}}is-current-month{{/ifeq}}">
+    <div data-year="{{this.year}}" data-monthname="{{this.monthName}}"
+    data-zeroindex="{{this.monthZeroIndex}}"
+    class="calendar calendar-grid {{#ifeq this.isCurrentMonth true}}is-current-month{{/ifeq}}">
       <header class="month-header">
         <h2 class="month-title">{{this.name}}</h2>
       </header>
@@ -64,7 +66,7 @@
             <li class="not-this-month">
             </li>
           {{/ifeq}}
-          {{#ifnoteq this.isBlank  true }}
+          {{#ifnoteq this.isBlank true}}
             <li class="
                 {{#ifeq this.isInThePast true}}not-this-month{{/ifeq}}
                 {{#if isToday}}isToday{{/if}}
@@ -72,7 +74,10 @@
                 {{#if helgDag}}helgDag{{/if}}
                 {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}}
                 {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}
-              ">
+                "
+
+
+                data-datum="{{datum}}">
                 <div class="date">
                   {{dayNumber}}
                 </div>

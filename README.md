@@ -3,7 +3,7 @@ A swedish calendar featuring all the date stuff swedes need
 
 * week numbers
 * name days
-* official holidays 
+* official holidays
 * funny themedays
 
 ![screenshot](https://i.imgur.com/91TbMEU.png)
@@ -27,3 +27,28 @@ A swedish calendar featuring all the date stuff swedes need
 
 * API from api.dryg.net
 * Calendar table CSS from https://codepen.io/altitudems/pen/HLFKx?limit=all&page=2&q=calendar
+
+## Example data
+
+```
+{
+  datum: '2024-01-01',
+  veckodag: 'Måndag',
+  'arbetsfri dag': 'Ja',
+  'röd dag': 'Ja',
+  vecka: '1',
+  'dag i vecka': '1',
+  helgdag: 'Nyårsdagen',
+  namnsdag: [],
+  flaggdag: 'Nyårsdagen',
+  themeDays: [ 'Internationella pizzadagen' ],
+  isInThePast: false,
+  monthNumber: 1,
+  monthZeroIndex: 0,
+  dayNumber: 1,
+  isToday: false,
+  redDay: true,
+  helgDag: true,
+  month: { number: 0, name: 'januari' }
+}
+```

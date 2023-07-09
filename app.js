@@ -3,8 +3,8 @@ var exphbs = require("express-handlebars");
 var path = require("path");
 var request = require("axios");
 var favicon = require("serve-favicon");
-var dayjs = require("dayjs")
-var isToday = require("dayjs/plugin/isToday")
+var dayjs = require("dayjs");
+var isToday = require("dayjs/plugin/isToday");
 dayjs.extend(isToday);
 const fs = require("fs");
 const util = require("util");
@@ -15,18 +15,16 @@ const readFile = (fileName) => util.promisify(fs.readFile)(fileName, "utf8");
 const googleAnalyticsId = process.env.GOOGLEANALYTICSID || config.GOOGLEANALYTICSID;
 const googleAnalyticsScriptUrl =  'https://www.googoogleAnalyticsIdgletagmanager.com/gtag/js?id=' + googleAnalyticsId;
 
-
 var weekOfYear = require('dayjs/plugin/weekOfYear')
-dayjs.extend(weekOfYear)
+dayjs.extend(weekOfYear);
 
 var utc = require('dayjs/plugin/utc');
 var timezone = require('dayjs/plugin/timezone');
-const { months } = require('dayjs/locale/sv');
-require('dayjs/locale/sv')
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.tz.setDefault("Sweden/Stockholm")
-dayjs.locale('sv')
+require('dayjs/locale/sv');
+dayjs.extend(utc);
+dayjs.extend(timezone);
+dayjs.tz.setDefault("Sweden/Stockholm");
+dayjs.locale('sv');
 
 var app = express();
 app.use(express.static(__dirname + '/public'));
@@ -73,7 +71,7 @@ app.get('/showCalendar', async function (req, res) {
 /*---Expected input---
     year: string.
     month: string like '01' for january
-*/ 
+*/
 async function renderCalendar(year, month, req, res) {
     var d = dayjs();
 
@@ -81,7 +79,7 @@ async function renderCalendar(year, month, req, res) {
         monthNumber: integer. 1 for January
         dayNumber: integer. 1 for the first day of the month
         month: { number: 0, name: 'januari'}
-    */ 
+    */
     const dateObj = new Date(`${year}-${month}`);
     const dayJsObject = dayjs(`${year}-${month}`);
     const currentTimeObj = {
@@ -91,7 +89,7 @@ async function renderCalendar(year, month, req, res) {
         monthZeroIndex: dateObj.getMonth(),
         dayJsObject
     }
-    
+
     //Prepare pagination links
     var nextYearObject = dayjs(`${Number(year)+1}-01-01`, "YYYY-MM-DD");
     var prevMonthMomentObject = dayjs(`${year}-${month}-01`, "YYYY-MM-DD").subtract(1, 'months');
@@ -136,7 +134,7 @@ async function renderCalendar(year, month, req, res) {
         allDaysOfYear.forEach(day => {
             day.monthNumber = Number(day.datum.split("-")[1]);
             day.monthZeroIndex = day.monthNumber -1;
-            
+
             var foundObj = allMonthObjectsDuringThisYear.find(m => day.monthZeroIndex == m.monthZeroIndex );
             if (foundObj) {
                 foundObj.days.push(day);
@@ -163,7 +161,7 @@ async function renderCalendar(year, month, req, res) {
             for(let i=0; i < blankDaysAtStartOfMonth; i++) {
                 monthObj.days.unshift({isBlank: true});
             }
-            
+
             return {
                 ...monthObj,
                 firstDayNameInMonth: firstDayName,
@@ -175,12 +173,12 @@ async function renderCalendar(year, month, req, res) {
         allDaysOfYear = getExtendedArrayOfDays(allDaysOfYear);
 
         const daysOfCurrentMonth = allDaysOfYear.filter(calDay => calDay.monthNumber === currentTimeObj.monthNumber);
-        
+
         var todayFiltered = allDaysOfYear.find(day => dayjs(day.datum).isToday());
-        var today = { 
-            dayName: d.format('dddd'), 
-            dayNumber: d.date(), 
-            weekNumber: d.week(), 
+        var today = {
+            dayName: d.format('dddd'),
+            dayNumber: d.date(),
+            weekNumber: d.week(),
             monthName: d.format('MMMM'),
             year: d.format('YYYY'),
             ...todayFiltered
@@ -204,7 +202,8 @@ async function renderCalendar(year, month, req, res) {
             googleAnalyticsId,
             googleAnalyticsScriptUrl
         };
-        // console.log(JSON.stringify({ currentYear: viewModel.currentYear }));
+        console.log("bla...");
+        console.log(viewModel.currentYear.months[0]);
         res.render("index", viewModel);
     } catch (e) {
         console.log("ERROR", e);
