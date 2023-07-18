@@ -1,0 +1,33 @@
+{
+    name: 'januari',
+    days: [
+      {
+        datum: '2024-01-01',
+        veckodag: 'Måndag',
+        'arbetsfri dag': 'Ja',
+        'röd dag': 'Ja',
+        vecka: '1',
+        'dag i vecka': '1',
+        helgdag: 'Nyårsdagen',
+        namnsdag: [],
+        flaggdag: 'Nyårsdagen',
+        themeDays: [Array],
+        isInThePast: false,
+        monthNumber: 1,
+        monthZeroIndex: 0,
+        dayNumber: 1,
+        isToday: false,
+        redDay: true,
+        helgDag: true,
+        month: [Object]
+      }
+    ],
+    monthZeroIndex: 0,
+    monthName: 'januari',
+    year: '2024',
+    firstDatumOfMonth: '2024-01-01',
+    isInThePast: false,
+    isCurrentMonth: false,
+    weekNumbers: [ '1', '2', '3', '4', '5' ],
+    firstDayNameInMonth: 'Måndag'
+  }

@@ -1,0 +1,43 @@
+{
+  config: undefined,
+  year: '2024',
+  currentMonth: {
+    days: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object]
+    ],
+    number: '01',
+    name: 'januari',
+    weekNumbers: [ '1', '2', '3', '4', '5' ]
+  },
+  today: {
+    dayName: 'söndag',
+    dayNumber: 9,
+    weekNumber: 27,
+    monthName: 'juli',
+    year: '2023'
+  },
+  nextQueryString: 'showCalendar?year=2025&month=01',
+  prevQueryString: 'showCalendar?year=2023&month=12',
+  currentYear: {
+    months: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ]
+  },
+  googleAnalyticsId: 'secret',
+  googleAnalyticsScriptUrl: 'secret'
+}

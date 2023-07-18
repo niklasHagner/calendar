@@ -30,6 +30,10 @@ A swedish calendar featuring all the date stuff swedes need
 
 ## Example data
 
+See exampleViewModel.json and exampleMonth.json for more
+
+Example data for a single day:
+
 ```
 {
   datum: '2024-01-01',
