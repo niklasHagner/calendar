@@ -40,6 +40,11 @@ function getSwedishWeekday(d) {
 
 function init() {
     const currentDate = new Date();
+    const currentMonthIndex = currentDate.getMonth();
+    const monthElements = Array.from(document.querySelectorAll("[data-zeroindex]"));
+    const monthsToRemove = monthElements.filter(x => Number(x.getAttribute("data-zeroindex")) < currentMonthIndex);
+    monthsToRemove.forEach(x => x.remove());
+
     const formattedToday = getFormattedDate(currentDate);
     const swedishWeekday = getSwedishWeekday(currentDate);
     const currentWeek = currentDate.getWeek();
