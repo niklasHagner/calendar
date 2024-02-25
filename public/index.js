@@ -35,7 +35,8 @@ function getFormattedDate(d) {
 
 function getSwedishWeekday(d) {
     const dayInt = d.getDay();
-    return ["Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag","Söndag"][dayInt];
+    // Yes! Sunday is 0, and Monday is 1
+    return ["Söndag","Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag"][dayInt];
 }
 
 function init() {

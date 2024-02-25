@@ -56,3 +56,7 @@ Example data for a single day:
   month: { number: 0, name: 'januari' }
 }
 ```
+
+# Notes 2024
+
+For static html sites, deploy the entire `public` folder - it contains a static variant: `index.html` with all of 2024, and `index.js` will highlight the current day
