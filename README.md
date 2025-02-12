@@ -18,7 +18,7 @@ A swedish calendar featuring all the date stuff swedes need
 
 1. `npm run build` to compile LESS to CSS
 2. `npm start` to start the node server
-3. Browse to `http://localhost:8001`
+3. Browse to `http://localhost:8001/kalender`
 
 ## Common issues
 `npm run build:styles` might give you a 'Permission denied' issue when running `node_modules/.bin/lessc`. If so just add permissions via `chmod 775 node_modules/.bin/lessc`.
@@ -57,6 +57,6 @@ Example data for a single day:
 }
 ```
 
-# Notes 2024
+# static html version
 
-For static html sites, deploy the entire `public` folder - it contains a static variant: `index.html` with all of 2024, and `index.js` will highlight the current day
+deploy the entire `public` folder - it contains a static variant: `index.html` with all of 2024, and `index.js` will highlight the current day
