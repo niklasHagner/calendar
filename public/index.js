@@ -35,16 +35,24 @@ function getFormattedDate(d) {
 
 function getSwedishWeekday(d) {
     const dayInt = d.getDay();
-    // Yes! Sunday is 0, and Monday is 1
-    return ["Söndag","Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag"][dayInt];
+    return ["Söndag","Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag"][dayInt]; // Jepp! Sunday is 0, and Monday is 1
 }
 
-function init() {
+function main() {
     const currentDate = new Date();
     const currentMonthIndex = currentDate.getMonth();
     const monthElements = Array.from(document.querySelectorAll("[data-zeroindex]"));
-    const monthsToRemove = monthElements.filter(x => Number(x.getAttribute("data-zeroindex")) < currentMonthIndex);
-    monthsToRemove.forEach(x => x.remove());
+    const monthsToCollapse = monthElements.filter(x => Number(x.getAttribute("data-zeroindex")) < currentMonthIndex);
+    monthsToCollapse.forEach(monthElement => {
+        const summary = document.createElement('summary');
+        summary.textContent = monthElement.querySelector('h2').textContent;
+        const details = document.createElement('details');
+        details.appendChild(summary);
+        while (monthElement.firstChild) {
+            details.appendChild(monthElement.firstChild);
+        }
+        monthElement.appendChild(details);
+    });
 
     const formattedToday = getFormattedDate(currentDate);
     const swedishWeekday = getSwedishWeekday(currentDate);
@@ -70,8 +78,7 @@ function init() {
             ${todayThemeDays ? `<strong>Temadagar:</strong><br>${todayThemeDays}` : ''}
         </div>
         ${todayNameDays ? `<div><strong>Grattis på namnsdagen:</strong><br>${todayNameDays}</div>` : '' }
-
     `;
 }
 
-init();
+main();
