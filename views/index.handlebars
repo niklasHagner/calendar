@@ -33,77 +33,78 @@
     </nav>
 </header>
 
+<!-- Desktop & Mobile -->
+<main>
+    {{#each currentYear.months}}
+    {{#ifnoteq this.isInThePast true}}
+        <div data-year="{{this.year}}" data-monthname="{{this.monthName}}"
+        data-zeroindex="{{this.monthZeroIndex}}"
+        class="calendar calendar-grid {{#ifeq this.isCurrentMonth true}}is-current-month{{/ifeq}}">
+        <header class="month-header">
+            <h2 class="month-title">{{this.name}}</h2>
+        </header>
 
-{{!-- Desktop and Mobile --}}
-{{#each currentYear.months}}
-  {{#ifnoteq this.isInThePast true}}
-    <div data-year="{{this.year}}" data-monthname="{{this.monthName}}"
-    data-zeroindex="{{this.monthZeroIndex}}"
-    class="calendar calendar-grid {{#ifeq this.isCurrentMonth true}}is-current-month{{/ifeq}}">
-      <header class="month-header">
-        <h2 class="month-title">{{this.name}}</h2>
-      </header>
+        <ol class="day-names">
+            <li>Mån</li>
+            <li>Tis</li>
+            <li>Ons</li>
+            <li>Tor</li>
+            <li>Fre</li>
+            <li class="weekend">Lör</li>
+            <li class="weekend">Sön</li>
+        </ol>
 
-      <ol class="day-names">
-          <li>Mån</li>
-          <li>Tis</li>
-          <li>Ons</li>
-          <li>Tor</li>
-          <li>Fre</li>
-          <li class="weekend">Lör</li>
-          <li class="weekend">Sön</li>
-      </ol>
+        <section class="weekNumbers">
+            {{#each this.weekNumbers}}
+            <div>v{{this}}</div>
+            {{/each}}
+        </section>
 
-      <section class="weekNumbers">
-        {{#each this.weekNumbers}}
-          <div>v{{this}}</div>
-        {{/each}}
-      </section>
-
-      <ol class="days">
-        {{#each this.days}}
-          {{#ifeq this.isBlank true}}
-            <li class="not-this-month">
-            </li>
-          {{/ifeq}}
-          {{#ifnoteq this.isBlank true}}
-            <li class="
-                {{#ifeq this.isInThePast true}}not-this-month{{/ifeq}}
-                {{#if isToday}}isToday{{/if}}
-                {{#if redDay}}redDay{{/if}}
-                {{#if helgDag}}helgDag{{/if}}
-                {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}}
-                {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}
-                "
+        <ol class="days">
+            {{#each this.days}}
+            {{#ifeq this.isBlank true}}
+                <li class="not-this-month">
+                </li>
+            {{/ifeq}}
+            {{#ifnoteq this.isBlank true}}
+                <li class="
+                    {{#ifeq this.isInThePast true}}not-this-month{{/ifeq}}
+                    {{#if isToday}}isToday{{/if}}
+                    {{#if redDay}}redDay{{/if}}
+                    {{#if helgDag}}helgDag{{/if}}
+                    {{#ifeq veckodag 'Lördag'}}weekend{{/ifeq}}
+                    {{#ifeq veckodag 'Söndag'}}weekend{{/ifeq}}
+                    "
 
 
-                data-datum="{{datum}}">
-                <div class="date">
-                  {{dayNumber}}
-                </div>
-                <div class="holiday">
-                  {{helgdag}}
-                  {{helgdagsafton}}
-                </div>
-                <div class="namedays">
-                  {{#each namnsdag}}
-                      <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
-                  {{/each}}
-                </div>
-                <div class="themedays">
-                  {{#each themeDays}}
-                      <p>{{this}}</p>
-                  {{/each}}
-                </div>
-              </li>
-          {{/ifnoteq}}
-        {{/each}}
-      </ol>
-    </div>
-  {{/ifnoteq}}
-{{/each}}
+                    data-datum="{{datum}}">
+                    <div class="date">
+                    {{dayNumber}}
+                    </div>
+                    <div class="holiday">
+                    {{helgdag}}
+                    {{helgdagsafton}}
+                    </div>
+                    <div class="namedays">
+                    {{#each namnsdag}}
+                        <span>{{this}}</span>{{#unless @last}} &amp; {{/unless}}
+                    {{/each}}
+                    </div>
+                    <div class="themedays">
+                    {{#each themeDays}}
+                        <p>{{this}}</p>
+                    {{/each}}
+                    </div>
+                </li>
+            {{/ifnoteq}}
+            {{/each}}
+        </ol>
+        </div>
+    {{/ifnoteq}}
+    {{/each}}
+</main>
 
-{{!-- Mobile only --}}
+<!-- Mobile only -->
 <div class="calendar mobile-calendar-list">
   {{#each currentYear.months}}
     <div class="{{#ifeq this.isInThePast true}}not-this-month{{/ifeq}}">
