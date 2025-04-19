@@ -69,6 +69,11 @@
   align-items: center;
   background-color: white;
 }
+.calendar .isToday.helgDag .date {
+    color: crimson !important;
+}
+
+
 .calendar .days li.not-this-month .date,
 .calendar .days li.not-this-month .namedays,
 .calendar .days li.not-this-month .themedays {
