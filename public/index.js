@@ -42,19 +42,9 @@ function main() {
     const currentDate = new Date();
     const currentMonthIndex = currentDate.getMonth();
     const monthElements = Array.from(document.querySelectorAll("[data-zeroindex]"));
-    const monthsToCollapse = monthElements.filter(x => Number(x.getAttribute("data-zeroindex")) < currentMonthIndex);
+    const prevMonths = monthElements.filter(x => Number(x.getAttribute("data-zeroindex")) < currentMonthIndex);
 
-    monthsToCollapse.forEach(monthElement => {
-        console.log(monthElement.outerHTML.slice(0, 500));
-        console.log("------");
-        const summary = document.createElement('summary');
-        summary.textContent = monthElement.querySelector('h2').textContent;
-
-        const details = document.createElement('details');
-        details.innerHTML = monthElement.innerHTML;
-        monthElement.innerHTML = '';
-        monthElement.appendChild(details);
-    });
+    prevMonths.forEach(monthElement => monthElement.remove());
 
     const formattedToday = getFormattedDate(currentDate);
     const swedishWeekday = getSwedishWeekday(currentDate);
