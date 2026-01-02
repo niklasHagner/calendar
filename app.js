@@ -27,10 +27,8 @@ dayjs.tz.setDefault("Sweden/Stockholm");
 dayjs.locale('sv');
 
 var app = express();
-app.use(express.static(__dirname + '/public'));
-app.engine(
-    "handlebars",
-    exphbs({
+// app.use(express.static(__dirname + '/public'));
+app.engine("handlebars", exphbs({
         defaultLayout: "main",
         partialsDir: ["views/partials/"],
         helpers: require('./handlebars-helpers/helper.js')
@@ -38,7 +36,7 @@ app.engine(
 );
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "handlebars");
-app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
 const baseEndpoint = 'https://sholiday.faboul.se/dagar/v2.1';
@@ -48,6 +46,7 @@ const SWEDISH_WEEKDAY_NAMES = [
 ];
 
 app.get('/', async function (req, res) { //serve handlebars
+    console.log("Root route");
     var d = dayjs();
     var year = Number(d.format('YYYY'));
     var month = d.month() + 1;
@@ -74,6 +73,8 @@ app.get('/showCalendar', async function (req, res) {
 */
 async function renderCalendar(year, month, req, res) {
     var d = dayjs();
+
+    console.log("Dagen är", d.format());
 
     /*---Expected format---
         monthNumber: integer. 1 for January
@@ -109,10 +110,12 @@ async function renderCalendar(year, month, req, res) {
         var response = await request(fullApiUrl);
         data = response.data;
 
+        console.log("Resp", response.data);
+
         //Extend api-data with themeDays from file
         const themeDayFileRaw = await readFile('./temadagar.json');
         const themeDayFile = JSON.parse(themeDayFileRaw);
-        const daysScraped = themeDayFile.daysScraped;
+        const daysScraped = themeDayFile;
 
         var allDaysOfYear = data.dagar.map((day) => {
             const matchingThemeDay = daysScraped.find((themeDay) => {
@@ -238,7 +241,7 @@ function getExtendedArrayOfDays(dayArray) {
     return mappedArray;
 }
 
-var port = process.env.PORT || 8001;
+var port = process.env.PORT || 8002;
 app.listen(port);
 console.log('Running server on port ' + port);
 exports = module.exports = app;
