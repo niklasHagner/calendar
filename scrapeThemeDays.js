@@ -19,7 +19,7 @@ request(endPoint).then((axiosResponse) => {
         * to get all temadagar for one year - filter p tags between yearHeadline and headline 2023
         * each day is a paragraph where the first anchor is the date, and the other anchors are the themedays
     */
-    
+
     function getThemeDaysForYear(possibleDayNode, year) {
         const anchorElements = Array.from(possibleDayNode.querySelectorAll("a"));
         if (anchorElements.length < 1) return;
@@ -35,7 +35,7 @@ request(endPoint).then((axiosResponse) => {
         //dayname is something like "2 Maj"
         const splitDayMonth = dayAndSweMonth.split(" ");
         let dayInt = splitDayMonth[0];
-        let dayStr = `${dayInt}`;  
+        let dayStr = `${dayInt}`;
         if (dayStr.length === 1) {
             dayStr = "0" + dayStr;
         }
@@ -62,9 +62,9 @@ request(endPoint).then((axiosResponse) => {
         if (string === "december") return "12";
     }
 
-    const yearToScrape = "2024";
-    const startElement = Array.from(document.querySelectorAll("h2")).find(x => x.textContent === "Kalender med temadagar 2024");
-    const endElement = document.querySelector("#ezoic-pub-ad-placeholder-111");
+    const yearToScrape = "2026";
+    const startElement = Array.from(document.querySelectorAll("h2")).find(x => x.textContent.includes("Kalender med temadagar " + yearToScrape));
+    const endElement = Array.from(document.querySelectorAll("h2")).find(x => x.textContent.includes("Kalender med temadagar " + yearToScrape+1));
     const root = startElement.parentElement;
 
     const elementArray = Array.from(root.childNodes);

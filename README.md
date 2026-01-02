@@ -59,4 +59,7 @@ Example data for a single day:
 
 # static html version
 
-deploy the entire `public` folder - it contains a static variant: `index.html` with all of 2024, and `index.js` will highlight the current day
+1. update temadagar.json
+2. `npm run start`
+3. look at the rendered html, the `<main>` blocks to `public/index.html`
+4. remove today classnames

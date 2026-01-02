@@ -5,7 +5,7 @@
       "type": "node",
       "request": "launch",
       "name": "Specific Node-version",
-      "runtimeExecutable": "${userHome}/.nvm/versions/node/v16.15.0/bin/node",
+      "runtimeExecutable": "${userHome}/.nvm/versions/node/v22.21.0/bin/node",
       "program": "${workspaceFolder}/app.js",
       "restart": true,
       "console": "integratedTerminal",

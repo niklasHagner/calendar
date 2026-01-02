@@ -69,11 +69,6 @@
   align-items: center;
   background-color: white;
 }
-.calendar .isToday.helgDag .date {
-    color: crimson !important;
-}
-
-
 .calendar .days li.not-this-month .date,
 .calendar .days li.not-this-month .namedays,
 .calendar .days li.not-this-month .themedays {
@@ -139,6 +134,9 @@
   justify-content: center;
   align-items: center;
   background-color: white !important;
+}
+.isToday.helgDag .date {
+  color: crimson !important;
 }
 .weeknumber {
   color: #b8291b;
@@ -221,7 +219,7 @@
     padding: 0;
     border-radius: 0;
   }
-  .calendar-grid:not(.is-current-month) {
+  .calendar-desktop-and-tablet {
     display: none;
   }
   .menu-bar {
@@ -293,27 +291,27 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM70w-.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Vollkorn';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/vollkorn/v27/0ybgGDoxxrvAnPhYGzMlQLzuMasz6Df2MHGuGQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/vollkorn/v30/0ybgGDoxxrvAnPhYGzMlQLzuMasz6Df2MHGuGQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Mr Dafoe';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/mrdafoe/v14/lJwE-pIzkS5NXuMMrFitibc.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/mrdafoe/v15/lJwE-pIzkS5NXuMMrFitibc.ttf) format('truetype');
 }
 @font-face {
   font-family: 'helvetica';
@@ -365,7 +363,4 @@ footer {
   border-top: solid 2px #F6E9DC;
   text-align: center;
   padding: 20px;
-}
-summary {
-    color: #eee;
 }
